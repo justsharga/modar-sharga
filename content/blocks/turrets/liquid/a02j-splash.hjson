@@ -1,0 +1,93 @@
+type:LiquidTurret
+name:Splash
+description:Shoot various liquid in a burst
+health:920
+size:3
+category:turret
+rotateSpeed:2.0
+inaccuracy:4
+reload:70
+range:140
+flying:false
+outlineColor:565666
+shootCone:6
+recoil:3
+shoot:{
+ firstShotDelay:30
+ shotDelay:3
+ shots:10
+}
+ammoTypes:{
+ water:{
+  type:LiquidBulletType
+  liquid:water
+  damage:0
+  speed:5
+  width:8
+  height:12
+  hitsize:9
+  knockback:1
+  status:wet
+  statusDuration:180
+  lifetime:40
+ }
+ c02-rusty-water:{
+  type:LiquidBulletType
+  liquid:c02-rusty-water
+  damage:4
+  speed:4
+  width:8
+  height:12
+  hitsize:9
+  knockback:0
+  status:wet
+  statusDuration:180
+  lifetime:40
+ }
+ c04-magnolite:{
+  type:LiquidBulletType
+  liquid:c04-magnolite
+  damage:4
+  speed:3
+  width:8
+  height:12
+  hitsize:9
+  knockback:1
+  status:melting
+  statusDuration:180
+  lifetime:40
+ }
+ c06-exozero:{
+  type:LiquidBulletType
+  liquid:c06-exozero
+  damage:0
+  speed:2
+  width:8
+  height:12
+  hitsize:9
+  knockback:2
+  status:frost
+  statusDuration:180
+  lifetime:40
+ }
+}
+drawer:{
+   type:DrawTurret
+   basePrefix:reinforced-
+}
+requirements:[
+ b01-iron/120
+ b03-durasteel/40
+ b05-hexaria-glass/60
+]
+research:{
+ parent:a01j-puncture
+  objective:[
+  a01j-puncture
+  {
+   type:OnSector
+   prefix:abandoned-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.2
