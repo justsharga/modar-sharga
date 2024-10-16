@@ -1,0 +1,108 @@
+type:ItemTurret
+name:Erupt
+description:Shoots large explosive frag bullet at the ground target.Requires magnolite to operate.
+health:1280
+size:4
+category:turret
+rotateSpeed:1
+shootSound:mediumCannon
+reload:300
+outlineColor:565666
+range:360
+ammoPerShot:6
+shootCone:4
+shootY:8
+recoil:2
+shake:4
+minWarmup:0.9
+predictTarget:true
+targetAir:false
+newTargetInterval:40
+shootWarmupSpeed:0.1
+consumes:{
+ liquid:c04-magnolite/0.5
+}
+ammoTypes:{
+ b06-hard-crystal:{
+  type:ArtilleryBulletType
+  width:18
+  height:20
+  knockback:2
+  hitSound:titanExplosion
+  shootEffect:shootTitan
+  smokeEffect:shootSmokeTitan
+  lifetime:180
+  speed:2
+  splashDamageRadius:70
+  splashDamage:310
+  scaledSplashDamage:true
+  frontColor:ffffff
+  backColor:d70000
+  hitColor:d70000
+  trailColor:d70000
+  trailLength:32
+  trailWidth:3.5
+  trailSinScl:2.5
+  trailSinMag:0.5
+  despawnShake:7
+  status:burning
+  statusDuration:120
+  buildingDamageMultiplier:0.3
+  fragBullets:10
+  fragBullet:{
+   type:ArtilleryBulletType
+         damage:25
+         speed:5
+         hitsize:6
+         width:6
+         height:6
+         lifetime:32
+         frontColor:ffffff
+         backColor:d70000
+         hitColor:d70000
+         trailColor:d70000
+         trailRotation:true
+         trailWidth:4
+         trailLength:8
+         trailChance:0.5
+         trailEffect:disperseTrail
+         homingRange:32
+         homingPower:0.3
+         homingDelay:10
+         status:burning
+         statusDuration:60
+         buildingDamageMultiplier:0.3
+  }
+ }
+}
+drawer:{
+ type:drawTurret
+ basePrefix:reinforced-
+ parts:[
+  {
+   type:RegionPart
+   suffix:-barrel
+   progress:recoil
+   moveY:-1.5
+   mirror:false
+  }
+  {
+   type:RegionPart
+   suffix:-side
+   progress:recoil
+   moveY:-1.5
+   moveX:1
+   moveRot:-5
+   mirror:true
+   under:true
+  }
+ ]
+}
+requirements:[
+ b06-hard-crystal/130
+ b08-mechanical-alloy/70
+ b10-zaprezonite/40
+]
+buildCostMultiplier:0.7
+research:a04j-besiege
+researchCostMultiplier:2

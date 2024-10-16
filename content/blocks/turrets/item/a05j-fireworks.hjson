@@ -1,0 +1,168 @@
+type:ItemTurret
+name:Fireworks
+description:Shoot cluster of frag bullets at flying enemy
+health:945
+size:4
+category:turret
+rotateSpeed:4
+shootSound:shootBig
+reload:40
+outlineColor:565666
+range:360
+inaccuracy:7
+shootCone:35
+shootY:4
+recoil:5
+shake:4
+targetGround:false
+consumeAmmoOnce:true
+shoot:{
+ shots:6
+ shotDelay:5
+}
+ammoTypes:{
+   b03-durasteel:{
+      type:BasicBulletType
+      damage:15
+      speed:8
+      width:18
+      hitSize:18
+      height:18
+      shrinkY:0.3
+      velocityRnd:0.11
+      ammoMultiplier:5
+      collidesGround:false
+      collidestTiles:false
+      shootEffect:shootBig2
+      smokeEffect:shootSmokeDisperse
+      sprite:"mine-bullet"
+      backSprite:"large-bomb-back"
+      frontColor:ffffff
+      backColor:d6dbe7
+      trailColor:d6dbe7
+      hitColor:d6dbe7
+      trailRotation:true
+      lifetime:45
+      trailWidth:2
+      trailLength:10
+      trailChance:0.6
+      trailEffect:disperseTrail
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      fragBullets:8
+      fragSpread:45
+      fragRandomSpread:0
+      fragBullet:{
+       type:LaserBulletType
+        width:15
+        length:14
+        damage:5
+        pierce:true
+        pierceBuilding:true
+        pierceCap:6
+        fragBullets:1
+        fragRandomSpread:0
+        fragBullet:{
+         type:BasicBulletType
+         damage:12
+         speed:2
+         hitsize:6
+         width:3
+         height:2
+         lifetime:30
+         collidesGround:false
+         collidestTiles:false
+         frontColor:ffffff
+         backColor:d6dbe7
+         hitColor:d6dbe7
+         trailColor:d6dbe7
+         trailRotation:true
+         trailWidth:1
+         trailLength:4
+         trailChance:0.3
+         trailEffect:disperseTrail
+        }
+      }
+   }
+   b11-rexonite:{
+      type:BasicBulletType
+      damage:20
+      speed:8
+      width:18
+      hitSize:18
+      height:18
+      shrinkY:0.3
+      velocityRnd:0.11
+      ammoMultiplier:5
+      collidesGround:false
+      collidestTiles:false
+      shootEffect:shootBig2
+      smokeEffect:shootSmokeDisperse
+      sprite:"mine-bullet"
+      backSprite:"large-bomb-back"
+      frontColor:ffffff
+      backColor:7c4b80
+      trailColor:7c4b80
+      hitColor:7c4b80
+      trailRotation:true
+      lifetime:45
+      trailWidth:2
+      trailLength:10
+      trailChance:0.6
+      trailEffect:disperseTrail
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      fragBullets:12
+      fragSpread:30
+      fragRandomSpread:0
+      fragBullet:{
+       type:LaserBulletType
+        width:15
+        length:30
+        damage:3
+        pierce:true
+        pierceBuilding:true
+        pierceCap:6
+        fragBullets:1
+        fragRandomSpread:0
+        fragBullet:{
+         type:BasicBulletType
+         damage:10
+         speed:2
+         hitsize:6
+         width:3
+         height:2
+         lifetime:30
+         collidesGround:false
+         collidestTiles:false
+         frontColor:ffffff
+         backColor:d6dbe7
+         hitColor:d6dbe7
+         trailColor:d6dbe7
+         trailRotation:true
+         trailWidth:1
+         trailLength:4
+         trailChance:0.3
+         trailEffect:disperseTrail
+        }
+      }
+   }
+}
+drawer:{
+   type:DrawTurret
+   basePrefix:reinforced-
+}
+requirements:[
+   b03-durasteel/80
+   b06-hard-crystal/100
+   b08-mechanical-alloy/60
+]
+buildCostMultiplier:0.9
+coolant:{
+   type:ConsumeCoolant
+   allowGas:true
+   allowLiquid:true
+   amount:0.1
+}
+research:a04j-besiege
+researchCostMultiplier:0.4

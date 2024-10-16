@@ -1,0 +1,83 @@
+type:ItemTurret
+name:Puncture
+description:Launch variety of material to enemy and damaging them.
+health:870
+size:3
+category:turret
+rotateSpeed:1.5
+shootSound:shootAlt
+inaccuracy:2
+reload:45
+outlineColor:565666
+range:120
+shootCone:4
+recoil:2
+shake:1
+ammoTypes:{
+   b01-iron:{
+      type:BasicBulletType
+      damage:26
+      speed:3.5
+      width:12
+      hitSize:7
+      height:20
+      shootEffect:shootBigColor
+      smokeEffect:shootBigSmoke
+      ammoMultiplier:1
+      pierce:true
+      pierceCap:3
+      pierceBuilding:true
+      frontColor:ffffff
+      backColor:9b9daa
+      trailColor:9b9daa
+      hitColor:9b9daa
+      trailWidth:2.1
+      trailLength:10
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      buildingDamageMultiplier:0.2
+   }
+   b06-hard-crystal:{
+      type:BasicBulletType
+      damage:38
+      speed:4
+      width:12
+      hitSize:7
+      height:20
+      shootEffect:shootBigColor
+      smokeEffect:shootBigSmoke
+      ammoMultiplier:1
+      pierce:true
+      pierceCap:3
+      pierceBuilding:true
+      frontColor:ffffff
+      backColor:d70000
+      trailColor:d70000
+      hitColor:d70000
+      trailWidth:2.1
+      trailLength:10
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      buildingDamageMultiplier:0.2
+      status:blasted
+   }
+}
+drawer:{
+   type:DrawTurret
+   basePrefix:reinforced-
+}
+requirements:[
+   b01-iron/160
+   b03-durasteel/80
+]
+coolant:{
+   type:ConsumeCoolant
+   allowGas:true
+   allowLiquid:true
+   amount:0.1
+}
+research:a01i-core-fragment
+researchCost:[
+ b01-iron/60
+ b03-durasteel/10
+]

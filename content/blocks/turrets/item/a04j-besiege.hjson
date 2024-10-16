@@ -1,0 +1,99 @@
+type:ItemTurret
+name:Besiege
+description:Shoot a group of homing bullets at the target
+health:980
+size:4
+category:turret
+rotateSpeed:2
+shootSound:shootAltLong
+reload:120
+outlineColor:565666
+range:158
+ammoPerShot:8
+inaccuracy:15
+shootCone:6
+shootY:9.5
+recoil:4
+shake:3
+shoot:{
+ firstShotDelay:30
+ shotDelay:0
+ shots:8
+}
+ammoTypes:{
+   b05-hexaria-glass:{
+      type:BasicBulletType
+      damage:14
+      speed:3
+      width:10
+      hitSize:10
+      height:25
+      shootEffect:shootBigColor
+      smokeEffect:shootBigSmoke
+      pierce:true
+      pierceCap:2
+      pierceBuilding:false
+      homingPower:0.4
+      homingDelay:10
+      homingRange:240
+      frontColor:ffffff
+      backColor:d6dbe7
+      trailColor:d6dbe7
+      hitColor:d6dbe7
+      lifetime:90
+      trailWidth:2.1
+      trailLength:10
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      buildingDamageMultiplier:0.2
+   }
+   b10-zaprezonite:{
+      type:BasicBulletType
+      damage:45
+      speed:3
+      width:10
+      hitSize:10
+      height:25
+      rangeChange:160
+      shootEffect:shootBigColor
+      smokeEffect:shootBigSmoke
+      pierce:true
+      pierceCap:2
+      pierceBuilding:false
+      homingPower:0.4
+      homingDelay:10
+      homingRange:240
+      frontColor:ffffff
+      backColor:ada834
+      trailColor:ada834
+      hitColor:ada834
+      lifetime:95
+      trailWidth:2.1
+      trailLength:10
+      hitEffect:hitBulletColor
+      despawnEffect:hitBulletColor
+      lightning:2
+      lightningLength:12
+      lightningDamage:6
+      buildingDamageMultiplier:0.2
+   }
+}
+drawer:{
+   type:DrawTurret
+   basePrefix:reinforced-
+}
+requirements:[
+   b01-iron/180
+   b03-durasteel/75
+   b06-hard-crystal/80
+   b08-mechanical-alloy/60
+]
+buildCostMultiplier:0.7
+coolant:{
+   type:ConsumeCoolant
+   allowGas:true
+   allowLiquid:true
+   amount:0.1
+}
+research:a01j-puncture
+researchCostMultiplier:0.3

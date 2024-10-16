@@ -1,0 +1,64 @@
+type:ItemTurret
+name:Burst
+description:Launches multiple missiles into the enemy.May cause different effects and damages depending on the ammo used
+health:1320
+size:4
+category:turret
+rotateSpeed:0.8
+shootSound:missileLaunch
+reload:560
+outlineColor:565666
+range:1900
+ammoPerShot:3
+shootCone:3
+shootY:1
+recoil:2
+shake:2
+shoot:{
+ shots:3
+ shotDelay:10
+}
+minWarmup:0.9
+newTargetInterval:60
+shootWarmupSpeed:0.01
+ammoTypes:{
+ b11-rexonite:{
+  instantDisappear:true
+  damage:0
+  spawnUnit:burst-missile
+ }
+}
+drawer:{
+ type:DrawTurret
+ basePrefix:reinforced-
+ parts:[
+  {
+   type:RegionPart
+   suffix:-front
+   progress:warmup
+   moveX:3
+   moveY:-3
+   mirror:true
+   under:true
+  }
+  {
+   type:RegionPart
+   suffix:-back
+   progress:recoil
+   moveY:-2
+   mirror:true
+   under:true
+  }
+ ]
+}
+coolant:{
+ type:ConsumeCoolant
+ allowGas:true
+ allowLiquid:true
+ amount:0.5
+}
+requirements:[
+ b06-hard-crystal/180
+ b10-zaprezonite/80
+ b11-rexonite/90
+]
