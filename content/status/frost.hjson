@@ -1,0 +1,8 @@
+name:frost
+speedMultiplier:0.4
+reloadMultiplier:0.5
+healthMultiplier:0.85
+opposites:[
+ melting
+ burning
+]
