@@ -1,0 +1,8 @@
+type:SteamVent
+name:Rough Vent
+blendGroup:cold-magnolite
+parent:cold-magnolite
+attributes:{
+ steam:1
+ heat:1
+}

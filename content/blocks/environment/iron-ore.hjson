@@ -1,0 +1,5 @@
+type:OreBlock
+name:Rusted Iron
+description:Rusted iron deposit that scattered around.Thisimplies that long time ago there was plenty of oxygen here.
+itemDrop:b01-iron
+variants:3

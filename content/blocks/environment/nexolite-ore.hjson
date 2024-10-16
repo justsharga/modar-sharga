@@ -1,0 +1,5 @@
+type:OreBlock
+name:Nexolite Ore
+description:Rich deposit of Cold Nexolite
+itemDrop:b07-nexolite
+variants:3

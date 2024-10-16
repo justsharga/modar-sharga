@@ -1,0 +1,10 @@
+type:Floor
+name:Liquid Iron
+speedMultiplier:0.3
+variants:0
+liquidDrop:c05-molten-iron
+liquidMultiplier: 2
+isLiquid: true
+cacheLayer:tar
+albedo: 0.8
+supportsOverlay: true

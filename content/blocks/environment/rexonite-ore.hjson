@@ -1,0 +1,5 @@
+type:OreBlock
+name:Rexonite Ore
+description:Rich deposit of hard Rexonite
+itemDrop:b11-rexonite
+variants:2

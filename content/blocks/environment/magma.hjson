@@ -1,0 +1,15 @@
+type:Floor
+name:Magma
+variants:2
+attributes:{
+ water:0
+ magnolite:1
+}
+status:burning
+statusDuration:30
+liquidDrop:c04-magnolite
+liquidMultiplier:1.8
+supportOverlay:true
+emitLight:true
+lightRadius:50
+lightColor:ee913f

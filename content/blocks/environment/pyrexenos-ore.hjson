@@ -1,0 +1,5 @@
+type:OreBlock
+name:Pyrexenos Ore
+description:Rich deposit of flamable Pyrexenos
+itemDrop:b02-pyrexenos
+variants:3

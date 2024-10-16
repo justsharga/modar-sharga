@@ -1,0 +1,12 @@
+type: Floor
+name: Shallow Living Water
+speedMultiplier: 0.7
+variants: 1
+status: enchanced
+statusDuration: 20
+liquidDrop: c01-hydrocharge
+isLiquid: true
+cacheLayer: water
+liquidMultiplier: 1.5
+albedo: 0.9
+supportsOverlay: true

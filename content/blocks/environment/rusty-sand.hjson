@@ -1,0 +1,5 @@
+type: Floor
+name: Rusty Sand
+description:Tile that contain various amount of minerals as sand.Excavating it would give us useful sand for manufacturing.
+itemDrop:b04-mineral-sand
+variants: 3

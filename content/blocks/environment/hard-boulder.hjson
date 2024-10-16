@@ -1,0 +1,4 @@
+type: Prop
+name: Hard Boulder
+variants: 2
+breakSound: rock-crush
