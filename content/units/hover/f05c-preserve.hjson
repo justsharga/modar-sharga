@@ -1,0 +1,107 @@
+type:flying
+flying:true
+name:Preserve
+description:Highest tier we can produce at the support unit tree.Specialized for passive buffs and capable for making some kind of helper bot.
+health:25000
+hitSize:52
+speed:0.5
+armor:5
+engines:[
+ {
+  x:0
+  y:-22
+  radius:8
+ }
+ {
+  x:21.5
+  y:-27
+  radius:6
+ }
+ {
+  x:-21.5
+  y:-27
+  radius:6
+ }
+]
+abilities:[
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-22
+  interval:5
+  minVelocity:0.3
+ }
+ {
+  type:ForceFieldAbility
+  max:1200
+  radius:160
+  cooldown:800
+  regen:1
+  sides:12
+ }
+ {
+  type:UnitSpawnAbility
+  spawnTime:2400
+  unit:resource-drone
+  spawnX:15.5
+  spawnY:-9.5
+ }
+ {
+  type:UnitSpawnAbility
+  spawnTime:2400
+  unit:builder-drone
+  spawnX:-15.5
+  spawnY:-9.5
+ }
+ {
+  type:UnitSpawnAbility
+  spawnTime:2400
+  unit:repairer-drone
+  spawnX:12.5
+  spawnY:16
+ }
+ {
+  type:UnitSpawnAbility
+  spawnTime:2400
+  unit:support-drone
+  spawnX:-12.5
+  spawnY:16
+ }
+ {
+  type:RepairFieldAbility
+  amount:4
+  reload:480
+  range:280
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  reload:600
+  mirror:false
+  rotate:false
+  shootCone:360
+  bullet:{
+   instantDisappear:true
+   damage:0
+   fragBullets:360
+   fragSpread:1
+   fragBullet:{
+    type:LaserBulletType
+    color:[85c278, 9be98b, ffffff
+    ]
+    width:5
+    length:120
+    damage:12
+    healPercent:3
+    collidesTeam:true
+    pierce:true
+    pierceBuilding:false
+    pierceCap:5
+   }
+  }
+ }
+]

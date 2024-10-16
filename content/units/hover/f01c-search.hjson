@@ -1,0 +1,95 @@
+type:mech
+name:Search
+description:little assiting bot armed with repair gun
+health:175
+speed:3.5
+armor:1
+shadowElevation:0.1
+mechFrontSway:0
+mechSideSway:0
+mechStride:0
+hitsize:8
+buildSpeed:0.6
+groundLayer:60
+accel:0.1
+rotateSpeed:6
+itemCapacity:20
+flying:false
+hovering:true
+hoverable:true
+useEngineElevation:false
+rotateMoveFirst:true
+lowAltitude:true
+accel:0.1
+commands: [move, repair, rebuild, assist]
+outlineColor:565666
+abilities:[
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-6.5
+  interval:4
+  minVelocity:0.6
+ }
+ {
+  type:EnergyFieldAbility
+  damage:4
+  reload:180
+  range:100
+  effectRadius:0.9
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:60
+  shootSound:spark
+  maxTargets:8
+  healPercent:1
+ }
+]
+engines:[
+ {
+  x:0
+  y:-6.5
+  radius:2.0
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  name:search-weapon
+  reload:240
+  mirror:false
+  rotate:false
+  shootSound:blaster
+  bullet:{
+   type:EmpBulletType
+   damage:22
+   radius:20
+   timeIncrease:1.5
+   timeDuration:100
+   powerDamageScl:1.2
+   healPercent:2
+   shootEffect:hitEmpSpark
+   smokeEffect:shootBigSmoke2
+   lifetime:30
+   backColor:84f491
+   frontColor:ffffff
+   width:10
+   height:10
+   shrinkY:0
+   speed:4
+   trailLength:20
+   trailWidth:8
+   trailColor:84f491
+   splashDamage:8
+   splashDamageRadius:20
+   collidesTeam:true
+   status:electrified
+   statusDuration:60
+   hitSound:plasmaboom
+  }
+ }
+]
+research:a03k-helper-assembler

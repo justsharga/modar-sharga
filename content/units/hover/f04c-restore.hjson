@@ -1,0 +1,145 @@
+type:mech
+name:Restore
+description:Multi Function Assisting hover unit that specialized on healing allied buildings.
+health:12500
+speed:1.5
+armor:4
+shadowElevation:0.1
+mechFrontSway:0
+mechSideSway:0
+mechStride:0
+hitsize:35
+buildSpeed:1.2
+groundLayer:60
+accel:0.1
+rotateSpeed:3
+itemCapacity:60
+mineSpeed:8
+mineTier:4
+hovering:true
+hoverable:true
+mineFloor:true
+mineWall:true
+flying:false
+useEngineElevation:false
+rotateMoveFirst:true
+lowAltitude:true
+faceTarget:true
+accel:0.1
+controller:DefenderAI
+commands: [move, repair, rebuild, assist,mine]
+outlineColor:565666
+abilities:[
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-8
+  interval:4
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-7.5
+  interval:4
+  minVelocity:0.6
+ }
+ {
+  type:EnergyFieldAbility
+  damage:4
+  reload:320
+  range:140
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:60
+  shootSound:spark
+  maxTargets:15
+  healPercent:3
+ }
+ {
+ type:UnitSpawnAbility
+ spawnTime:1800
+ unit:repairer-drone
+ spawnX:6
+ spawnY:-14.5
+ }
+ {
+ type:UnitSpawnAbility
+ spawnTime:1800
+ unit:repairer-drone
+ spawnX:-6
+ spawnY:-14.5
+ }
+ {
+ type:ForceFieldAbility
+ max:870
+ radius:125
+ cooldown:600
+ regen:0.3
+ sides:12
+ }
+]
+engines:[
+ {
+  x:0
+  y:-17
+  radius:5
+ }
+ {
+ x:11
+ y:-16
+ radius:2.5
+ }
+ {
+ x:-11
+ y:-16
+ radius:2.5
+ }
+]
+weapons:[
+ {
+  x:0
+  y:19
+  reload:180
+  innacuracy:10
+  mirror:false
+  rotate:false
+  shootSound:blaster
+  shoot:{
+   shotDelay:15
+   shots:6
+  }
+  bullet:{
+   type:EmpBulletType
+   damage:58
+   radius:24
+   timeIncrease:1.5
+   timeDuration:100
+   powerDamageScl:1.2
+   healPercent:3
+   shootEffect:hitEmpSpark
+   smokeEffect:shootBigSmoke2
+   lifetime:50
+   backColor:84f491
+   frontColor:ffffff
+   width:12
+   height:12
+   shrinkY:0
+   speed:3
+   trailLength:60
+   trailWidth:12
+   trailColor:84f491
+   splashDamage:45
+   splashDamageRadius:24
+   collidesTeam:true
+   status:electrified
+   statusDuration:60
+   hitSound:plasmaboom
+  }
+ }
+]
