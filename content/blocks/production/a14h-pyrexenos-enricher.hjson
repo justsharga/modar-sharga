@@ -1,0 +1,50 @@
+type:HeatCrafter
+name:Pyrexenos Enricher
+description:Slowly separate radioactive and flamable Pyrexenos from impurities.
+health:1120
+size:5
+category:crafting
+craftTime:600
+itemCapacity:30
+heatRequirement:10
+maxEfficiency:4
+squareSprite:false
+outputItem:b13-enriched-pyrexenos/1
+consumes:{
+ power:3.5
+ items:[
+  b02-pyrexenos/5
+ ]
+}
+drawer:{
+  type:drawMulti
+  drawers:[
+        {
+         type:DrawRegion
+         suffix:-bottom
+        }
+        {
+         type:DrawArcSmelt
+        }
+        {
+         type:DrawDefault
+      }
+   ]
+}
+requirements:[
+ b08-mechanical-alloy/120
+ b09-repair-circuit/80
+ b10-zaprezonite/35
+]
+ambientSound:smelter
+ambientSoundVolume:0.9
+research:{
+ parent:a08h-zaprezonite-charger
+ objectives:[
+  {
+   type: OnSector
+   preset:silent-passage
+  }
+ ]
+}
+researchCostMultiplier:5

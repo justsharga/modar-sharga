@@ -1,0 +1,56 @@
+type:GenericCrafter
+name:Iron Cooler
+description:Cooling down liquified iron into usable iron using large amount of water.
+category:crafting
+size:4
+health:970
+squareSprite:false
+consumes:{
+   liquids:[
+    {
+     liquid:water
+     amount:2.5
+    }
+    {
+     liquid:c05-molten-iron
+     amount:1
+    }
+   ]
+   power:2
+}
+outputItem:b01-iron/15
+craftTime:900
+itemCapacity:30
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c05-molten-iron
+      padding:3
+      }
+      {
+      type:DrawSoftParticles
+      color:7090ea
+      color2:ffffff
+      alpha:0.4
+      particleRad:10
+      particleSize:5
+      particleLife:30
+      particles:15
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b05-hexaria-glass/80
+   b08-mechanical-alloy/60
+   b11-rexonite/40
+]
+buildCostMultiplier:0.75

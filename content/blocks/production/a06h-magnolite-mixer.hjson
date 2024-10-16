@@ -1,0 +1,45 @@
+type:GenericCrafter
+name:Magnolite Mixer
+description:Mix Hydrocharge and Pyrexenos to obtain Magnolite.
+category:crafting
+size:3
+health:780
+consumes:{
+   items:[
+      b02-pyrexenos/1
+   ]
+   liquid:c01-hydrocharge/0.5
+   power:2
+}
+outputLiquid:c04-magnolite/0.5
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c04-magnolite
+      }
+      {
+      type:DrawRegion
+      suffix:-rotator
+      spinSprite:true
+      rotateSpeed:3
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+liquidCapacity:30
+requirements:[
+   b05-hexaria-glass/40
+   b06-hard-crystal/45
+   b08-mechanical-alloy/80
+]
+buildCostMultiplier:0.75
+research:a05h-mechanical-alloy-furnace
+researchCostMultiplier:0.4

@@ -1,0 +1,51 @@
+type:GenericCrafter
+name:Crystal Pressurizer
+description:Pressurize the Mineral Sand and heating it up using Pyrexenos producing Hard Crystal as output.
+category:crafting
+squareSprite:false
+size:3
+health:670
+consumes:{
+   power:3
+   items:[
+   b02-pyrexenos/2
+   b04-mineral-sand/2
+   ]
+}
+outputItem:b06-hard-crystal/4
+drawer:{
+  type:drawMulti
+  drawers:[
+        {
+         type:DrawRegion
+         suffix:-bottom
+        }
+        {
+         type:DrawArcSmelt
+         flameColor:bc0000
+         midColor:c85c51
+        }
+        {
+         type:DrawDefault
+      }
+   ]
+}
+ambientSound:smelter
+ambientSoundVolume:0.9
+requirements:[
+   b01-iron/50
+   b03-durasteel/20
+   b05-hexaria-glass/10
+
+]
+research:{
+ parent:a02h-hexaria-kiln
+ objective:[
+  a02h-hexaria-kiln
+  {
+   type:OnSector
+   preset:patrol-line
+  }
+ ]
+}
+researchCostMultiplier:0.1

@@ -1,0 +1,35 @@
+type:GenericCrafter
+name:Exozero Mixing Tank
+description:create Exozero by dissolving soft Nexolite into Water.
+size:3
+category:crafting
+consumes:{
+   items:[
+      b07-nexolite/4
+   ]
+   liquid:water/0.5
+   power:4
+}
+outputLiquid:c06-exozero/0.5
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c06-exozero
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b05-hexaria-glass/35
+   b06-hard-crystal/30
+   b08-mechanical-alloy/50
+   b11-rexonite/40
+]

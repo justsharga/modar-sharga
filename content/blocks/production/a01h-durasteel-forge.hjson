@@ -1,0 +1,41 @@
+type:GenericCrafter
+name:Durasteel Forge
+description:Melts up iron and fuse it with pyrexenos,creating durasteel.Require power to operate
+size:3
+category:crafting
+health:120
+itemCapacity:20
+craftTime:120
+craftEffect:none
+outputItem:b03-durasteel/3
+consumes:{
+   power:1
+   items:[
+   b01-iron/4
+   b02-pyrexenos/2
+   ]
+}
+drawer:{
+  type:drawMulti
+  drawers:[
+        {
+         type:DrawRegion
+         suffix:-bottom
+        }
+        {
+         type:DrawArcSmelt
+        }
+        {
+         type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b01-iron/120
+]
+ambientSound:smelter
+ambientSoundVolume:0.9
+research:a01i-core-fragment
+researchCost:[
+ b01-iron/50
+]

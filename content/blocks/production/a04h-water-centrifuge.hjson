@@ -1,0 +1,42 @@
+type:GenericCrafter
+name:Water Centrifuge
+description:Stir Rusty Water to separate the Water and Mineral Sand
+category:crafting
+size:3
+health:520
+squareSprite:false
+consumes:{
+   liquid:c02-rusty-water/2
+   power:1.5
+}
+outputLiquid:water/1
+outputItem:b04-mineral-sand/3
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c02-rusty-water
+      }
+      {
+      type:DrawRegion
+      suffix:-rotator
+      spinSprite:true
+      rotateSpeed:5
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b05-hexaria-glass/60
+   b06-hard-crystal/80
+]
+buildCostMultiplier:0.75
+research:a03h-crystal-pressurizer
+researchCostMultiplier:0.2

@@ -1,0 +1,63 @@
+type:GenericCrafter
+name:Zaprezonite Charger
+description:Charges up iron using Hydrocharge to get highly charged Zaprezonite.
+size:4
+health:850
+category:crafting
+squareSprite:false
+itemCapacity:20
+consumes:{
+   power:6
+   items:[
+      b01-iron/4
+   ]
+   liquid:c01-hydrocharge/1
+}
+craftTime:240
+outputLiquid:water/0.5
+outputItem:b10-zaprezonite/4
+drawer:{
+   type:drawMulti
+      drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c01-hydrocharge
+      alpha:0.7
+      padding:2.5
+      }
+      {
+      type:DrawBubbles
+      color:1616b6
+      spread:2
+      recurrence:3
+      sides:10
+      radius:2
+      amount:25
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+ambientSound:pulse
+ambientSoundVolume:0.5
+requirements:[
+   b03-durasteel/80
+   b06-hard-crystal/75
+   b08-mechanical-alloy/90
+]
+research:{
+ parent:a05h-mechanical-alloy-furnace
+ objectives:[
+  {
+   type: OnSector
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:0.4
+buildCostMultiplier:0.7

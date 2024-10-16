@@ -1,0 +1,32 @@
+type:HeatProducer
+name:Water Heater
+description:Transfer heat from heated water into the facing output.
+size:2
+category:crafting
+liquidCapacity:60
+consumes:{
+ liquid:c03-heated-water/0.5
+}
+rotateDraw:false
+regionRotated:1
+heatOutput:2
+outputLiquid:water/0.5
+ambientSound:hum
+drawer:{
+ type:DrawMulti
+ drawers:[
+  {
+   type:DrawDefault
+  }
+  {
+   type:DrawHeatOutput
+  }
+ ]
+}
+requirements:[
+ b06-hard-crystal/40
+ b08-mechanical-alloy/20
+]
+buildCostMultiplier:0.7
+research:a05h-mechanical-alloy-furnace
+researchCostMultiplier:4

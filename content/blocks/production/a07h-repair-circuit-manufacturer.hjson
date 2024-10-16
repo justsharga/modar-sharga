@@ -1,0 +1,48 @@
+type:GenericCrafter
+name:Repair Circuit Manufacturer
+description:Combining Nexolite and Durasteel to create advanced material Repair Circuit
+category:crafting
+size:4
+health:970
+squareSprite:false
+consumes:{
+   items:[
+      b03-durasteel/6
+      b07-nexolite/4
+      ]
+   power:4
+   liquid:water/0.25
+}
+craftTime:180
+outputItem:b09-repair-circuit/4
+drawer:{
+   type:drawMulti
+      drawers:[
+         {
+         type:DrawRegion
+         suffix:-bottom
+         }
+         {
+         type:DrawLiquidTile
+         drawLiquid:water
+         alpha:0.65
+         padding:2.5
+         }
+         {
+         type:DrawWeave
+         }
+         {
+         type:DrawDefault
+         }
+      ]
+}
+ambientSound:smelter
+ambientSoundVolume:0.3
+requirements:[
+   b01-iron/120
+   b05-hexaria-glass/95
+   b06-hard-crystal/100
+]
+buildCostMultiplier:0.8
+research:a05h-mechanical-alloy-furnace
+researchCostMultiplier:0.3

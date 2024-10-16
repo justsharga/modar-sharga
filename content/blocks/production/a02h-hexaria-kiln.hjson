@@ -1,0 +1,49 @@
+type:GenericCrafter
+name:Hexaria Kiln
+description:Heat up mineral sand into clear white crystal called Hexaria glass.Require power to operate
+size:3
+category:crafting
+health:215
+itemCapacity:20
+craftTime:60
+craftEffect:none
+outputItem:b05-hexaria-glass/1
+consumes:{
+   power:3
+   items:[
+   b04-mineral-sand/2
+   ]
+}
+drawer:{
+  type:drawMulti
+  drawers:[
+        {
+         type:DrawRegion
+         suffix:-bottom
+        }
+        {
+         type:DrawCrucibleFlame
+        }
+        {
+         type:DrawDefault
+      }
+   ]
+}
+ambientSound:smelter
+ambientSoundVolume:0.09
+squareSprite:false
+requirements:[
+   b01-iron/70
+   b03-durasteel/50
+]
+research:{
+ parent:a01h-durasteel-forge
+ objective:[
+  a01h-durasteel-forge
+  {
+   type:OnSector
+   preset:abandoned-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.3

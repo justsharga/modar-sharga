@@ -1,0 +1,55 @@
+type:GenericCrafter
+name:Hexahedron Blast Furnace
+description:Combine the best material into powerful and durable plating.
+size:4
+health:1245
+category:crafting
+squareSprite:true
+itemCapacity:30
+consumes:{
+   power:6
+   items:[
+      b03-durasteel/4
+      b06-hard-crystal/4
+      b08-mechanical-alloy/4
+      b09-repair-circuit/4
+      b10-zaprezonite/4
+   ]
+   liquid:c04-magnolite/0.5
+}
+outputItem:b12-hexahedron-plating/6
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c04-magnolite
+      }
+      {
+      type:DrawSoftParticles
+      color:b0b9c0
+      color2:3f4049
+      alpha:0.6
+      particleRad:10
+      particleSize:10
+      particleLife:30
+      particles:30
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b03-durasteel/50
+   b08-mechanical-alloy/80
+   b10-zaprezonite/60
+   b11-rexonite/35
+]
+buildCostMultiplier:0.8
+ambientSound:smelter
+ambientSoundVolume:0.8

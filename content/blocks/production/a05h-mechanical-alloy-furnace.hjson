@@ -1,0 +1,63 @@
+type:GenericCrafter
+name:Mechanical Alloy Furnace
+description:Condense the cold Nexolite into alloy using Hydrocharge.Output some water as byproduct.
+size:4
+health:870
+category:crafting
+squareSprite:false
+itemCapacity:20
+consumes:{
+   power:4
+   items:[
+      b07-nexolite/6
+   ]
+   liquid:c01-hydrocharge/0.5
+}
+outputLiquid:water/0.25
+outputItem:b08-mechanical-alloy/3
+drawer:{
+   type:DrawMulti
+   drawers:[
+      {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c01-hydrocharge
+      alpha:0.5
+      padding:2.5
+      }
+      {
+      type:DrawSoftParticles
+      color:80a9ff
+      color2:4673cb
+      alpha:0.4
+      particleRad:10
+      particleSize:5
+      particleLife:60
+      particles:25
+      }
+      {
+      type:DrawDefault
+      }
+   ]
+}
+requirements:[
+   b03-durasteel/75
+   b05-hexaria-glass/90
+   b06-hard-crystal/100
+]
+buildCostMultiplier:0.8
+ambientSound:smelter
+ambientSoundVolume:0.3
+research:{
+ parent:a03h-crystal-pressurizer
+ objectives:[
+  {
+   type:OnSector
+   preset:aerial-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.3

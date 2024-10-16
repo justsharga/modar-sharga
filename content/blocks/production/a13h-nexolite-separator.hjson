@@ -1,0 +1,21 @@
+type:GenericCrafter
+name:Nexolite Separator
+description:Separate pure nexolite from cold magnolite from rough nexolite by crushing the cold magnolite into mineral sand.
+health:780
+size:3
+category:crafting
+consumes:{
+ power:2
+ items:[
+  b14-rough-nexolite/5
+ ]
+}
+craftTime:120
+outputItems:[
+ b04-mineral-sand/5
+ b07-nexolite/3
+]
+requirements:[
+ b01-iron/240
+ b08-mechanical-alloy/120
+]

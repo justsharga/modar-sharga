@@ -1,0 +1,50 @@
+type:GenericCrafter
+name:Magnolite Extraction Tank
+description:Extracts pyrexenos from magnolite and giving out clean hydrocharge.
+health:870
+size:3
+category:crafting
+consumes:{
+ power:2.5
+ liquid:c04-magnolite/1.5
+}
+outputItem:b02-pyrexenos/3
+outputLiquid:c01-hydrocharge/0.5
+craftTime:180
+itemCapacity:30
+drawer:{
+ type:DrawMulti
+ drawers:[
+  {
+   type:DrawRegion
+   suffix:-mid
+  }
+  {
+   type:DrawLiquidTile
+   drawLiquid:c04-magnolite
+   alpha:0.7
+   padding:2.5
+  }
+  {
+   type:DrawDefault
+  }
+  {
+   type:DrawRegion
+   suffix:-bottom
+  }
+  {
+   type:DrawLiquidTile
+   drawLiquid:c01-hydrocharge
+   alpha:0.7
+  }
+  {
+   type:DrawDefault
+  }
+ ]
+}
+requirements:[
+ b03-durasteel/280
+ b05-hexaria-glass/120
+ b10-zaprezonite/80
+ b11-rexonite/120
+]
