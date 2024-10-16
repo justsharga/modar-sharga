@@ -1,0 +1,67 @@
+type:flying
+flying:true
+name:Adapt
+description:Defender of Pieces core.Capable of mining some resources and heal allied building
+controller:BuilderAI
+health:280
+armor:1
+mineFloor:true
+mineWall:true
+speed:5
+hitsize:7
+isEnemy:false
+mineSpeed:7
+mineTier:2
+buildSpeed:0.8
+drag:0.4
+itemCapacity:80
+outlineColor:565666
+engines: [
+   {
+    x: 0
+    y: -7.0
+    engineSize:4.5
+    engineOffset:5.0
+    engineLayer:-1.0
+   }
+]
+weapons: [
+{
+    x:2
+    y:2
+    reload:90
+    mirror:true
+    rotate:false
+    alternate:true
+    shootSound:laser
+    inaccuracy:4
+    shoot: {
+  firstShotDelay: 60
+    shotDelay: 10
+    shots:2
+  }
+    chargeSound: short-laser-charge
+    bullet:{
+      collides: true
+      collidesTiles: true
+      collidesAir: true
+      collidesGround: true
+      type: LaserBulletType
+      colors: [ d89b5c, f3e872, ffffff
+      ]
+         width:6
+         length:95
+         damage:22
+         healPercent:4
+         collidesTeam:true
+         pierce:true
+         pierceBuilding:false
+         pierceCap:2
+         chargeEffect:none
+         shootEffect:shootSmall
+         smokeEffect:shootSmallSmoke
+         hitColor:85c278
+         buildingDamageMultiplier:0.1
+    }
+  }
+]
