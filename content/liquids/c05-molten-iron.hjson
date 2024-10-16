@@ -1,0 +1,10 @@
+name:Molten Iron
+description:Iron that melts on extremely high temperature.
+coolant:false
+boilpoint:1
+color:9b9daa
+heatCapacity:0.1
+temperature:0.8
+viscosity:0.9
+gasColor:9b9daa
+research:c02-rusty-water

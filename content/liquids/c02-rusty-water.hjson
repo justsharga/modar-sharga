@@ -1,0 +1,10 @@
+name:Rusty Water
+description:Water that got contaminated by rust.Cannot be used for Manufacture and coolant.Maybe it can be sieved to extract the water.
+coolant:false
+effect:wet
+boilPoint:0.5
+color:d3926b
+heatCapacity:0.2
+gasColor:ea9c57
+alwaysUnlocked:true
+research:c01-hydrocharge

@@ -1,0 +1,10 @@
+name:Exozero
+description:Cold substance created by mixing soft Nexolite with pure Water.Similiar to Cryofluid.
+coolant:true
+effect:frost
+boilPoint:0.1
+color:517fdb
+heatCapacity:0.8
+temperature:0.1
+gasColor:86aeff
+research:c04-magnolite

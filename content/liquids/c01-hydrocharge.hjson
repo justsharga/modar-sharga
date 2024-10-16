@@ -1,0 +1,10 @@
+name:Hydrocharge
+description:Water that contain electricity,capable to boost mechanical robot and generating power.
+coolant:true
+effect:enchanced
+boilPoint:0.6
+color:0000a5
+heatCapacity:0.2
+gasColor:1616b6
+alwaysUnlocked:true
+research:a01i-core-fragment

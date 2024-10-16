@@ -1,0 +1,13 @@
+name:Heated Water
+description:Water that can be used for heat source.Contain some pressure.
+heatCapacity:0
+explosiveness:3
+temperature:0.95
+flammability:0
+coolant:false
+gas:true
+color:ffffff
+gasColor:ffffff
+barColor:ffffff
+lightColor:ffffff
+research:c01-hydrocharge

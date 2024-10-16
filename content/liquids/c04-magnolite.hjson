@@ -1,0 +1,10 @@
+name:Magnolite
+description:very hot liquid.can be used to drill material and making some items.
+coolant:false
+color:cf792f
+heatCapacity:0
+temperature:1
+effect:melting
+viscosity:0.8
+gasColor:ee913f
+research:c01-hydrocharge
