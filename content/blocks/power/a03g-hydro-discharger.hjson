@@ -1,0 +1,41 @@
+type:ConsumeGenerator
+name:Hydro Discharger
+description:Releases electricity from Hydrocharge.Output pure water as a byproduct.
+health:480
+category:power
+size:3
+squareSprite:false
+powerProduction:5
+consumes:{
+   liquid:c01-hydrocharge/1
+}
+drawer:{
+   type:drawMulti
+      drawers:[
+      {
+      type:DrawDefault
+      }
+      {
+      type:DrawWarmupRegion
+      }
+   ]
+}
+requirements:[
+   b01-iron/40
+   b03-durasteel/80
+   b05-hexaria-glass/20
+]
+liquidCapacity:60
+outputLiquid:water/0.5
+buildCostMultiplier:0.8
+research:{
+ parent:a01g-radio-ignition-chamber
+ objective:[
+  a01g-radio-ignition-chamber
+  {
+   type:OnSector
+   prefix:abandoned-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.2

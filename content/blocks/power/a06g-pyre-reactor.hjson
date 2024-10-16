@@ -1,0 +1,72 @@
+type:HeaterGenerator
+name:Pyre Reactor
+description:Use the reaction of Enriched Pyrexenos to produce power.Requires water to function.
+health:1080
+size:5
+category:power
+squareSprite:false
+powerProduction:30
+outputLiquid:c03-heated-water/0.5
+consumes:{
+ liquid:water/3
+ items:[
+  b13-enriched-pyrexenos/3
+ ]
+}
+itemDuration:240
+drawer:{
+ type:drawMulti
+ drawers:[
+  {
+   type:DrawRegion
+   suffix:-bottom
+  }
+  {
+   type:drawLiquidTile
+   drawLiquid:water
+   padding:2.5
+  }
+  {
+   type:DrawCircles
+   color:ffffff
+   particles:40
+   range:6
+  }
+  {
+   type:DrawDefault
+  }
+  {
+   type:DrawHeatOutput
+  }
+  {
+   type:DrawGlowRegion
+   suffix:-glow
+   color:f3e872
+   alpha:0.7
+  }
+ ]
+}
+explodeOnFull:true
+explosionRadius:20
+explosionDamage:2500
+explosionMinWarmup:0.9
+explodeEffect:[bigShockwave,titanSmoke,scatheExplosion]
+explodeSound:largeExplosion
+liquidCapacity:120
+itemCapacity:30
+requirements:[
+ b08-mechanical-alloy/80
+ b09-repair-circuit/45
+ b10-zaprezonite/85
+]
+research:{
+ parent:a04g-heat-turbine
+ objectives:[
+  {
+   type:OnSector
+   preset:silent-passage
+  }
+ ]
+}
+buildCostMultiplier:0.7
+researchCostMultiplier:4

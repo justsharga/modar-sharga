@@ -1,0 +1,40 @@
+type:ThermalGenerator
+Attribute:heat
+name:Heat Turbine
+description:Produce some amount of power with the turbine and catches heated water.
+size:3
+health:720
+category:power
+minEfficiency:8
+generateEffect:turbinegenerate
+effectChance:0.4
+hasLiquids:true
+outputLiquid:c03-heated-water/0.222222222
+liquidCapacity:30
+displayEfficiencyScale:0.111111111
+displayEfficiency:false
+ambientSound:hum
+ambientSoundVolume:0.9
+powerProduction:1.48148148
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawBlurSpin
+      suffix: -rotator
+      spinSprite: true
+      blurThresh:0.07
+    }
+  ]
+}
+squareSprite:false
+requirements:[
+ b05-hexaria-glass/40
+ b06-hard-crystal/20
+ b08-mechanical-alloy/15
+]
+research:a03g-hydro-discharger
+researchCostMultiplier:0.1
