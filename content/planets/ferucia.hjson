@@ -1,0 +1,95 @@
+localizedName:Ferucia
+description:Strange planet at the outer side of the solar system made out from iron.We also detected some living electricity organism on the water.Explore this new area and advance to the next project soon.
+alwaysUnlocked:true
+sectorSize:1
+allowLaunchSchematics:false
+allowLaunchToNumbered:false
+allowLaunchLoadout:false
+allowSectorInvasion:false
+startSector:0
+orbitSpacing:2
+radius:1.2
+minZoom:1.2
+drawOrbit:true
+atmosphereRadIn:0.0
+atmosphereRadOut:0.2
+accessible:true
+updateLighting:true
+sectorSeed:14513
+bloom: false
+visible: true
+atmosphereColor:b0b9c0
+iconColor:989aa4
+hasAtmosphere:true
+allowWaveSimulation:true
+clearSectorOnLose:true
+allowWaves:true
+prebuildBase:false
+defaultCore:a01i-core-fragment
+parent:sun
+solarSystem:sun
+launchCandidates:[]
+mesh:[
+ {
+   type:NoiseMesh
+   planet:ferucia
+   divisions:6
+   seed:10
+   radius:1.3
+   color1:6e7080
+   color2:989aa4
+   octaves:4
+   persistence:1.1
+ }
+ {
+   type:NoiseMesh
+   planet:ferucia
+   divisions:6
+   seed:45
+   radius:1.1
+   color1:b36955
+   color2:d3926b
+   octaves:4
+   persistence:0.5
+ }
+ {
+   type:NoiseMesh
+   planet:ferucia
+   divisions:6
+   seed:60
+   radius:0.6
+   color1:bccad6
+   color2:9ca5b6
+   octaves:4
+   persistence:1.1
+ }
+]
+generator: {
+  octaves: 3
+  persistence: 0.52
+  scale: 22
+  mag: 0.721
+  thresh: 1.152
+  min: 100
+  max: 100
+  radMin: 220
+  radMax: 600
+  iceChance: 0.51
+  carbonChance: 0.32
+  berylChance: 0
+  ferricChance: 0.26
+}
+itemWhitelist:[
+ "b01-iron"
+ "b02-pyrexenos"
+ "b03-durasteel"
+ "b04-mineral-sand"
+ "b05-hexaria-glass"
+ "b06-hard-crystal"
+ "b07-nexolite"
+ "b08-mechanical-alloy"
+ "b09-repair-circuit"
+ "b10-zaprezonite"
+ "b11-rexonite"
+ "b12-hexahedron-plating"
+]
