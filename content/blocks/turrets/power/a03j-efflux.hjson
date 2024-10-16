@@ -1,0 +1,67 @@
+type:PowerTurret
+name:Efflux
+description:Concentrate power and release it to damage a single target accurately.
+health:875
+size:3
+category:turret
+accurateDelay:false
+inaccuracy:0
+reload:480
+outlineColor:565666
+range:240
+shootCone:3
+shootWarmupSpeed:5
+recoil:4
+shake:3
+shootType:{
+   type:RailBulletType
+   shootEffect:instShoot
+   hitEffect:instHit
+   pierceEffect:railHit
+   smokeEffect:smokeCloud
+   pointEffect:instTrail
+   despawnEffect:instBomb
+   pointEffectSpace:10
+   damage:130
+   buildingDamageMultiplier:0.2
+   maxDamageFraction:0.6
+   pierceDamageFactor:1
+   length:240
+   hitshake:6
+}
+consumes:{
+   power:4
+}
+drawer:{
+   type:DrawTurret
+   basePrefix:reinforced-
+   parts:[
+      {
+      type:RegionPart
+      suffix:-front
+      progress:warmup
+      heatProgress:warmup
+      color:989aa4
+      heatColor:ffea00
+      mirror:false
+      under:false
+      }
+   ]
+}
+requirements:[
+   b01-iron/180
+   b03-durasteel/45
+   b06-hard-crystal/70
+]
+shootSound:railgun
+research:{
+ parent:a01j-puncture
+ objective:[
+  a01j-puncture
+  {
+   type:OnSector
+   preset:patrol-line
+  }
+ ]
+}
+researchCostMultiploer:0.1
