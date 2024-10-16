@@ -1,0 +1,59 @@
+type:flying
+flying:true
+name:Crack
+description:tactical bomber specialized to breach the enemy defend line
+health:320
+speed:2
+hitsize:9
+targetAir:false
+circleTarget:true
+targetFlags:[turret, null]
+outlinecolor:565666
+engines: [
+   {
+    x: 0
+    y: -5.5
+    engineSize:9.0
+    engineOffset:5.0
+    engineLayer:-1.0
+   }
+]
+weapons:[
+ {
+  x:0
+  y:2.5
+  reload:120
+  shootCone:180
+  mirror:false
+  rotate:false
+  ignoreRotation:true
+  shootSound:none
+  minShootVelocity:0.1
+  bullet:{
+   type:BasicBulletType
+   width:25
+   height:20
+   maxRange:10
+   backColor:ffffff
+   frontColor:bf92f9
+   hitSound:plasmaboom
+   shootCone:180
+   hitShake:3
+   collidesAir:false
+   lifetime:60
+   despawnEffect:greenBomb
+   hitEffect:flakExplosion
+   keepVelocity:false
+   spin:3
+   shrinkX:0.7
+   shrinkY:0.7
+   speed:0
+   collides:false
+   splashDamage:30
+   splashDamageRadius:24
+   status:sapped
+   statusDuration:120
+  }
+ }
+]
+research:a07k-aerial-recrafter

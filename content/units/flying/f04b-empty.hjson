@@ -1,0 +1,156 @@
+type:flying
+flying:true
+name:Empty
+description:Large Airforce armed with four lasers and single deadly continous laser.Capable for warping forward.
+health:12200
+hitSize:70
+speed:0.8
+rotateSpeed:1.2
+itemCapacity:0
+faceTarget:true
+lowAltitude:true
+outlineColor:565666
+engineSize:0
+abilities:[
+ {
+  type:MoveEffectAbility
+  minVelocity:0.9
+  x:-2
+  y:-37.5
+  effect:artilleryTrailSmoke
+  teamColor:true
+  interval:2
+  }
+ {
+  type:MoveEffectAbility
+  minVelocity:0.9
+  x:2
+  y:-37.5
+  effect:artilleryTrailSmoke
+  teamColor:true
+  interval:2
+ }
+ {
+  type:SuppressionFieldAbility
+  reload:120
+  range:160
+  orbRadius:4
+  orbMidScl:1
+ }
+]
+engines:[
+ {
+  x:0
+  y:-37.5
+  radius:12
+ }
+]
+parts:[
+ {
+  type:ShapePart
+  circle:true
+  hollow:true
+  radius:0
+  radiusTo:13
+  stroke:0
+  strokeTo:4
+  layer:110
+  color:bf92f9
+ }
+ {
+  type:HaloPart
+  haloRadius:0
+  haloRadiusTo:13
+  haloRotateSpeed:0.8
+  sides:12
+  shapes:3
+  radius:0
+  radiusTo:4
+  stroke:0
+  strokeTo:3
+  hollow:false
+  color:bf92f9
+  layer:110
+ }
+]
+weapons:[
+ {
+  x:0
+  y:36
+  continuous:true
+  reload:400
+  cooldown:120
+  shootSound:laserbig
+  shoot:{
+   shots:1
+   firstShotDelay:30
+  }
+  rotate:false
+  mirror:false
+  bullet:{
+   type:ContinuousLaserBulletType
+   continuous:true
+   width:12
+   length:310
+   lifetime:330
+   damage:90
+   damageInterval:10
+   fadeTime:50
+   incendSpread:0
+   incendAmount:0
+   incendChance:0
+  }
+ }
+ {
+  x:10
+  y:36
+  reload:30
+  mirror:true
+  rotate:true
+  shootSound:sap
+  bullet:{
+   type:SapBulletType
+   damage:80
+   length:320
+   width:0.8
+   color:bf92f9
+  }
+ }
+ {
+  x:20
+  y:30
+  reload:30
+  mirror:true
+  rotate:true
+  shootSound:sap
+  bullet:{
+   type:SapBulletType
+   damage:80
+   length:320
+   width:0.8
+   color:bf92f9
+  }
+ }
+ {
+  x:0
+  y:0
+  reload:1200
+  mirror:false
+  rotate:false
+  shootCone:5
+  shoot:{
+   firstShotDelay:120
+  }
+  chargeSound:lasercharge
+  shootSound:railgun
+  bullet:{
+   width:0
+   lifetime:80
+   speed:5
+   despawnEffect:none
+   collides:false
+   damage:0
+   recoil:-80
+  }
+ }
+]

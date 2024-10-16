@@ -1,0 +1,49 @@
+type:flying
+flying:true
+name:Hole
+description:Dangerious flying vessel equipped with two pairs of missile launcher
+health:1380
+speed:0.8
+hitSize:25
+faceTarget:false
+targetFlags:[core]
+targetAir:false
+engines:[
+ {
+  x: 0
+  y: -23
+  radius:5
+ }
+]
+weapons:[
+ {
+  x:7
+  y:2
+  name:hole-weapon
+  reload:290
+  mirror:true
+  alternate:false
+  rotate:true
+  rotateSpeed:1.2
+  bullet:{
+   instantDisappear:true
+   damage:0
+   spawnUnit:piercer-missile
+  }
+ }
+ {
+  x:4
+  y:-8.5
+  name:hole-weapon
+  reload:290
+  mirror:true
+  alternate:false
+  rotate:true
+  rotateSpeed:1.2
+  bullet:{
+   instantDisappear:true
+   damage:0
+   spawnUnit:piercer-missile
+  }
+ }
+]
