@@ -1,0 +1,10 @@
+type:item
+name:Zaprezonite
+description:Iron that got charged up using Hydrocharge.Very similar with it counterpart,Surge Alloy.
+cost:4
+healthScaling:4
+hardness:4
+color:686b7b
+charge:0.6
+explosiveness:0.3
+research:b08-mechanical-alloy

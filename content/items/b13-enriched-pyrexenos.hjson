@@ -1,0 +1,10 @@
+type:item
+name:Enriched Pyrexenos
+description:Highly Pure  Flamable and Radioactive Pyrexenos.
+hardness:4
+cost:3
+buildable:false
+explosiveness:2
+flammability:2
+radioactivity:1.5
+color:ff6e51

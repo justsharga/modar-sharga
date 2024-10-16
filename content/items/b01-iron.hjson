@@ -1,0 +1,8 @@
+type:item
+name:Iron
+description:The basic material used for Ferucian technologies,strong and durable for early material
+hardness:1
+cost:1
+color:929292
+alwaysUnlocked:true
+research:a01i-core-fragment

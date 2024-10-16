@@ -1,0 +1,7 @@
+type:item
+name:Hexaria Glass
+description:White transparent crystal created by heating up mineral sand.Good for constructing some factory and transporting Liquids.
+hardness:2
+cost:1
+color:ffffff
+research:b04-mineral-sand

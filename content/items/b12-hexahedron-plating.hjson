@@ -1,0 +1,8 @@
+type:item
+name:Hexahedron Plating
+description:The best possible material produced by high end machinery.
+hardness:5
+cost:4
+healthScaling:6
+color:60496d
+research:b11-rexonite

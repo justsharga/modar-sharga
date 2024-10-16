@@ -1,0 +1,7 @@
+type:item
+name:Durasteel
+description:Very durable metal cteated from forging iron and pyrexenos.
+hardness:2
+cost:1
+color:989aa4
+research:b02-pyrexenos

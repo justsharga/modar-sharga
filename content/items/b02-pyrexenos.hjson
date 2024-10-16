@@ -1,0 +1,10 @@
+type:item
+name:Pyrexenos
+description:Hot flamable material that spreads around the Ferucia surface.Useful for manufacturing some material.Low level of radiation easily get rid by mixing it with other material
+hardness:1
+cost:1
+buildable:false
+color:ff795e
+flammability:0.3
+radioactivity:0.1
+research:b01-iron

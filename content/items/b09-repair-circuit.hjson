@@ -1,0 +1,8 @@
+type:item
+name:Repair Circuit
+description:Advanced mechanism for crating healer and unit.
+cost:3
+healthScaling:4
+hardness:4
+color:84f491
+research:b07-nexolite

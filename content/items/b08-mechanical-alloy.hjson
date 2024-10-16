@@ -1,0 +1,9 @@
+type:item
+name:Mechanical Alloy
+description:Advanced alloy made by combining Nexolite and Hydrocharge.
+hardness:4
+cost:3
+healthScaling:4
+color:7191d1
+charge:0.3
+research:b07-nexolite
