@@ -1,0 +1,43 @@
+type:tank
+name:Threaten
+description:Slow manuverable tank eqquiped with a turret that shoots two missile.
+health:2800
+armor:4
+speed:0.5
+hitSize:25
+rotateSpeed:0.9
+omniMovement:false
+rotateMoveFirst:true
+itemCapacity:0
+outlineColor:565666
+crushDamage:1
+treadRects:[
+ {
+  x:24
+  y:-45
+  width:16
+  height:90
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  shoot:{
+   shots:2
+   shotDelay:25
+  }
+  name:threathen-weapon
+  shootSound:smallMissile
+  reload:150
+  mirror:false
+  rotate:true
+  rotateSpeed:0.7
+  bullet:{
+   instantDisappear:true
+   damage:0
+   spawnUnit:breaker-missile
+  }
+ }
+]
+research:a10k-striker-reassembler

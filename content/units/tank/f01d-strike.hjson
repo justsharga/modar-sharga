@@ -1,0 +1,59 @@
+type:tank
+name:Strike
+description:small tank that fires a bullet at high velocity.
+health:220
+armor:2
+speed:0.8
+hitsize:12
+rotateSpeed:2.5
+omniMovement:false
+rotateMoveFirst:true
+itemCapacity:0
+outlineColor:565666
+treadRects:[
+ {
+  x:6
+  y:-25
+  width:14
+  height:51
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  name:strike-weapon
+  reload:100
+  mirror:false
+  rotate:true
+  rotateSpeed:1.5
+  shootY:8
+  shootSound:shootAltLong
+  bullet:{
+  collides:true
+   collidesTiles:true
+   collidesAir:true
+   collidesGround:true
+   type: BasicBulletType
+   damage:28
+   speed:9.0
+   width:3
+   hitSize:5
+   height:8
+   pierce:true
+   pierceCap:1
+   shootEffect:shootBigColor
+   smokeEffect:shootBigSmoke
+   lifetime:15
+   frontColor:ffffff
+   backColor:bc5452
+   trailColor:bc5452
+   hitColor:bc5452
+   trailWidth:0.9
+   trailLength:10
+   hitEffect:hitBulletColor
+   despawnEffect:hitBulletColor
+  }
+ }
+]
+research:a01k-striker-assembler

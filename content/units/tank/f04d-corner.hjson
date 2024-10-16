@@ -1,0 +1,119 @@
+type:tank
+name:Corner
+description:Heavily armored tank equipped with a big frag cannon and two burst missile launchers.
+health:16000
+armor:4
+speed:0.5
+hitsize:40
+rotateSpeed:0.7
+omniMovement:false
+rotateMoveFirst:true
+itemCapacity:0
+outlineColor:565666
+crushDamage:4
+treadRects:[
+ {
+  x:56
+  y:-66
+  width:22
+  height:162
+ }
+ {
+  x:22
+  y:-84
+  width:22
+  height:184
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  name:corner-weapon
+  shootSound:mediumCannon
+  reload:210
+  mirror:false
+  rotate:true
+  rotateSpeed:0.4
+  bullet:{
+   collides:true
+   collidesTiles:true
+   collidesAir:true
+   collidesGround:true
+   type: BasicBulletType
+   sprite:missile-large
+   damage:95
+   speed:2.5
+   width:10
+   height:16
+   pierce:false
+   shootEffect:shootBigColor
+   smokeEffect:shootSmokeTitan
+   lifetime:120
+   frontColor:ffffff
+   backColor:bc5452
+   trailColor:bc5452
+   hitColor:bc5452
+   trailWidth:6
+   trailLength:16
+   hitEffect:massiveExplosion
+   despawnEffect:hitBulletColor
+      fragBullets:10
+      fragSpread:18
+      fragRandomSpread:0
+      fragVelocityMin:1
+      fragBullet:{
+         type:BasicBulletType
+         sprite:missile-large
+         damage:28
+         speed:1.5
+         hitsize:6
+         width:6
+         height:10
+         lifetime:45
+         frontColor:ffffff
+         backColor:bc5452
+         hitColor:bc5452
+         trailColor:bc5452
+         trailRotation:true
+         trailWidth:1
+         trailLength:3
+         fragBullets:2
+         fragSpread:30
+         fragRandomSpread:0
+         fragVelocityMin:1
+         fragBullet:{
+            type:laserBulletType
+            width:20
+            length:24
+            damage:38
+            pierce:true
+            pierceBuilding:true
+            pierceCap:6
+            colors:[bc5452,f3e872,ffffff
+            ]
+         }
+      }
+   }
+ }
+ {
+ x:17
+ y:-13
+ name:corner-launcher
+ reload:280
+  mirror:true
+  rotate:true
+  alternate:false
+  rotateSpeed:0.6
+  inaccuracy:10
+  shoot:{
+   shots:3
+   shotDelay:10
+  }
+  bullet:{
+   instantDisappear:true
+   damage:0
+   spawnUnit:breaker-missile
+  }
+ }
+]

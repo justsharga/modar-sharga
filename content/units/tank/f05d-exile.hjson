@@ -1,0 +1,145 @@
+type:tank
+name:Exile
+description:Heavy assault tank with a gun for destroying enemy defend line.This is the best unit we can recreate from the tank tree.
+health:30800
+armor:6
+speed:0.3
+hitSize:80
+rotateSpeed:0.3
+omniMovement:false
+rotateMoveFirst:true
+faceTarget:false
+itemCapacity:0
+outlineColor:565666
+crushDamage:8
+treadPullOffset:3
+treadRects:[
+ {
+  x:75
+  y:-144
+  width:31
+  height:288
+ }
+]
+weapons:[
+ {
+  name:exile-gun
+  x:0
+  y:0
+  recoil:5
+  shootY:37.5
+  reload:420
+  inaccuracy:1
+  rotateSpeed:0.5
+  shootWarmupSpeed:0.06
+  minWarmup:0.9
+  cooldownTime:110
+  rotate:true
+  mirror:false
+  shootSound:largeCannon
+  parts:[
+   {
+    type:RegionPart
+    suffix:-blade
+    moveX:8
+    moveY:-7
+    moveRot:-40
+    mirror:true
+    progress:warmup
+    heatProgress:warmup
+    under:true
+   }
+   {
+    type:RegionPart
+    suffix:-front
+    progress:warmup
+    heatProgress:warmup
+    color:989aa4
+    heatColor:ffea00
+    mirror:false
+    under:false
+   }
+  ]
+  bullet:{
+  type:BasicBulletType
+  sprite:missile-large
+  width:12
+  height:20
+  speed:4
+  damage:280
+  lifetime:80
+  pierce:true
+  pierceBuilding:true
+  pierceCap:4
+  removeAfterPierce:false
+  frontColor:ffffff
+  backColor:feb380
+  trailColor:feb380
+  hitColor:feb380
+  trailWidth:4
+  trailLength:9
+  smokeEffect:shootSmokeTitan
+  hitEffect:massiveExplosion
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:explosionEffect
+     lifetime:70
+     waveStroke:6
+     waveColor:feb380
+     sparkColor:feb380
+     waveRad:15
+     smokeSize:8
+     smokes:8
+     smokeSizeBase:0
+     smokeColor:feb380
+     sparks:10
+     sparkRad:40
+     sparkLen:4
+     sparkStroke:6
+    }
+   ]
+  }
+  intervalBullets:3
+  bulletInterval:10
+  intervalRandomSpread:60
+  intervalSpread:30
+  intervalBullet:{
+   type:BasicBulletType
+   sprite:missile-large
+   width:10
+   height:16
+   damage:98
+   speed:5
+   lifetime:30
+   pierce:true
+   pierceBuilding:true
+   pierceCap:3
+   removeAfterPierce:false
+   frontColor:ffffff
+   backColor:feb380
+   trailColor:feb380
+   hitColor:feb380
+   trailWidth:4
+   trailLength:9
+   hitEffect:massiveExplosion
+   intervalBullets:1
+   bulletInterval:15
+   intervalBullet:{
+    type:ArtilleryBulletType
+    keepVelocity:false
+    speed:0.05
+    lifetime:220
+    damage:40
+    width:5
+    height:5
+    splashDamage:75
+    splashDamageRadius:32
+    trailWidth:2
+    trailColor:feb380
+    }
+   }
+  }
+ }
+]
