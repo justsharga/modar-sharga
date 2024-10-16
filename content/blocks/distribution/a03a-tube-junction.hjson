@@ -1,0 +1,15 @@
+type:Junction
+name:Tube Junction
+description:Act as a bridge for two crossing item tube.
+health:35
+category:distribution
+requirements:[
+   b01-iron/2
+]
+buildCostMultiplier:6
+speed:26
+capacity:6
+research:a02a-item-router
+researchCost:[
+ b01-iron/10
+]

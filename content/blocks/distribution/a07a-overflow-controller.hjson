@@ -1,0 +1,13 @@
+type:OverflowGate
+name:Overflow Controller
+description:only output item to the side if the front path is blocked
+health:40
+category:distribution
+requirements:[
+   b01-iron/6
+]
+buildCostMultiplier:3
+research:a03a-tube-junction
+researchCost:[
+ b01-iron/12
+]

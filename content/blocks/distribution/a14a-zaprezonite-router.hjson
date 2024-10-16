@@ -1,0 +1,14 @@
+type:StackRouter
+name:Zaprezonite Router
+description:Divides inputted items into three sides equally.
+health:198
+category:distribution
+speed:6
+underBullets:true
+solid:false
+requirements:[
+ b03-durasteel/1
+ b10-zaprezonite/5
+]
+research:a13a-zaprezonite-conveyor
+researchCostMultiplier:0.5

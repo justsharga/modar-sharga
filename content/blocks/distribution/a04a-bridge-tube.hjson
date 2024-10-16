@@ -1,0 +1,15 @@
+type:DuctBridge
+name:Bridge Tube
+description:transport items over terrain and structure.
+category:distribution
+health:40
+size:1
+range:4
+speed:4
+requirements:[
+   b01-iron/10
+]
+research:a02a-item-router
+researchCost:[
+ b01-iron/50
+]

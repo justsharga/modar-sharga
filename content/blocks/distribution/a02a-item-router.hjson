@@ -1,0 +1,13 @@
+type:Router
+name:Item Router
+description:divides item input into three outputs equally
+health:50
+category:distribution
+requirements:[
+   b01-iron/6
+]
+buildCostMultiplier:4
+research:a01a-item-tube
+researchCost:[
+ b01-iron/20
+]

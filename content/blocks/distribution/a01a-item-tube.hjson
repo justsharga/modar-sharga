@@ -1,0 +1,15 @@
+type:Duct
+name:Item Tube
+description:Transfering item using air pressure
+category:distribution
+alwaysunlocked:true
+speed:5
+health:35
+bridgeReplacement:a04a-bridge-tube
+requirements:[
+ b01-iron/1
+]
+research:a01i-core-fragment
+researchCost:[
+ b01-iron/5
+]

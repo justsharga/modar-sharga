@@ -1,0 +1,18 @@
+type:DirectionalUnloader
+name:Item Unloader
+description:unload item from block and outputs it into the front side.
+health:40
+category:distribution
+requirements:[
+   b01-iron/2
+   b03-durasteel/4
+]
+speed:5
+solid:false
+underBullets:true
+regionRotated:1
+research:a04a-bridge-tube
+researchCost:[
+ b01-iron/8
+ b03-durasteel/16
+]

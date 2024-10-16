@@ -1,0 +1,14 @@
+type:OverflowGate
+name:Underflow Controller
+description:only output item forwards if the side path is blocked
+health:40
+category:distribution
+requirements:[
+   b01-iron/6
+]
+buildCostMultiplier:3
+invert:true
+research:a07a-overflow-controller
+researchCost:[
+ b01-iron/12
+]

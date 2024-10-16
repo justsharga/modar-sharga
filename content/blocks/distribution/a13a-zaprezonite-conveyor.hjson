@@ -1,0 +1,13 @@
+type:StackConveyor
+name:Zaprezonite Conveyor
+description:transport one type of item in bulk and outputs it onto three direction equally at the end.
+hralth:170
+category:distribution
+speed:0.08
+itemCapacity:40
+requirements:[
+ b03-durasteel/1
+ b10-zaprezonite/1
+]
+research:a10a-alloyed-tube
+researchCostMultiplier:0.5

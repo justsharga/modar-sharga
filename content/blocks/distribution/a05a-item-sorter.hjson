@@ -1,0 +1,13 @@
+type:Sorter
+name:Item Sorter
+description:output undesignated item to the side
+health:40
+category:distribution
+requirements:[
+   b01-iron/4
+]
+buildCostMultiplier:3
+research:a03a-tube-junction
+researchCost:[
+ b01-iron/8
+]
