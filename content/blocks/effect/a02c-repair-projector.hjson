@@ -1,0 +1,57 @@
+type:RegenProjector
+name:Repair Projector
+description:Heals surrounding buildings over time.
+size:2
+health:480
+category:effect
+range:11
+baseColor:85c278
+healPercent:0.03
+consumes:{
+ power:1
+ liquid:c04-magnolite/0.25
+}
+effect: {
+  type:ParticleEffect
+  colorFrom:85c278
+  colorTo:ffffff
+  particles:5
+  line:true
+  length:4
+  baseLength:4
+  strokeFrom:0.5
+  strokeTo:1.0
+  lifetime:90
+  cone:360
+  interp:pow2
+  sizeInterp:pow2Out
+}
+drawer:{
+  type:DrawMulti
+  drawers:[
+    {
+      type:DrawDefault
+    }
+    {
+      type:DrawPulseShape
+      square:true
+      color:85c278
+      layer:110
+    }
+  ]
+}
+requirements:[
+ b06-hard-crystal/80
+ b08-mechanical-alloy/30
+ b09-repair-circuit/40
+]
+research:{
+ parent:a01c-lamp
+ objectives:[
+  {
+   type:OnSector
+   preset:aerial-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.2

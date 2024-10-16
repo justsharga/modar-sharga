@@ -1,0 +1,15 @@
+type:LightBlock
+name:Lamp
+description:provides light to its surrounding when powered.
+category:effect
+brightness:0.9
+radius:160
+consumes:{
+ power:0.5
+}
+requirements:[
+ b01-iron/40
+ b06-hard-crystal/30
+]
+research:a01i-core-fragment
+researchCostMultiplier:0.1
