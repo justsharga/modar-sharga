@@ -1,0 +1,11 @@
+type:Wall
+name:Alloy Wall
+description:Protect allied building from enemy attack
+size:1
+health:720
+category:defense
+requirements:[
+   b08-mechanical-alloy/6
+]
+research:a02l-large-durasteel-wall
+researchCostMultiplier:0.1

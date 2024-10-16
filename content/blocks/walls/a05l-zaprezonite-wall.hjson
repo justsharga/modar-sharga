@@ -1,0 +1,15 @@
+type:Wall
+name:Zaprezonite Wall
+description:Protect allied building from enemy attack
+size:1
+health:986
+lightningChance:0.1
+lightningDamage:25
+armor:20
+category:defense
+requirements:[
+   b03-durasteel/2
+   b10-zaprezonite/10
+]
+research:a04l-large-alloy-wall
+researchCostMultiplier:0.5

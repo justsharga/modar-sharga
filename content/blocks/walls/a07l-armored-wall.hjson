@@ -1,0 +1,29 @@
+type:Wall
+name:Armored Wall
+description:Protect allied building from enemy attack.Can absorb laser and creates healing fragments upon destruction.
+size:2
+health:5200
+armor:25
+absorbLasers:true
+destroyBullet:{
+ instantDisappear:true
+ damage:0
+ fragBullets:8
+ fragVelocityMin:1
+ fragBullet:{
+  type:BasicBulletType
+  damage:0
+  lifetime:8
+  speed:1
+  pierce:true
+  collidesTeam:true
+  collidesAir:false
+  healPercent:1.5
+ }
+}
+destroyBulletSameTeam:true
+category:defense
+requirements:[
+   b08-mechanical-alloy/8
+   b11-rexonite/40
+]

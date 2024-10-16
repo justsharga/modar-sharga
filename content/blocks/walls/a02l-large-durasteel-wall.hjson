@@ -1,0 +1,13 @@
+type:Wall
+name:Large Durasteel Wall
+description:Protect allied building from enemy attack.Has a larger size
+size:2
+health:1360
+category:defense
+requirements:[
+   b03-durasteel/24
+]
+research:a01l-durasteel-wall
+researchCost:[
+ b03-durasteel/24
+]

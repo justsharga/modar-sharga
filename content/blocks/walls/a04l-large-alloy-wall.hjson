@@ -1,0 +1,11 @@
+type:Wall
+name:Large Alloy Wall
+description:Protect allied building from enemy attack.Has a larger size
+size:2
+health:2880
+category:defense
+requirements:[
+   b08-mechanical-alloy/24
+]
+research:a03l-alloy-wall
+researchCostMultiplier:0.1

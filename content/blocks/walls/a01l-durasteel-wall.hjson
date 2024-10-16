@@ -1,0 +1,13 @@
+type:Wall
+name:Durasteel Wall
+description:Protect allied building from enemy attack
+size:1
+health:340
+category:defense
+requirements:[
+   b03-durasteel/6
+]
+research:a01i-core-fragment
+researchCost:[
+ b03-durasteel/6
+]
