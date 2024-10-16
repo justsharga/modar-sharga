@@ -1,0 +1,19 @@
+type:LiquidBridge
+name:Hexaria Bridge
+description:Moves liquid over terrain and building.
+health:90
+category:liquid
+fadeIn:false
+moveArrow:false
+arrowSpacing:6
+range:4
+hasPower:false
+requirements:[
+   b03-durasteel/4
+   b05-hexaria-glass/4
+]
+research:a03e-hexaria-junction
+researchCost:[
+ b03-durasteel/80
+ b05-hexaria-glass/80
+]

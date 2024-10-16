@@ -1,0 +1,29 @@
+type:Pump
+name:Heat Water Pump
+description:machine to pump water from below it.Require Pyrexenos to operate.
+size:2
+health:150
+squareSprite:false
+category:liquid
+requirements:[
+   b03-durasteel/20
+   b05-hexaria-glass/10
+]
+pumpAmount:0.08
+consumes:{
+  items:[
+   b02-pyrexenos/1
+   ]
+}
+consumeTime:120
+research:{
+ parent:a01i-core-fragment
+ objective:[
+  a01i-core-fragment
+  {
+   type:OnSector
+   preset:abandoned-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.2

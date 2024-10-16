@@ -1,0 +1,17 @@
+type:LiquidJunction
+name:Hexaria Junction
+description:Act as a bridge for two crossing conduit.
+health:70
+category:liquid
+solid:false
+underbullets:true
+requirements:[
+   b03-durasteel/2
+   b05-hexaria-glass/2
+]
+buildCostMultiplier:3
+research:a02e-hexaria-conduit
+researchCost:[
+ b05-hexaria-glass/20
+ b03-durasteel/20
+]

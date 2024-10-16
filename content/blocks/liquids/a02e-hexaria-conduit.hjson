@@ -1,0 +1,19 @@
+type:Conduit
+name:Hexaria Conduit
+description:Conduit made out from fine Hexaria Glass.Good for transporting gas and liquid.
+health:60
+category:liquid
+leaks:true
+underBullets:true
+liquidCapacity:20
+liquidPressure:1.03
+botColor:565666
+requirements:[
+   b05-hexaria-glass/2
+]
+junctionReplacement:a03e-hexaria-junction
+bridgeReplacement:a05e-hexaria-bridge
+research:a01e-heat-water-pump
+researchCost:[
+ b05-hexaria-glass/20
+]

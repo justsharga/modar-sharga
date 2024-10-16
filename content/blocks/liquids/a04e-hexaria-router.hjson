@@ -1,0 +1,17 @@
+type:liquidRouter
+name:Hexaria Router
+description:divides liquid and gas into three side output.Can store small amount of liquid and gas.
+health:85
+category:liquid
+liquidCapacity:20
+solid:false
+underbullets:true
+requirements:[
+   b03-durasteel/2
+   b05-hexaria-glass/4
+]
+research:a03e-hexaria-junction
+researchCost:[
+ b03-durasteel/40
+ b05-hexaria-glass/80
+]

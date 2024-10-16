@@ -1,0 +1,15 @@
+type:liquidRouter
+name:Flow Tank
+description:Stores moderate amount of liquid and gas.
+health:198
+size:2
+category:liquid
+liquidCapacity:100
+solid:true
+underbullets:false
+requirements:[
+   b05-hexaria-glass/4
+   b08-mechanical-alloy/8
+]
+research:a04e-hexaria-router
+researchCostMultiplier:0.2

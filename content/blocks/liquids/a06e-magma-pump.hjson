@@ -1,0 +1,25 @@
+type:Pump
+name:Heat Water Pump
+description:machine to pump water from below it.Require Magnolite to operate.
+size:3
+health:350
+squareSprite:false
+category:liquid
+consumes:{
+ liquid:c04-magnolite/0.1
+}
+requirements:[
+   b05-hexaria-glass/20
+   b08-mechanical-alloy/60
+]
+pumpAmount:0.12
+research:{
+ parent:a01e-heat-water-pump
+ objectives:[
+  {
+   type:OnSector
+   preset:aerial-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.1

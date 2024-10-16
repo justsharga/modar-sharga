@@ -1,0 +1,16 @@
+type:Pump
+name:Advanced Pump
+description:More advanced and optimized version of heat water pump.Only use power to pump liquids from below it.
+health:480
+size:2
+category:liquid
+squareSprite:false
+consumes:{
+ power:3
+}
+pumpAmount:0.35
+requirements:[
+ b05-hexaria-glass/90
+ b10-zaprezonite/80
+ b11-rexonite/120
+]

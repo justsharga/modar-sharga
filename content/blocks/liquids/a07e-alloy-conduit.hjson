@@ -1,0 +1,19 @@
+type:Conduit
+name:Alloy Conduit
+description:Conduit made out from Strong Alloy.Good for transporting gas and liquid.Does not accept non conduit side input.
+health:60
+category:liquid
+leaks:true
+underBullets:true
+noSideBlend:true
+liquidCapacity:40
+liquidPressure:1.5
+botColor:565666
+requirements:[
+   b05-hexaria-glass/3
+   b08-mechanical-alloy/2
+]
+junctionReplacement:a03e-hexaria-junction
+bridgeReplacement:a05e-hexaria-bridge
+research:a06e-magma-pump
+researchCostMultiplier:0.1
