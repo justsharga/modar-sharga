@@ -1,0 +1,21 @@
+localizedName:Aerial Outpost
+description: 
+'''
+  We arrived at the first outpost that produce some air unit.
+  
+  Huge amount of Nexolite detected here.
+  
+  mine all Nexolite and use it to produce new material and units. 
+'''
+difficulty:4
+planet:ferucia
+sector:20
+research:{
+ parent:patrol-line
+ objectives:[
+  {
+   type: SectorComplete
+   preset:patrol-line
+  }
+ ]
+}

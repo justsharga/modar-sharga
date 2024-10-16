@@ -1,0 +1,19 @@
+localizedName:Freezing Grounds
+description:
+'''
+ Getting off from the last area we encountered large closed area full of snow and nexolite.
+ try to defend this place and produce Rexonite for our own good
+'''
+captureWave:40
+planet:ferucia
+difficulty:3
+sector:28
+research:{
+ parent:heavy-mech-manufacturer
+ objectives:[
+  {
+   type: SectorComplete
+   preset:heavy-mech-manufacturer
+  }
+ ]
+}

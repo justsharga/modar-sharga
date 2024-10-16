@@ -1,0 +1,20 @@
+localizedName:Abandoned Outpost
+description:
+'''
+Moving forward into the enemy zone we found small abandoned outpost with some mineral sand.
+Produce Hexaria Glass and use liquids to protect the base from strong enemy.
+Various types of enemy incoming!
+''' 
+captureWave:25
+planet:ferucia
+sector:1
+research:{
+ parent:dark-canyon
+ objective:[
+  {
+   types:SectorComplete
+   preset:dark-canyon
+  }
+ ]
+}
+difficulty:1

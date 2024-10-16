@@ -1,0 +1,13 @@
+localizedName:Dark Canyon
+description:
+''' 
+  Large area covered in hills.Perfect for producing some basic material to be used here.
+  Warning, enemy has detected our presence.Enemy force incoming!
+  Build, Defend, and Survive to move forwards.
+''' 
+captureWave:10
+planet:ferucia
+sector:0
+research:a01i-core-fragment
+difficulty:1
+alwaysUnlocked:true

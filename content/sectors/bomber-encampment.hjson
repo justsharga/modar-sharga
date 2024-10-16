@@ -1,0 +1,18 @@
+localizedName:Bomber Encampment
+description: 
+'''
+  Near the outpost we encountered another base that mass producing Crack unit.
+  Destroy this base for our safety and move forwards.
+'''
+difficulty:5
+planet:ferucia
+sector:22
+research:{
+ parent:aerial-outpost
+ objectives:[
+  {
+   type: SectorComplete
+   preset:aerial-outpost
+  }
+ ]
+}

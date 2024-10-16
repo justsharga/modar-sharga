@@ -1,0 +1,19 @@
+localizedName:Silent Passage
+description:
+'''
+ We are getting closer to the enemy territory.
+ Keep your guard here because enemy already sent one of their strong unit here.
+'''
+captureWave:20
+planet:ferucia
+difficulty:5
+sector:27
+research:{
+ parent:freezing-grounds
+ objectives:[
+  {
+   type: SectorComplete
+   preset:freezing-grounds
+  }
+ ]
+}

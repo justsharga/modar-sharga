@@ -1,0 +1,19 @@
+localizedName:Heavy Mech Manufacturer
+description: 
+'''
+  Another low tier enemy base detected by our system.
+  This place actively producing small tank units.
+  destroy this place and we will go to the next step for our technology.
+'''
+difficulty:5
+planet:ferucia
+sector:30
+research:{
+ parent:bomber-encampment
+ objectives:[
+  {
+   type: SectorComplete
+   preset:bomber-encampment
+  }
+ ]
+}

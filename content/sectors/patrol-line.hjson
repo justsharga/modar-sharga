@@ -1,0 +1,19 @@
+localizedName:Patrol Line
+description:
+''' 
+  Considerable large amount of malis air unit detected to be patroling here. 
+  Protect this area from ground and air unit swarm and develop Hard Crystal for future requirements.
+''' 
+captureWave:30
+planet:ferucia
+sector:10
+research:{
+ parent:abandoned-outpost
+ objective:[
+  {
+   types:SectorComplete
+   preset:abandoned-outpost
+  }
+ ]
+}
+difficulty:2

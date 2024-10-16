@@ -1,0 +1,19 @@
+localizedName:Freezing Lake
+description: 
+'''
+  Enemy has established well guarded core here around Rexonite deposit.
+  Destroy it and obtain this ore.
+  Beware for the enemy drop point and their dangerious long range turret.
+'''
+difficulty:7
+planet:ferucia
+sector:29
+research:{
+ parent:silent-passage
+ objectives:[
+  {
+   type: SectorComplete
+   preset:silent-passage
+  }
+ ]
+}
