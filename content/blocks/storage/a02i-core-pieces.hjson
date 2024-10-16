@@ -1,0 +1,25 @@
+type: CoreBlock
+name: Core: Pieces
+description: Core of the base. Decently armored and stores good amount of items.
+size:5
+squareSprite:false
+unitType:f02a-adapt
+health:4500
+itemCapacity:10000
+unitCapModifier:8
+category:effect
+requirements: [
+  b03-durasteel/5000
+  b06-hard-crystal/3000
+  b08-mechanical-alloy/1500
+]
+research:{
+ parent:a01i-core-fragment
+ objectives:[
+  {
+   type:SectorComplete
+   preset:aerial-outpost
+  }
+ ]
+}
+researchCostMultiplier:0.4

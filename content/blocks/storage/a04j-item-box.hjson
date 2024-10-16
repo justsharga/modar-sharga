@@ -1,0 +1,21 @@
+type:StorageBlock
+name:Item Box
+description:Stores small amount of item. Use unloader to take the item inside.
+ScaledHealth:80
+size:2
+category:effect
+itemCapacity:500
+requirements:[
+ b03-durasteel/50
+ b06-hard-crystal/20
+]
+research:{
+ parent:a09a-item-unloader
+ objectives:[
+  {
+   type:OnSector
+   preset:patrol-line
+  }
+ ]
+}
+researchCostMultiplier:3

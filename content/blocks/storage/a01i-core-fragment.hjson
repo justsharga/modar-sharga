@@ -1,0 +1,23 @@
+type: CoreBlock
+name: Core: Fragment
+description: Core of the base. Lightly armored and stores decent amount of items.
+requirements: [
+  b01-iron/1200
+]
+isFirstTier: true
+size: 4
+squareSprite: false
+alwaysUnlocked: true
+requiresCoreZone:true
+incinerateNonBuildable:true
+unitType: f01a-rebirth
+health: 1500
+itemCapacity: 4000
+unitCapModifier: 8
+category: effect
+research:{
+ planet:ferucia
+ root:true
+ name:Ferucia
+ requiresUnlock:false
+}

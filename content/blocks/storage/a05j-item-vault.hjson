@@ -1,0 +1,13 @@
+type:StorageBlock
+name:Item Vault
+description:Stores great amount of item. Use unloader to take the item inside.
+ScaledHealth:80
+size:3
+category:effect
+itemCapacity:1500
+requirements:[
+ b06-hard-crystal/40
+ b08-mechanical-alloy/30
+]
+research:a04j-item-box
+researchCostMultiplier:3
