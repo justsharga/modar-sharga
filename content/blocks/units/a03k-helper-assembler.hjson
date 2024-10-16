@@ -1,0 +1,36 @@
+type:UnitFactory
+name:Helper Assembler
+dascription:creating small assist unit.Output unit can be used directly or moved to recrafter for further upgrade.
+health:310
+size:3
+category:units
+consumes:{
+ power:2.5
+}
+plans:[
+ {
+  type:FactoryUnitPlan
+  unit:f01c-search
+  time:1800
+  requirements:[
+   b03-durasteel/60
+   b09-repair-circuit/30
+  ]
+ }
+]
+requirements:[
+ b01-iron/60
+ b03-durasteel/80
+ b06-hard-crystal/50
+]
+builCostMultiplier:0.8
+research:{
+ parent:a01k-striker-assembler
+ objectives:[
+  {
+  type:OnSector
+  preset:heavy-mech-manufacturer
+  }
+ ]
+}
+researchCostMultiplier:2

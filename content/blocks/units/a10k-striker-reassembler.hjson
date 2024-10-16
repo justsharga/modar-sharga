@@ -1,0 +1,39 @@
+type:UnitAssembler
+name:Striker Reassembler
+description:upgrades inputted tank unit into third tier using payloads.Requires Magnolite to operate.
+health:970
+size:5
+category:units
+droneType:reassembler-bot
+consumes:{
+ power:3
+ liquid:c04-magnolite/0.5
+}
+plans:[
+ {
+  type:AssemblerUnitPlan
+  unit:f03d-threathen
+  time:2800
+  requirements:[
+   mod-ar-f02d-ambush/2
+   mod-ar-a02l-large-durasteel-wall/6
+  ]
+ }
+]
+squareSprite:false
+areaSize:11
+requirements:[
+ b06-hard-crystal/120
+ b08-mechanical-alloy/60
+ b10-zaprezonite/80
+]
+research:{
+ parent:a06k-striker-recrafter
+ objectives:[
+  {
+   type: SectorComplete
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:3

@@ -1,0 +1,40 @@
+type:Constructor
+name:Payload Constructor
+descriotion:
+'''
+ Construct some basic Payloads and Blocks when filled with corresponding material.Requires power to operate
+ recipes:
+  - Large Durasteel Wall
+  - energy Transmitter
+  - Large Alloy Wall
+  - Flow Tank
+'''
+health:560
+size:3
+buildSpeed:1
+category:units
+hasPower:true
+consumes:{
+ power:1
+}
+filter:[
+ a02l-large-durasteel-wall
+ a02g-energy-transmitter
+ a04l-large-alloy-wall
+ a08e-flow-tank
+]
+requirements:[
+ b03-durasteel/50
+ b06-hard-crystal/30
+ b09-repair-circuit/20
+]
+research:{
+ parent:a04k-heavy-transporter
+ objectives:[
+  {
+   type: SectorComplete
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:4

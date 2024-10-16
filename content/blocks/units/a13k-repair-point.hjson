@@ -1,0 +1,27 @@
+type:RepairTower
+name:Repair Point
+description:Repairing any nearby allied unit when powered.
+health:870
+size:2
+category:units
+squareSprite:false
+canosumes:{
+ power:2
+}
+range:90
+healAmount:0.65
+requirements:[
+ b06-hard-crystal/80
+ b09-repair-circuit/110
+ b10-zaprezonite/35
+]
+research:{
+ parent:a01k-striker-assembler
+ objectives:[
+  {
+   type: OnSector
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:0.35

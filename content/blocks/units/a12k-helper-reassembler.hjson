@@ -1,0 +1,29 @@
+type:UnitAssembler
+name:Helper Reassembler
+description:upgrades inputted hover unit into third tier using payloads.Requires Magnolite to operate.
+health:970
+size:5
+category:units
+droneType:reassembler-bot
+consumes:{
+ power:3
+ liquid:c04-magnolite/0.5
+}
+plans:[
+ {
+  type:AssemblerUnitPlan
+  unit:f03c-collect
+  time:2800
+  requirements:[
+   mod-ar-f02d-explore/2
+   mod-ar-a04l-large-alloy-wall/4
+  ]
+ }
+]
+squareSprite:false
+areaSize:11
+requirements:[
+ b08-mechanical-alloy/60
+ b10-zaprezonite/80
+ b11-rexonite/180
+]

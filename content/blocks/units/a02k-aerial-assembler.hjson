@@ -1,0 +1,36 @@
+type:UnitFactory
+name:Aerial Assembler
+dascription:creating small flying unit.Output unit can be used directly or moved to recrafter for further upgrade.
+health:380
+size:3
+category:units
+consumes:{
+ power:2.5
+}
+plans:[
+ {
+  type:FactoryUnitPlan
+  unit:f01b-rift
+  time:2400
+  requirements:[
+   b06-hard-crystal/60
+   b08-mechanical-alloy/30
+  ]
+ }
+]
+requirements:[
+ b03-durasteel/90
+ b06-hard-crystal/70
+ b08-mechanical-alloy/30
+]
+builCostMultiplier:0.8
+research:{
+ parent:a01k-striker-assembler
+ objectives:[
+  {
+   type:OnSector
+   preset:bomber-encampment
+  }
+ ]
+}
+researchCostMultiplier:0.1

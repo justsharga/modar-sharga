@@ -1,0 +1,13 @@
+type:PayloadConveyor
+name:Heavy Transporter
+description:Moves heavy payload forwards.
+size:3
+category:units
+canOverdrive:false
+payloadLimit:4
+requirements:[
+ b03-durasteel/30
+ b06-hard-crystal/20
+]
+research:a01k-striker-assembler
+researchCostMultiplier:0.1

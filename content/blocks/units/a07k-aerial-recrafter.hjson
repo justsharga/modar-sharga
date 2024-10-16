@@ -1,0 +1,28 @@
+type:Reconstructor
+name:Aerial Recrafter
+description:Upgrades inputted Aerial unit to the second tier.
+health:520
+size:3
+category:units
+constructTime:2100
+consumes:{
+ power:3
+ liquid:water/0.5
+ items:[
+  b06-hard-crystal/120
+  b08-mechanical-alloy/60
+ ]
+}
+upgrades:[
+ [
+  f01b-rift
+  f02b-crack
+ ]
+]
+requirements:[
+ b03-durasteel/180
+ b08-mechanical-alloy/80
+]
+builCostMultiplier:0.8
+research:a02k-aerial-assembler
+researchCostMultiplier:0.3

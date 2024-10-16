@@ -1,0 +1,12 @@
+type:PayloadRouter
+name:Heavy Router
+description:transport inputted payload into three directions alternately.
+size:3
+category:units
+canOverdrive:false
+requirements:[
+ b03-durasteel/30
+ b06-hard-crystal/30
+]
+research:a04k-heavy-transporter
+researchCostMultiplier:0.1

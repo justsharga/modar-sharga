@@ -1,0 +1,37 @@
+type:UnitFactory
+name:Striker Assembler
+dascription:creating small tank unit.Output unit can be used directly or moved to recrafter for further upgrade.
+health:340
+size:3
+category:units
+consumes:{
+ power:2.5
+}
+plans:[
+ {
+  type:FactoryUnitPlan
+  unit:f01d-strike
+  time:1200
+  requirements:[
+   b03-durasteel/60
+   b06-hard-crystal/30
+  ]
+ }
+]
+requirements:[
+ b01-iron/60
+ b03-durasteel/80
+ b06-hard-crystal/50
+]
+builCostMultiplier:0.8
+research:{
+ parent:a01i-core-fragment
+ objective:[
+  a01i-core-fragment
+  {
+   type:OnSector
+   preset:patrol-line
+  }
+ ]
+}
+researchCostMultiplier:0.3

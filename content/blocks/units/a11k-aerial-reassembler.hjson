@@ -1,0 +1,29 @@
+type:UnitAssembler
+name:Aerial Reassembler
+description:upgrades inputted aerial unit into third tier using payloads.Requires Magnolite to operate.
+health:970
+size:5
+category:units
+droneType:reassembler-bot
+consumes:{
+ power:3
+ liquid:c04-magnolite/0.5
+}
+plans:[
+ {
+  type:AssemblerUnitPlan
+  unit:f03b-hole
+  time:3000
+  requirements:[
+   mod-ar-f02b-crack/3
+   mod-ar-a04l-large-alloy-wall/6
+  ]
+ }
+]
+squareSprite:false
+areaSize:11
+requirements:[
+ b08-mechanical-alloy/80
+ b10-zaprezonite/30
+ b11-rexonite/90
+]

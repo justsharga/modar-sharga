@@ -1,0 +1,28 @@
+type:Reconstructor
+name:Striker Recrafter
+description:Upgrades inputted Tank unit to the second tier.
+health:580
+size:3
+category:units
+constructTime:2100
+consumes:{
+ power:3
+ liquid:water/0.5
+ items:[
+  b06-hard-crystal/120
+  b08-mechanical-alloy/60
+ ]
+}
+upgrades:[
+ [
+  f01d-strike
+  f02d-ambush
+ ]
+]
+requirements:[
+ b03-durasteel/200
+ b08-mechanical-alloy/60
+]
+builCostMultiplier:0.8
+research:a01k-striker-assembler
+researchCostMultiplier:0.3
