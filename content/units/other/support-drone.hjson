@@ -1,0 +1,62 @@
+type:flying
+flying:true
+name:Reinforce Drone
+description:Specialized drone assisting on the frontline
+health:980
+hitSize:16
+speed:1.5
+buildSpeed:1.3
+drag:0.4
+outlineColor:565666
+useEngineElevation:false
+abilities:[
+ {
+  type:StatusFieldAbility
+  effect:overclock
+  duration:550
+  reload:600
+  range:36
+ }
+ {
+ type:EnergyFieldAbility
+  damage:10
+  reload:15
+  range:80
+  effectRadius:1
+  damageEffect:chainLightning
+  status:frost
+  statusDuration:60
+  shootSound:spark
+  maxTargets:1
+  healPercent:0.1
+ }
+ {
+  type:ForceFieldAbility
+  max:620
+  radius:64
+  cooldown:480
+  regen:0.5
+  sides:4
+ }
+ {
+  type:RepairFieldAbility
+  amount:0.1
+  reload:60
+  range:140
+ }
+ {
+  type:ShieldRegenFieldAbility
+  amount:120
+  max:480
+  reload:400
+  range:36
+ }
+]
+engines:[
+ {
+  x:0
+  y:-6
+  radius:2
+ }
+]
+commands:[move,assist]

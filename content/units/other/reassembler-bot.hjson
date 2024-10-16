@@ -1,0 +1,22 @@
+type:tether
+name:Reassembler Bot
+description:Flying bot that used for reassembling units.
+flying:true
+health:300
+drag:0.5
+accel: 0.2
+speed: 1.5
+engineSize:2
+engineOffset:6.5
+payloadCapacity:0
+outlineColor:565666
+controller:AssemblerAI
+targetable:false
+bounded:false
+isEnemy:false
+hidden:true
+useUnitCap:false
+logicControllable:false
+playerControllable:false
+allowedInPayloads:false
+createWreck:false

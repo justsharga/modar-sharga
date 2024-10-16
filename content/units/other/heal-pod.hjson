@@ -1,0 +1,36 @@
+type:flying
+flying:true
+health:180
+physics:false
+controller:RepairAI
+logicControllable:false
+playerControllable:false
+allowedInPayloads:false
+isEnemy:false
+bounded:false
+speed:1.2
+targetAir:false
+outlineColor:565666
+hidden:true
+range:2
+weapons:[
+  {
+  reload:1
+  shake:0
+  shootOnDeath:true
+  mirror:false
+  shootCone:360
+  shake:2
+  bullet:{
+   type:ExplosionBulletType
+   despawnShake:3
+   hitShake:2
+   splashDamage:1
+   splashDamageRadius:24
+   collidesTeam:true
+   healPercent:3
+   status:electrified
+   statusDuration:120
+  }
+ } 
+]

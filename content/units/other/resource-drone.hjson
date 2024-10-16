@@ -1,0 +1,34 @@
+type:flying
+flying:true
+name:Logistic Drone
+description:Specialized drone assisting on mining and moving resources
+health:790
+hitSize:16
+speed:2
+isEnemy:false
+mineFloor:true
+mineWall:true
+bounded:false
+mineSpeed:6
+mineTier:4
+drag:0.4
+outlineColor:565666
+abilities:[
+ {
+  type:ShieldRegenFieldAbility
+  amount:100
+  max:400
+  reload:600
+  range:36
+ }
+]
+engines:[
+ {
+  x:0
+  y:-4.5
+  radius:2
+ }
+]
+playerControllable:false
+logicControllable:false
+controller:MinerAI

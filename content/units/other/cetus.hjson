@@ -1,0 +1,20 @@
+type:tether
+name:Cetus
+description:Move loads of items into demanding drop vault.
+controller:CargoAI
+flying:true
+hidden:true
+isEnemy:false
+lowAltitude:false
+allowedInPayloads:false
+logicControllable:false
+playerControllable:false
+speed:3
+rotateSpeed:9
+accel:0.12
+drag:0.08
+health:280
+itemCapacity:150
+hitsize:12
+engineSize:3
+engineOffset:6.5

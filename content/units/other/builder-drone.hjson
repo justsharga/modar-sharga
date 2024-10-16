@@ -1,0 +1,29 @@
+type:flying
+flying:true
+name:Builder Drone
+description:Specialized drone assisting on building bases
+health:680
+hitSize:16
+speed:1.5
+isEnemy:false
+buildSpeed:1.3
+drag:0.4
+outlineColor:565666
+abilities:[
+ {
+  type:StatusFieldAbility
+  effect:overdrive
+  duration:580
+  reload:600
+  range:36
+ }
+]
+engines:[
+ {
+  x:0
+  y:-6
+  radius:2
+ }
+]
+commands:[move,rebuild,assist]
+controller:BuilderAI

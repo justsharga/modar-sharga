@@ -1,0 +1,71 @@
+type:flying
+flying:true
+name:Repairer Drone
+description:Specialized drone assisting on healing allied buildings
+health:490
+hitSize:16
+speed:2
+isEnemy:false
+drag:0.4
+outlineColor:565666
+abilities:[
+ {
+  type:EnergyFieldAbility
+  damage:0
+  reload:120
+  range:80
+  effectRadius:1
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:60
+  shootSound:spark
+  maxTargets:18
+  healPercent:1.5
+ }
+]
+engines:[
+ {
+  x:0
+  y:-5
+  radius:2
+ }
+]
+controller:RepairAI
+commands:[move,repair,assist]
+weapons:[
+ {
+  x:0
+  y:-0.5
+  reload:60
+  mirror:false
+  rotate:false
+  shootSound:blaster
+  bullet:{
+   type:EmpBulletType
+   damage:10
+   radius:25
+   timeIncrease:1.5
+   timeDuration:100
+   powerDamageScl:1.2
+   healPercent:3
+   shootEffect:hitEmpSpark
+   smokeEffect:shootBigSmoke2
+   lifetime:80
+   backColor:84f491
+   frontColor:ffffff
+   width:6
+   height:6
+   shrinkY:0
+   speed:2
+   trailLength:20
+   trailWidth:4
+   trailColor:84f491
+   splashDamage:20
+   splashDamageRadius:24
+   collidesTeam:true
+   status:electrified
+   statusDuration:60
+   hitSound:plasmaboom
+  }
+ }
+]
