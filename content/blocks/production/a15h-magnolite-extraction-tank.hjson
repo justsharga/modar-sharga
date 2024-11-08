@@ -17,6 +17,15 @@ drawer:{
  drawers:[
   {
    type:DrawRegion
+   suffix:-bottom
+  }
+  {
+   type:DrawLiquidTile
+   drawLiquid:c07-hydrocharge
+   alpha:0.7
+  }
+  {
+   type:DrawRegion
    suffix:-mid
   }
   {
@@ -24,18 +33,6 @@ drawer:{
    drawLiquid:c04-magnolite
    alpha:0.7
    padding:2.5
-  }
-  {
-   type:DrawDefault
-  }
-  {
-   type:DrawRegion
-   suffix:-bottom
-  }
-  {
-   type:DrawLiquidTile
-   drawLiquid:c01-hydrocharge
-   alpha:0.7
   }
   {
    type:DrawDefault
@@ -48,3 +45,5 @@ requirements:[
  b10-zaprezonite/80
  b11-rexonite/120
 ]
+research:a06h-magnolite-mixer
+researchCostMultiplier:0.3
