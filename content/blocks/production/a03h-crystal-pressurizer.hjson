@@ -5,6 +5,7 @@ category:crafting
 squareSprite:false
 size:3
 health:670
+craftTime:120
 consumes:{
    power:3
    items:[
