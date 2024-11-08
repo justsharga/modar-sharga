@@ -1,0 +1,10 @@
+type:Wall
+name:Ability Initiator Implant
+description:Necessary addition for high tier unit that eqquiped with vatious unique ability.
+size:2
+squareSprites:false
+placeablePlayer:false
+requirements:[
+ b09-repair-circuit/20
+ b11-rexonite/12
+]

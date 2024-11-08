@@ -1,0 +1,13 @@
+type:UnitAssemblerModule
+name:Basic Upgrade Module
+description:Upgrades the tier of attached reassembler into the first tier.Can be used as payload input when powered
+size:3
+category:units
+consumes:{
+ power:3
+}
+requirements:[
+ b08-mechanical-alloy/180
+ b10-zaprezonite/120
+ b11-rexonite/210
+]
