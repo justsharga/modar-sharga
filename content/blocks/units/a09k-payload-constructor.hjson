@@ -6,8 +6,12 @@ descriotion:
  recipes:
   - Large Durasteel Wall
   - energy Transmitter
+  - Repair Projector
   - Large Alloy Wall
+  - Large Zaprezonite Wall
+  - Armored Wall
   - Flow Tank
+  - Ability Initiator Implant
 '''
 health:560
 size:3
@@ -20,8 +24,12 @@ consumes:{
 filter:[
  a02l-large-durasteel-wall
  a02g-energy-transmitter
+ a02c-repair-projector
  a04l-large-alloy-wall
+ a06l-large-zaprezonite-wall
+ a07l-armored-wall
  a08e-flow-tank
+ a20k-ability-initiator-implant
 ]
 requirements:[
  b03-durasteel/50
