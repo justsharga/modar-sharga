@@ -62,3 +62,13 @@ requirements:[
  b10-zaprezonite/80
  b11-rexonite/90
 ]
+research:{
+ parent:a06j-erupt
+ objectives:[
+  {
+   type:OnSector
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:0.3
