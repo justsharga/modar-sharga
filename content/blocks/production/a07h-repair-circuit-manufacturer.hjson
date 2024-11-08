@@ -7,8 +7,8 @@ health:970
 squareSprite:false
 consumes:{
    items:[
-      b03-durasteel/6
-      b07-nexolite/4
+      b03-durasteel/4
+      b07-nexolite/8
       ]
    power:4
    liquid:water/0.25
