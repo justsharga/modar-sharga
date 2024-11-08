@@ -27,3 +27,5 @@ requirements:[
    b08-mechanical-alloy/8
    b11-rexonite/40
 ]
+research:a05l-zaprezonite-wall
+researchCostMultiplier:0.2
