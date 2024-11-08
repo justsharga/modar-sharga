@@ -54,3 +54,5 @@ requirements:[
    b11-rexonite/40
 ]
 buildCostMultiplier:0.75
+research:a06h-magnolite-mixer
+researchCostMultiplier:0.3
