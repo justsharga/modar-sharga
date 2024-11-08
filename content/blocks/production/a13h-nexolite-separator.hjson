@@ -19,3 +19,5 @@ requirements:[
  b01-iron/240
  b08-mechanical-alloy/120
 ]
+research:a15h-magnolite-extraction-tank
+researchCostMultiplier:0.6
