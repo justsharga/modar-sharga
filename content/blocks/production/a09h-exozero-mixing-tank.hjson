@@ -5,7 +5,7 @@ size:3
 category:crafting
 consumes:{
    items:[
-      b07-nexolite/4
+      b07-nexolite/5
    ]
    liquid:water/0.5
    power:4
