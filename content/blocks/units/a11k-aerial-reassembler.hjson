@@ -19,11 +19,31 @@ plans:[
    mod-ar-a04l-large-alloy-wall/6
   ]
  }
+ {
+  type:AssemblerUnitPlan
+  unit:f04b-empty
+  time:4200
+  requirements:[
+   mod-ar-f02b-crack/6
+   mod-ar-a06l-large-zaprezonite-wall/4
+   mod-ar-a20k-ability-initiator-implant/2
+  ]
+ }
 ]
 squareSprite:false
-areaSize:11
+areaSize:13
 requirements:[
  b08-mechanical-alloy/80
  b10-zaprezonite/30
  b11-rexonite/90
 ]
+research:{
+ parent:a07k-aerial-recrafter
+ objectives:[
+  {
+   type:OnSector
+   preset:freezing-grounds
+  }
+ ]
+}
+researchCostMultiplier:0.5
