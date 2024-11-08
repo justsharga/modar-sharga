@@ -19,9 +19,19 @@ plans:[
    mod-ar-a04l-large-alloy-wall/4
   ]
  }
+ {
+  type:AssemblerUnitPlan
+  unit:f04c-restore
+  time:5400
+  requirements:[
+   mod-ar-f02c-explore/3
+   mod-ar-a07l-armored-wall/4
+   mod-ar-a20k-ability-initiator-implant/3
+  ]
+ }
 ]
 squareSprite:false
-areaSize:11
+areaSize:13
 requirements:[
  b08-mechanical-alloy/60
  b10-zaprezonite/80
