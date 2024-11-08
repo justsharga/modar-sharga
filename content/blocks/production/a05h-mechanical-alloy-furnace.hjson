@@ -9,12 +9,12 @@ itemCapacity:20
 consumes:{
    power:4
    items:[
-      b07-nexolite/6
+      b07-nexolite/12
    ]
    liquid:c01-hydrocharge/0.5
 }
 outputLiquid:water/0.25
-outputItem:b08-mechanical-alloy/3
+outputItem:b08-mechanical-alloy/6
 drawer:{
    type:DrawMulti
    drawers:[
