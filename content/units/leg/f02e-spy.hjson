@@ -1,0 +1,93 @@
+type:legs
+name:Spy
+description:Long ranged sniper mech mounted with knockback turret.
+health:470
+hitSize:20.5
+armor:2
+legLength:45
+legCount:6
+legSpeed:0.8
+legMoveSpace:0.9
+legExtension:-0.1
+legForwardScl:0.5
+faceTarget:true
+outlineColor:565666
+weapons:[
+ {
+  x:0
+  y:-3
+  name:spy-gun
+  mirror:true
+  alternate:false
+  reload:460
+  recoil:2
+  shootSound:lancerLaserShoot
+  bullet:{
+   type:PointBulletType
+   speed:15
+   lifetime:30
+   damage:10
+   pierce:true
+   pierceCap:2
+   width:4
+   height:12
+   knockback:1
+   frontColor:ffffff
+   backColor:ffffff
+   trailEffect:{
+    type:particleEffect
+    line:true
+    rotWithParent:true
+    length:0
+    particles:1
+    cone:360
+    strokeFrom:0.1
+    strokeTo:1.2
+    lenFrom:1
+    lenTo:1
+    colorFrom:ffffff
+    colorTo:00000000
+   }
+   trailChance:0.9
+   trailSpacing:0.5
+  }
+ }
+ {
+ x:7
+ y:3
+  name:scout-sniper
+  mirror:true
+  alternate:true
+  reload:320
+  recoil:4
+  shootSound:mediumCannon
+  bullet:{
+   type:PointBulletType
+   speed:15
+   lifetime:30
+   damage:46
+   pierce:true
+   pierceCap:2
+   width:4
+   height:12
+   frontColor:ffffff
+   backColor:ffffff
+   trailEffect:{
+    type:particleEffect
+    line:true
+    rotWithParent:true
+    length:0
+    particles:1
+    cone:360
+    strokeFrom:0.1
+    strokeTo:1.2
+    lenFrom:1
+    lenTo:1
+    colorFrom:d56662
+    colorTo:00000000
+   }
+   trailChance:1
+   trailSpacing:0.1
+  }
+ }
+]

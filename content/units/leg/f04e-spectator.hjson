@@ -1,0 +1,181 @@
+type:legs
+name:Spectator
+description:Heavy assault mech installed with heavy frag railgun.Capable to place assisting sentry after some period of time and explode into some setry when killed.
+health:11850
+hitSize:77
+armor:3
+speed:0.4
+rotateSpeed:0.75
+legLength:100
+legBaseOffset:32
+legCount:10
+legSpeed:0.3
+legMoveSpace:0.8
+legExtension:-18
+legForwardScl:0.5
+legLengthScl:0.96
+faceTarget:true
+outlineColor:565666
+abilities:[
+ {
+  type:SpawnDeathAbility
+  unit:spider-sentry
+  amount:4
+ }
+]
+weapons:[
+ {
+ x:0
+ y:0
+ reload:900
+ rotate:false
+ mirror:false
+ bullet:{
+  type:bulletType
+  speed:20
+  lifetime:20
+  fragBullets:1
+  fragBullet:{
+   type:bulletType
+   speed:0
+   lifetime:300
+   collides:false
+   parts:[
+    {
+     type:ShapePart
+     x:0
+     y:0
+     radius:170
+     radiusTo:170
+     stroke:0
+     strokeTo:3
+     layer:110
+     circle:true
+     hollow:true
+     color:d1efff
+     progress:life
+    }
+    {
+     type:ShapePart
+     x:0
+     y:0
+     radius:0
+     radiusTo:170
+     stroke:0
+     strokeTo:2
+     layer:110
+     circle:true
+     hollow:true
+     color:d1efff
+     progress:life
+    }
+    {
+     type:HaloPart
+     haloRadius:175
+     haloRadiusTo:175
+     haloRotateSpeed:1.2
+     sides:3
+     shapes:4
+     radius:5
+     radiusTo:8
+     stroke:0
+     strokeTo:2
+     hollow:true
+     color:d1efff
+     layer:110
+    }
+   ]
+   fragBullets:25
+   fragVelocityMin:0.1
+   fragVelocityMax:1.0
+   fragLifeMin:0.1
+   fragLifeMax:1.4
+   fragBullet:{
+    type:ArtilleryBulletType
+    speed:0.8
+    lifetime:200
+    width:0
+    height:0
+    trailMult:0
+    trailSize:0
+    splashDamage:380
+    splashDamageRadius:280
+    despawnEffect:titanSmoke
+    }
+   }
+  }
+ }
+ {
+  x:0
+  y:-10
+  reload:480
+  name:spark-railgun
+  mirror:false
+  shake:3
+  shoot:{
+   firstShotDelay:30
+  }
+  chargeSound:lasercharge2
+  shootSound:laserblast
+  bullet:{
+   type:BasicBulletType
+   sprite:shell
+   width:12
+   height:12
+   speed:20
+   lifetime:30
+   damage:820
+   knockback:4
+   pierce:true
+   pierceBuilding:true
+   trailWidth:3
+   trailLength:12
+   trailEffect:disperseTrail
+   fragOnHit:false
+   fragBullets:6
+   fragRandomSpread:0
+   fragSpread:5
+   fragLifeMin:0
+   fragBullet:{
+    type:BasicBulletType
+    width:8
+    height:8
+    speed:3
+    lifetime:30
+    damage:280
+    pierce:true
+    pierceBuilding:true
+    trailWidth:2
+    trailLength:12
+   }
+   intervalBullets:1
+   bulletInterval:2
+   intervalBullet:{
+    type:BasicBulletType
+    width:24
+    height:24
+    frontColor:0000000
+    backColor:0000000
+    speed:0
+    lifetime:3
+    damage:15
+    knockback:3
+   }
+  }
+ }
+ {
+  x:0
+  y:-36
+  reload:780
+  mirror:false
+  rotate:false
+  shootSound:noammo
+  shootCone:180
+  bullet:{
+   instantDisappear:true
+   shootEffect:unitSpawn
+   damage:0
+   spawnUnit:spider-sentry
+  }
+ }
+]

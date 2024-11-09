@@ -1,0 +1,63 @@
+type:legs
+name:Sniper
+description:Heavy mech mounted with heavy assault railgun.Capable to place assisting sentry after some period of time.
+health:2860
+hitSize:20.5
+armor:3
+speed:0.6
+legLength:78
+legBaseOffset:5
+legCount:8
+legSpeed:0.45
+legMoveSpace:0.8
+legExtension:-15
+legForwardScl:0.5
+legLengthScl:0.96
+faceTarget:true
+outlineColor:565666
+weapons:[
+ {
+  x:0
+  y:-16
+  name:railgun
+  reload:320
+  mirror:false
+  recoil:3
+  shake:15
+  shoot:{
+   firstShotDelay:30
+  }
+  chargeSound:lasercharge2
+  shootSound:laserblast
+  bullet:{
+   type:BasicBulletType
+   sprite:shell
+   width:10
+   height:10
+   speed:20
+   lifetime:12
+   damage:180
+   knockback:2
+   pierce:true
+   pierceBuilding:true
+   trailWidth:3
+   trailLength:12
+   trailEffect:disperseTrail
+  }
+ }
+ {
+  x:0
+  y:-18
+  reload:720
+  mirror:false
+  rotate:false
+  shootSound:noammo
+  shootCone:180
+  bullet:{
+   instantDisappear:true
+   shootEffect:unitSpawn
+   damage:0
+   spawnUnit:spider-sentry
+  }
+ }
+]

@@ -1,0 +1,54 @@
+type:legs
+name:Scout
+description:Highly agile leg unit equipped with two heavy sniper turrets on it sides.
+health:180
+hitSize:10
+armor:1
+legLength:32
+legCount:6
+legSpeed:0.5
+legMoveSpace:0.9
+legExtension:-1.5
+legForwardScl:0.5
+faceTarget:true
+outlineColor:565666
+weapons:[
+ {
+  x:3.25
+  y:0
+  name:scout-sniper
+  mirror:true
+  alternate:false
+  reload:380
+  recoil:4
+  shootSound:mediumCannon
+  bullet:{
+   type:PointBulletType
+   speed:16
+   lifetime:10
+   damage:30
+   pierce:true
+   pierceCap:2
+   width:4
+   height:12
+   frontColor:ffffff
+   backColor:ffffff
+   trailEffect:{
+    type:particleEffect
+    line:true
+    rotWithParent:true
+    length:0
+    particles:1
+    cone:360
+    strokeFrom:0.1
+    strokeTo:1.2
+    lenFrom:1
+    lenTo:1
+    colorFrom:d56662
+    colorTo:00000000
+   }
+   trailChance:1
+   trailSpacing:0.1
+  }
+ }
+]
