@@ -9,7 +9,7 @@ itemCapacity:30
 consumes:{
    power:6
    items:[
-      b14-rough-nexolite
+      b14-rough-nexolite/10
    ]
    liquids:[
       c04-magnolite/1.0
