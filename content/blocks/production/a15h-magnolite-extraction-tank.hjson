@@ -21,7 +21,7 @@ drawer:{
   }
   {
    type:DrawLiquidTile
-   drawLiquid:c07-hydrocharge
+   drawLiquid:c01-hydrocharge
    alpha:0.7
   }
   {
