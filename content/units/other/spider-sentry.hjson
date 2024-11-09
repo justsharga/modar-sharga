@@ -1,0 +1,56 @@
+type:legs
+name:Spider Sentry
+description:Automated sentry created by leg unit to assist at defending.
+health:260
+hitSize:9
+speed:0
+legLength:12.5
+legCount:4
+legSpeed:0
+legMoveSpace:0.7
+legExtension:0
+legForwardScl:0.5
+faceTarget:true
+targetable:false
+bounded:false
+isEnemy:false
+hidden:false
+useUnitCap:false
+logicControllable:false
+playerControllable:false
+allowedInPayloads:false
+createWreck:false
+outlineColor:565666
+weapons:[
+ {
+  x:4
+  y:0
+  name:spider-gun
+  mirror:true
+  alternate:true
+  alwaysShooting:true
+  reload:5
+  shootStatus:melting
+  bullet:{
+   type:PointBulletType
+   speed:2
+   lifetime:50
+   damage:8
+   trailEffect:{
+    type:particleEffect
+    rotWithParent:true
+    length:0
+    particles:2
+    cone:360
+    strokeFrom:0.1
+    strokeTo:1.2
+    lenFrom:1
+    lenTo:1
+    colorFrom:ffffff
+    colorTo:00000000
+   }
+   trailChance:1
+   trailSpacing:0.3
+  }
+ }
+]
