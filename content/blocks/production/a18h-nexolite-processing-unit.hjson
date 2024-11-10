@@ -1,0 +1,60 @@
+type:GenericCrafter
+name:Nexolite Processing Unit
+description:Process nexolite and durasteel using hydrocharge into mechanical alloy and repair circuit.
+health:1135
+size:5
+category:crafting
+craftTime:180
+itemCapacity:50
+consumes:{
+ power:5
+ items:[
+  b03-durasteel/10
+  b07-nexolite/25
+ ]
+ liquid:c01-hydrocharge/1
+}
+outputItems:[
+ b08-mechanical-alloy/10
+ b09-repair-circuit/8
+]
+drawer:{
+ type:drawMulti
+ drawers:[
+  {
+   type:DrawRegion
+   suffix:-bottom
+  }
+  {
+   type:DrawSoftParticles
+   color:80a9ff
+   color2:4673cb
+   alpha:0.9
+   particleRad:20
+   particles:80
+   particleLife:40
+   particleSize:5
+  }
+  {
+   type:DrawRegion
+   suffix:-mid
+  }
+  {
+   type:DrawLiquidTile
+   drawLiquid:c01-hydrocharge
+   alpha:0.7
+   padding:15
+  }
+  {
+  type:DrawDefault
+  }
+ ]
+}
+ambientSound:smelter
+ambientSoundVolume:0.3
+requirements:[
+ b03-durasteel/380
+ b10-zaprezonite/240
+ b12-hexahedron-plating/120
+]
+buildCostMultiplier:0.6

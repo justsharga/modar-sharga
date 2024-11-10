@@ -1,0 +1,44 @@
+type:AttributeCrafter
+name:Crystal Multi Pressurizer
+description:Pressurize mineral sand more efficience using enriched pyrexenos. Works better when placed on a vent.
+health:1130
+size:5
+category:crafting
+squareSprites:false
+craftTime:120
+attribute:steam
+boostScale:0.1
+maxBoost:1
+consumes:{
+   power:4
+   items:[
+   b04-mineral-sand/5
+   b13-enriched-pyrexenos/1
+   ]
+}
+outputItem:b06-hard-crystal/10
+drawer:{
+ type:drawMulti
+ drawers:[
+  {
+   type:DrawDefault
+  }
+  {
+   type:DrawRegion
+   suffix:-rotator
+   spinSprite:true
+   rotateSpeed:0.9
+  }
+  {
+   type:DrawRegion
+   suffix:-top
+  }
+ ]
+}
+ambientSound:smelter
+ambientSoundVolume:0.9
+requirements:[
+ b01-iron/280
+ b05-hexaria-glass/120
+ b12-hexahedron-plating/80
+]
