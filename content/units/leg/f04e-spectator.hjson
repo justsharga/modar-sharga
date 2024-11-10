@@ -98,8 +98,8 @@ weapons:[
     height:0
     trailMult:0
     trailSize:0
-    splashDamage:380
-    splashDamageRadius:280
+    splashDamage:285
+    splashDamageRadius:74
     despawnEffect:titanSmoke
     }
    }
@@ -124,7 +124,7 @@ weapons:[
    height:12
    speed:20
    lifetime:30
-   damage:820
+   damage:720
    knockback:4
    pierce:true
    pierceBuilding:true
@@ -135,7 +135,7 @@ weapons:[
    fragBullets:6
    fragRandomSpread:0
    fragSpread:5
-   fragLifeMin:0
+   fragVelocityMin:1.0
    fragBullet:{
     type:BasicBulletType
     width:8
@@ -158,7 +158,7 @@ weapons:[
     backColor:0000000
     speed:0
     lifetime:3
-    damage:15
+    damage:30
     knockback:3
    }
   }
