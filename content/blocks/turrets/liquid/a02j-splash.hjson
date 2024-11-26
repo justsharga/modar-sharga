@@ -1,22 +1,17 @@
 type:LiquidTurret
 name:Splash
-description:Shoot various liquid in a burst
+description:Shoot various liquid simultaneously
 health:920
 size:3
 category:turret
 rotateSpeed:2.0
 inaccuracy:4
-reload:70
+reload:2
 range:140
 flying:false
 outlineColor:565666
 shootCone:6
 recoil:3
-shoot:{
- firstShotDelay:30
- shotDelay:3
- shots:10
-}
 ammoTypes:{
  water:{
   type:LiquidBulletType
