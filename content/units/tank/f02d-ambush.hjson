@@ -1,7 +1,7 @@
 type:tank
 name:Ambush
 description:Mobile well armored striker tank equipped with small missile launcher
-health:480
+health:620
 armor:3
 speed:0.75
 hitsize:13
@@ -23,7 +23,7 @@ weapons:[
   x:0
   y:0
   name:ambush-weapon
-  reload:180
+  reload:160
   mirror:false
   rotate:true
   rotationLimit:270
@@ -59,7 +59,7 @@ weapons:[
   x:0
   y:-10
   name:ambush-launcher
-  reload:210
+  reload:220
   mirror:false
   rotate:true
   rotationLimit:140
