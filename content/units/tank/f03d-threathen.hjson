@@ -1,7 +1,7 @@
 type:tank
 name:Threaten
 description:Slow manuverable tank eqquiped with a turret that shoots two missile.
-health:2800
+health:2680
 armor:4
 speed:0.5
 hitSize:25
@@ -10,7 +10,7 @@ omniMovement:false
 rotateMoveFirst:true
 itemCapacity:0
 outlineColor:565666
-crushDamage:1
+crushDamage:0.5
 treadRects:[
  {
   x:24
@@ -29,7 +29,7 @@ weapons:[
   }
   name:threathen-weapon
   shootSound:smallMissile
-  reload:150
+  reload:210
   mirror:false
   rotate:true
   rotateSpeed:0.7
