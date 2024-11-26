@@ -8,7 +8,7 @@ rotateSpeed:1
 shootSound:mediumCannon
 reload:300
 outlineColor:565666
-range:360
+range:480
 ammoPerShot:6
 shootCone:4
 shootY:8
@@ -31,10 +31,10 @@ ammoTypes:{
   hitSound:titanExplosion
   shootEffect:shootTitan
   smokeEffect:shootSmokeTitan
-  lifetime:180
+  lifetime:240
   speed:2
   splashDamageRadius:70
-  splashDamage:310
+  splashDamage:480
   scaledSplashDamage:true
   frontColor:ffffff
   backColor:d70000
@@ -45,7 +45,7 @@ ammoTypes:{
   trailSinScl:2.5
   trailSinMag:0.5
   despawnShake:7
-  status:burning
+  status:melting
   statusDuration:120
   buildingDamageMultiplier:0.3
   fragBullets:10
