@@ -8,7 +8,7 @@ rotateSpeed:2
 shootSound:shootAltLong
 reload:120
 outlineColor:565666
-range:158
+range:240
 ammoPerShot:8
 inaccuracy:15
 shootCone:6
@@ -23,7 +23,7 @@ shoot:{
 ammoTypes:{
    b05-hexaria-glass:{
       type:BasicBulletType
-      damage:14
+      damage:18
       speed:3
       width:10
       hitSize:10
@@ -40,7 +40,7 @@ ammoTypes:{
       backColor:d6dbe7
       trailColor:d6dbe7
       hitColor:d6dbe7
-      lifetime:90
+      lifetime:80
       trailWidth:2.1
       trailLength:10
       hitEffect:hitBulletColor
@@ -54,7 +54,7 @@ ammoTypes:{
       width:10
       hitSize:10
       height:25
-      rangeChange:160
+      rangeChange:120
       shootEffect:shootBigColor
       smokeEffect:shootBigSmoke
       pierce:true
@@ -67,7 +67,7 @@ ammoTypes:{
       backColor:ada834
       trailColor:ada834
       hitColor:ada834
-      lifetime:95
+      lifetime:120
       trailWidth:2.1
       trailLength:10
       hitEffect:hitBulletColor
