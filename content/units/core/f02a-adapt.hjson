@@ -27,16 +27,16 @@ engines: [
 ]
 weapons: [
 {
-    x:2
-    y:2
+    x:0
+    y:1.5
     reload:90
-    mirror:true
+    mirror:false
     rotate:false
     alternate:true
     shootSound:laser
-    inaccuracy:4
+    inaccuracy:2
     shoot: {
-  firstShotDelay: 60
+  firstShotDelay: 80
     shotDelay: 10
     shots:2
   }
@@ -52,7 +52,7 @@ weapons: [
          width:6
          length:95
          damage:22
-         healPercent:4
+         healPercent:3
          collidesTeam:true
          pierce:true
          pierceBuilding:false
