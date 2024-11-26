@@ -2,16 +2,17 @@ type:flying
 flying:true
 name:Hole
 description:Dangerious flying vessel equipped with two pairs of missile launcher
-health:1380
-speed:0.8
+health:1290
+speed:0.9
 hitSize:25
 faceTarget:false
+engineSize:0
 targetFlags:[core]
 targetAir:false
 engines:[
  {
   x: 0
-  y: -15.5
+  y: -15
   radius:5
  }
 ]
@@ -22,7 +23,7 @@ weapons:[
   name:hole-weapon
   reload:290
   mirror:true
-  alternate:false
+  alternate:true
   rotate:true
   rotateSpeed:1.2
   bullet:{
@@ -37,7 +38,7 @@ weapons:[
   name:hole-weapon
   reload:290
   mirror:true
-  alternate:false
+  alternate:true
   rotate:true
   rotateSpeed:1.2
   bullet:{
