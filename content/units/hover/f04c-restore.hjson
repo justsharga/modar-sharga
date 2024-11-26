@@ -105,14 +105,15 @@ weapons:[
  {
   x:0
   y:19
-  reload:180
+  reload:120
   innacuracy:10
   mirror:false
   rotate:false
   shootSound:blaster
   shoot:{
-   shotDelay:15
-   shots:6
+   type:ShootHelix
+   mag:2
+   scl:4
   }
   bullet:{
    type:EmpBulletType
@@ -131,15 +132,33 @@ weapons:[
    height:12
    shrinkY:0
    speed:3
-   trailLength:60
-   trailWidth:12
+   trailLength:45
+   trailWidth:5
    trailColor:84f491
    splashDamage:45
    splashDamageRadius:24
    collidesTeam:true
+   pierceBuilding:true
    status:electrified
+   trailEffect:missileTrail
    statusDuration:60
    hitSound:plasmaboom
+   fragBullets:4
+   fragBullet:{
+    type:EmpBulletType
+    damage:10
+    speed:5
+    lifetime:20
+    healPercent:1
+    trailEffect:missileTrail
+    trailColor:84f491
+    splashDamage:5
+    splashDamageRadius:10
+    collidesTeam:true
+    pierceBuilding:true
+    status:electrified
+    statusDuration:30
+   }
   }
  }
 ]
