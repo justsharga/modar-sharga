@@ -3,7 +3,7 @@ flying:true
 physics:false
 template:MissileUnitType
 controller:MissileAI
-speed:4
+speed:2.5
 useUnitCap:false
 engineSize:0.6
 engineOffset:2.5
@@ -39,7 +39,7 @@ weapons:[
    type:ExplosionBulletType
    despawnShake:3
    hitShake:2
-   splashDamage:52
+   splashDamage:48
    splashDamageRadius:24
   }
  } 
