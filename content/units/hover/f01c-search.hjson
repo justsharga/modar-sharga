@@ -1,8 +1,8 @@
 type:mech
 name:Search
 description:little assiting bot armed with repair gun
-health:175
-speed:3.5
+health:210
+speed:2.8
 armor:1
 shadowElevation:0.1
 mechFrontSway:0
