@@ -2,7 +2,7 @@ type:flying
 flying:true
 name:Preserve
 description:Highest tier we can produce at the support unit tree.Specialized for passive buffs and capable for making some kind of helper bot.
-health:25000
+health:23200
 hitSize:52
 speed:0.5
 armor:5
@@ -84,24 +84,23 @@ weapons:[
   mirror:false
   rotate:false
   shootCone:360
+  shoot:{
+   type:shootSpread
+   shots:180
+   shotDelay:1
+   spread:2
+  }
   bullet:{
-   instantDisappear:true
-   damage:0
-   fragBullets:360
-   fragSpread:1
-   fragBullet:{
-    type:LaserBulletType
-    color:[85c278, 9be98b, ffffff
-    ]
-    width:5
-    length:120
-    damage:12
-    healPercent:3
-    collidesTeam:true
-    pierce:true
-    pierceBuilding:false
-    pierceCap:5
-   }
+   type:LaserBulletType
+   colors:[85c278, 9be98b, ffffff
+   ]
+   width:5
+   length:120
+   damage:12
+   healPercent:3
+   collidesTeam:true
+   pierce:true
+   pierceBuilding:true
   }
  }
 ]
