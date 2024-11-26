@@ -8,7 +8,7 @@ accurateDelay:false
 inaccuracy:0
 reload:480
 outlineColor:565666
-range:240
+range:400
 shootCone:3
 shootWarmupSpeed:5
 recoil:4
@@ -22,11 +22,11 @@ shootType:{
    pointEffect:instTrail
    despawnEffect:instBomb
    pointEffectSpace:10
-   damage:130
+   damage:145
    buildingDamageMultiplier:0.2
    maxDamageFraction:0.6
    pierceDamageFactor:1
-   length:240
+   length:400
    hitshake:6
 }
 consumes:{
