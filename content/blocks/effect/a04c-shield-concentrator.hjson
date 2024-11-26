@@ -1,0 +1,41 @@
+type:ForceProjector
+name:Shield Concentrator
+description:Concentrate inputted energy into wide energy shield covering the area around it from some bullets.Can be boosted using hexahedron plating.
+size:3
+category:effect
+shieldHealth:650
+sides:4
+radius:180
+phaseRadiusBoost:80
+phaseShieldBoost:550
+phaseUseTime:180
+cooldownNormal:2.0
+cooldownLiquid:1.5
+cooldownBrokenBase:0.35
+coolantConsumption:0.5
+shieldRotation:45
+squareSprite:false
+consumes:{
+ power:2
+ items:{
+  items:[
+   b12-hexahedron-plating/1
+   ]
+  optional:true
+  booster:true
+ }
+}
+requirements:[
+ b08-mechanical-alloy/180
+ b10-zaprezonite/280
+ b11-rexonite/120
+]
+research:{
+ parent:a03c-advanced-regenerator
+ objectives:[
+  {
+   type:OnSector
+   preset:hidden-cavern
+  }
+ ]
+}
