@@ -1,0 +1,147 @@
+type:LiquidTurret
+name:Rainshower
+description:drop inputted liquid from the sky to the area surrounding the turret
+health:1120
+size:4
+category:turret
+rotateSpeed:0
+shootCone:360
+reload:5
+range:156
+outlineColor:565666
+minWarmup:0.9
+shootWarmupSpeed:0.1
+shootY:0
+recoil:0
+ammoTypes:{
+ water:{
+  type:BulletType
+  speed:0
+  lifetime:0
+  collides:false
+  despawnEffect:hitLiquid
+  fragBullets:30
+  fragVelocityMin:0.1
+  fragVelocityMax:1.0
+  fragLifeMin:0.1
+  fragLifeMax:1.2
+  fragBullet:{
+   type:BulletType
+   speed:0.8
+   lifetime:200
+   collides:false
+   despawnEffect:hitLiquid
+   fragBullets:1
+   fragVelocityMax:0
+   fragBullet:{
+    type:LiquidBulletType
+    liquid:water
+    keepVelocity:false
+    damage:0
+    speed:0
+    lifetime:60
+    orbSize:1
+    shrinkX:0
+    shrinkY:0
+    knockback:3
+    status:wet
+    statusDuration:180
+   }
+  }
+ }
+ c05-molten-iron:{
+  type:BulletType
+  speed:0
+  lifetime:0
+  collides:false
+  despawnEffect:hitLiquid
+  fragBullets:30
+  fragVelocityMin:0.1
+  fragVelocityMax:1.0
+  fragLifeMin:0.1
+  fragLifeMax:1.2
+  fragBullet:{
+   type:BulletType
+   speed:0.8
+   lifetime:200
+   collides:false
+   despawnEffect:hitLiquid
+   fragBullets:1
+   fragVelocityMax:0
+   fragBullet:{
+    type:LiquidBulletType
+    liquid:c05-molten-iron
+    keepVelocity:false
+    damage:20
+    speed:0
+    lifetime:60
+    orbSize:1.5
+    shrinkX:0
+    shrinkY:0
+    knockback:1
+   }
+  }
+ }
+ c06-exozero:{
+  type:BulletType
+  speed:0
+  lifetime:0
+  collides:false
+  despawnEffect:hitLiquid
+  fragBullets:30
+  fragVelocityMin:0.1
+  fragVelocityMax:1.0
+  fragLifeMin:0.1
+  fragLifeMax:1.2
+  fragBullet:{
+   type:BulletType
+   speed:0.8
+   lifetime:200
+   collides:false
+   despawnEffect:hitLiquid
+   fragBullets:1
+   fragVelocityMax:0
+   fragBullet:{
+    type:LiquidBulletType
+    liquid:water
+    keepVelocity:false
+    damage:0
+    speed:0
+    lifetime:60
+    orbSize:2
+    shrinkX:0
+    shrinkY:0
+    knockback:4
+    status:frost
+    statusDuration:180
+   }
+  }
+ }
+}
+drawer:{
+ type:DrawTurret
+ basePrefix:reinforced-
+ parts:[
+  {
+   type:RegionPart
+   suffix:-front
+   progress:warmup
+   moveX:5
+   moveY:5
+   mirror:true
+  }
+  {
+   type:RegionPart
+   suffix:-back
+   progress:warmup
+   moveX:5
+   moveY:-5
+   mirror:true
+  }
+ ]
+}
+requirements:[
+ b01-iron/380
+ b05-hexaria-glass/130
+ b11-rexonite/190
+]
