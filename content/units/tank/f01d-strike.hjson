@@ -1,7 +1,7 @@
 type:tank
 name:Strike
 description:small tank that fires a bullet at high velocity.
-health:220
+health:290
 armor:2
 speed:0.8
 hitsize:12
@@ -23,7 +23,7 @@ weapons:[
   x:0
   y:0
   name:strike-weapon
-  reload:100
+  reload:90
   mirror:false
   rotate:true
   rotateSpeed:1.5
@@ -35,7 +35,7 @@ weapons:[
    collidesAir:true
    collidesGround:true
    type: BasicBulletType
-   damage:28
+   damage:30
    speed:9.0
    width:3
    hitSize:5
