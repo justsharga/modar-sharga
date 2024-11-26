@@ -1,8 +1,8 @@
 type:tank
 name:Exile
 description:Heavy assault tank with a gun for destroying enemy defend line.This is the best unit we can recreate from the tank tree.
-health:30800
-armor:6
+health:28600
+armor:5
 speed:0.3
 hitSize:80
 rotateSpeed:0.3
@@ -11,7 +11,7 @@ rotateMoveFirst:true
 faceTarget:false
 itemCapacity:0
 outlineColor:565666
-crushDamage:8
+crushDamage:4
 treadPullOffset:3
 treadRects:[
  {
@@ -103,7 +103,7 @@ weapons:[
   }
   intervalBullets:3
   bulletInterval:10
-  intervalRandomSpread:60
+  intervalRandomSpread:0
   intervalSpread:30
   intervalBullet:{
    type:BasicBulletType
