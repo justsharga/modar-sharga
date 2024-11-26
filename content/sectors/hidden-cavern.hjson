@@ -1,0 +1,20 @@
+localizedName:Hidden Cavern
+description:
+'''
+ We shall continue the research of rexonite here to obtain even more technologies.
+ Be aware that enemy will attack us from north with some new mechs.
+ Capture this place to claim those mechs for our armnaments.
+'''
+captureWave:20
+planet:ferucia
+difficulty:7
+sector:8
+research:{
+ parent:freezing-lake
+ objectives:[
+  {
+   type: SectorComplete
+   preset:freezing-lake
+  }
+ ]
+}
