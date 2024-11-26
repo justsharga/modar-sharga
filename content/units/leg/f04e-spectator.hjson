@@ -1,9 +1,9 @@
 type:legs
 name:Spectator
 description:Heavy assault mech installed with heavy frag railgun.Capable to place assisting sentry after some period of time and explode into some setry when killed.
-health:11850
+health:10890
 hitSize:77
-armor:3
+armor:4
 speed:0.4
 rotateSpeed:0.75
 legLength:100
