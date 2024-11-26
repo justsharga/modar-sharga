@@ -1,0 +1,40 @@
+type:UnitAssembler
+name:Mech Reassembler
+description:upgrades inputted mech unit into third tier using payloads.Requires Magnolite to operate.
+health:1010
+size:5
+category:units
+droneType:reassembler-bot
+consumes:{
+ power:3
+ liquid:c04-magnolite/0.5
+}
+plans:[
+ {
+  type:AssemblerUnitPlan
+  unit:f03e-sniper
+  time:3200
+  requirements:[
+   mod-ar-f02e-spy/2
+   mod-ar-a04l-large-alloy-wall/4
+  ]
+ }
+ {
+  type:AssemblerUnitPlan
+  unit:f04e-spectator
+  time:3800
+  requirements:[
+   mod-ar-f02e-spy/4
+   mod-ar-a07l-armored-wall/8
+  ]
+ }
+]
+squareSprite:false
+areaSize:13
+requirements:[
+ b08-mechanical-alloy/180
+ b10-zaprezonite/120
+ b11-rexonite/250
+]
+research:a15k-mech-reassembler
+researchCostMultiplier:3

@@ -1,0 +1,36 @@
+type:UnitFactory
+name:Mech Assembler
+description:creating small mech unit.Output unit can be used directly or moved to recrafter for further upgrade.
+health:340
+size:3
+category:units
+consumes:{
+ power:2.5
+}
+plans:[
+ {
+  type:FactoryUnitPlan
+  unit:f01e-scout
+  time:1200
+  requirements:[
+   b06-hard-crystal/70
+   b08-mechanical-alloy/10
+  ]
+ }
+]
+requirements:[
+ b01-iron/60
+ b03-durasteel/80
+ b06-hard-crystal/50
+]
+builCostMultiplier:0.8
+research:{
+ parent:a01k-striker-assembler
+ objective:[
+  {
+   type:OnSector
+   preset:hidden-cavern
+  }
+ ]
+}
+researchCostMultiplier:0.3

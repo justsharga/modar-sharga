@@ -1,0 +1,28 @@
+type:Reconstructor
+name:Mech Recrafter
+description:Upgrades inputted Mech unit to the second tier.
+health:580
+size:3
+category:units
+constructTime:2400
+consumes:{
+ power:3
+ liquid:water/0.5
+ items:[
+  b08-mechanical-alloy/120
+  b10-zaprezonite/60
+ ]
+}
+upgrades:[
+ [
+  f01e-scout
+  f02e-spy
+ ]
+]
+requirements:[
+ b08-mechanical-alloy/200
+ b10-zaprezonite/120
+]
+builCostMultiplier:0.8
+research:a14k-mech-assembler
+researchCostMultiplier:0.3
