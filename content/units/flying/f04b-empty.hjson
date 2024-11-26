@@ -2,9 +2,10 @@ type:flying
 flying:true
 name:Empty
 description:Large Airforce armed with four lasers and single deadly continous laser.Capable for warping forward.
-health:12200
+health:8890
+armor:3
 hitSize:70
-speed:0.8
+speed:1
 rotateSpeed:1.2
 itemCapacity:0
 faceTarget:true
@@ -80,7 +81,7 @@ weapons:[
   continuous:true
   reload:400
   cooldown:120
-  shootSound:laserbig
+  shootSound:beam
   shoot:{
    shots:1
    firstShotDelay:30
