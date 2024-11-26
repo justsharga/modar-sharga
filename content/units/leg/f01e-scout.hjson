@@ -1,7 +1,7 @@
 type:legs
 name:Scout
 description:Highly agile leg unit equipped with two heavy sniper turrets on it sides.
-health:180
+health:210
 hitSize:10
 armor:1
 legLength:32
@@ -52,3 +52,4 @@ weapons:[
   }
  }
 ]
+research:a14k-mech-assembler
