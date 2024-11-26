@@ -9,7 +9,7 @@ shootSound:shootAlt
 inaccuracy:2
 reload:45
 outlineColor:565666
-range:120
+range:280
 shootCone:4
 recoil:2
 shake:1
