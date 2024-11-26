@@ -1,0 +1,222 @@
+type:ItemTurret
+name:Overlay
+description:Overlay the target with a coating from various crushed materials.Different material might also act diffrently as ammo.
+health:985
+size:4
+category:turret
+rotateSpeed:0.8
+shootSound:shootSmite
+reload:210
+outlineColor:565666
+range:64
+ammoPerShot:5
+shootCone:4
+shootY:11
+recoil:0
+minWarmup:0.9
+predictTarget:true
+shootWarmupSpeed:0.03
+heatRequirement:8
+maxHeatEfficiency:4.0
+inaccuracy:20
+shoot:{
+ shots:15
+ shotDelay:3
+}
+ammoTypes:{
+ b01-iron:{
+  type:BulletType
+  speed:4
+  lifetime:16
+  damage:20
+  smokeEffect:none
+  despawnEffect:none
+  hitEffect:none
+  hittable:false
+  reflectable:false
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:ParticleEffect
+     particles:30
+     sizeFrom:7
+     sizeTo:0
+     interp:circleOut
+     sizeInterp:pow5In
+     length:100
+     lifetime:32
+     cone:30
+     offset:0
+     colorFrom:9b9daa
+     colorTo:9b9daa00
+    }
+   ]
+  }
+ }
+ b06-hard-crystal:{
+  type:BulletType
+  speed:4
+  lifetime:16
+  damage:22
+  splashDamageRadius:20
+  splashDamage:12
+  smokeEffect:none
+  despawnEffect:none
+  hitEffect:none
+  hittable:false
+  reflectable:false
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:ParticleEffect
+     particles:30
+     sizeFrom:7
+     sizeTo:0
+     interp:circleOut
+     sizeInterp:pow5In
+     length:100
+     lifetime:32
+     cone:30
+     offset:0
+     colorFrom:ff3939
+     colorTo:ff393900
+    }
+   ]
+  }
+ }
+ b07-nexolite:{
+  type:BulletType
+  speed:4
+  lifetime:16
+  damage:11
+  smokeEffect:none
+  despawnEffect:none
+  hitEffect:none
+  piercing:true
+  status:frost
+  statusDuration:180
+  hittable:false
+  reflectable:false
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:ParticleEffect
+     particles:30
+     sizeFrom:7
+     sizeTo:0
+     interp:circleOut
+     sizeInterp:pow5In
+     length:100
+     lifetime:32
+     cone:30
+     offset:0
+     colorFrom:26e2ff
+     colorTo:2696ff00
+    }
+   ]
+  }
+ }
+ b10-zaprezonite:{
+  type:BulletType
+  speed:4
+  lifetime:16
+  damage:18
+  status:shocked
+  statusDuration:180
+  smokeEffect:none
+  despawnEffect:none
+  hitEffect:none
+  hittable:false
+  reflectable:false
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:ParticleEffect
+     particles:30
+     sizeFrom:7
+     sizeTo:0
+     interp:circleOut
+     sizeInterp:pow5In
+     length:100
+     lifetime:32
+     cone:30
+     offset:0
+     colorFrom:ffcc44
+     colorTo:ffec0000
+    }
+   ]
+  }
+  spawnBullets:{
+   type:LightningBulletType
+   lightningLength:64
+   damage:20
+  }
+ }
+ b13-enriched-pyrexenos:{
+  type:BulletType
+  speed:4
+  lifetime:16
+  damage:28
+  status:melting
+  statusDuration:180
+  incendAmount:2
+  pierce:true
+  smokeEffect:none
+  despawnEffect:none
+  hitEffect:none
+  hittable:false
+  reflectable:false
+  shootEffect:{
+   type:MultiEffect
+   effects:[
+    {
+     type:ParticleEffect
+     particles:30
+     sizeFrom:7
+     sizeTo:0
+     interp:circleOut
+     sizeInterp:pow5In
+     length:100
+     lifetime:32
+     cone:30
+     offset:0
+     colorFrom:e75506
+     colorTo:f6a33000
+    }
+   ]
+  }
+ }
+}
+drawer:{
+ type:DrawTurret
+ basePrefix:reinforced-
+ parts:[
+  {
+   type:RegionPart
+   suffix:-front
+   progress:warmup
+   moveX:1
+   moveY:4.5
+   moveRot:-30
+   mirror:true
+   under:false
+  }
+  {
+   type:RegionPart
+   suffix:-side
+   progress:warmup
+   moveX:4
+   mirror:true
+   under:true
+  }
+ ]
+}
+requirements:[
+ b06-hard-crystal/120
+ b08-mechanical-alloy/280
+ b10-zaprezonite/90
+]
