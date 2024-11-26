@@ -41,7 +41,7 @@ weapons: [
     shots:1
   }
     chargeSound: short-laser-charge
-    shootY:1
+    shootY:0.5
     bullet:{
       collides: true
       collidesTiles: true
@@ -53,7 +53,7 @@ weapons: [
          width:4
          length:80
          damage:16
-         healPercent:3
+         healPercent:1.5
          collidesTeam: true
          pierce: true
          pierceBuilding: false
