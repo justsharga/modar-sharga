@@ -8,7 +8,3 @@ requirements:[
 ]
 buildCostMultiplier:3
 invert:true
-research:a07a-overflow-controller
-researchCost:[
- b01-iron/12
-]
