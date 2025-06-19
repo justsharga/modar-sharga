@@ -3,9 +3,11 @@ name:Alloyed Tube
 description:Transfering item using air pressure.Has more health than normal item tube.
 category:distribution
 alwaysunlocked:true
+armor:2
 speed:5
 health:170
 noSideBlend:true
+armored:true
 bridgeReplacement:a04a-bridge-tube
 requirements:[
  b01-iron/1
