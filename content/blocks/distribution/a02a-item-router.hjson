@@ -7,7 +7,3 @@ requirements:[
    b01-iron/6
 ]
 buildCostMultiplier:4
-research:a01a-item-tube
-researchCost:[
- b01-iron/20
-]
