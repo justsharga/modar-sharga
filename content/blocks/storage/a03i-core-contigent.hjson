@@ -1,0 +1,17 @@
+type: CoreBlock
+name: Core: Contigent
+description: Core of the base. Heavily armored and stores large amount of items.
+size:6
+armor:4
+squareSprite:false
+unitType:f03a-advance
+health:5800
+itemCapacity:12000
+unitCapModifier:10
+category:effect
+requirements: [
+  b06-hard-crystal/8500
+  b08-mechanical-alloy/10000
+  b10-zaprezonite/8000
+  b11-rexonite/9500
+]
