@@ -1,0 +1,59 @@
+type:BurstDrill
+name:Pressure Drill
+description:Use heat and pressure to extract ore from ground.Requires power and Magnolite to operate.
+size:5
+category:production
+tier:7
+health:780
+drillTime:135
+shake:7
+itemCapacity:40
+drillEffect:{
+ type:MultiEffect
+ effects:[
+  {
+   type:WaveEffect
+   sizeFrom:0
+   sizeTo:40
+   strokeFrom:4
+   strokeTo:0
+   lifetime:75
+  }
+  {
+   type:mineImpact
+  }
+  {
+   type:mineImpactWave
+  }
+ ]
+}
+consumes:{
+   power:8.5
+   liquid:{
+      liquid:c04-magnolite
+      amount:0.5
+      optional:false
+   }
+}
+drillMultipliers:{
+ b01-iron:3.5
+ b07-nexolite:0.75
+}
+hardnessDrillMultiplier:150
+arrows:1
+requirements:[
+   b03-durasteel/40
+   b08-mechanical-alloy/60
+   b10-zaprezonite/20
+]
+squareSprite:false
+research:{
+ parent:a03b-compress-drill
+ objectives:[
+  {
+   type:OnSector
+   preset:silent-passage
+  }
+ ]
+}
+researchCostMultiplier:2

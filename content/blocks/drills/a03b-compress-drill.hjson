@@ -1,0 +1,38 @@
+type:BurstDrill
+name:Compress Drill
+description:Use compressed air to extract ore from ground.Requires power to operate
+size:4
+category:production
+tier:5
+drillTime:180
+shake:5
+itemCapacity:40
+hasLiquids:false
+drillEffect:mineImpact
+consumes:{
+   power:3.5
+}
+drillMultipliers:{
+ b01-iron:3.5
+ b07-nexolite:0.75
+}
+hardnessDrillMultiplier:150
+arrows:2
+arrowSpacing:5.5
+requirements:[
+   b01-iron/20
+   b03-durasteel/12
+   b06-hard-crystal/18
+]
+squareSprite:false
+research:{
+ parent:a02b-ore-scraper
+ objective:[
+  a02b-ore-scraper
+  {
+   type:OnSector
+   preset:patrol-line
+  }
+ ]
+}
+researchCostMultiplier:0.2

@@ -1,0 +1,32 @@
+type:drill
+name:Ore Scraper
+description:Extracting ore from ground by scraping it,slow but it works.
+size:2
+category:production
+tier:3
+health:100
+drillTime:360
+warmupSpeed:0.01
+drawMineItem:false
+rotateSpeed:4
+updateEffct:pulverizeRed
+updateEffectChance:0.03
+drillEffect:mineHuge
+drillEffectChance:0.1
+consumes:{
+   liquid:{
+   liquid:water
+   amount:0.25
+   booster:true
+   optional:true
+   }
+}
+requirements:[
+   b01-iron/20
+]
+liquidBoostIntensity:1.8
+squareSprite:false
+research:a01i-core-fragment
+researchCost:[
+ b01-iron/15
+]
