@@ -7,7 +7,3 @@ requirements:[
    b01-iron/4
 ]
 buildCostMultiplier:3
-research:a03a-tube-junction
-researchCost:[
- b01-iron/8
-]
