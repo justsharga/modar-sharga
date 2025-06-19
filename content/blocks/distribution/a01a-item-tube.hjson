@@ -9,7 +9,3 @@ bridgeReplacement:a04a-bridge-tube
 requirements:[
  b01-iron/1
 ]
-research:a01i-core-fragment
-researchCost:[
- b01-iron/5
-]
