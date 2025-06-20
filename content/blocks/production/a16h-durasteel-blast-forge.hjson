@@ -9,11 +9,11 @@ itemCapacity:30
 heatRequirement:8
 maxEfficiency:1
 squareSprite:false
-outputItem:b03-durasteel/20
+outputItem:b03-durasteel/25
 consumes:{
  power:3.5
  items:[
-  b13-enriched-pyrexenos/2
+  b13-enriched-pyrexenos/1
  ]
  liquid:c05-molten-iron/0.5
 }
