@@ -6,14 +6,15 @@ size:5
 category:power
 squareSprite:false
 powerProduction:30
-outputLiquid:c03-heated-water/0.5
+heatOutput:35
+outputLiquid:c03-heated-water/0.25
 consumes:{
- liquid:water/3
+ liquid:water/1.5
  items:[
-  b13-enriched-pyrexenos/3
+  b13-enriched-pyrexenos/1
  ]
 }
-itemDuration:240
+itemDuration:300
 drawer:{
  type:drawMulti
  drawers:[
