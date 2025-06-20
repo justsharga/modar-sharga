@@ -19,14 +19,15 @@ drawer:{
       suffix:-bottom
       }
       {
-      type:DrawLiquidTile
-      drawLiquid:c02-rusty-water
-      }
-      {
       type:DrawRegion
       suffix:-rotator
       spinSprite:true
-      rotateSpeed:5
+      rotateSpeed:6
+      }
+      {
+      type:DrawLiquidTile
+      drawLiquid:c02-rusty-water
+      padding:0.8
       }
       {
       type:DrawDefault
