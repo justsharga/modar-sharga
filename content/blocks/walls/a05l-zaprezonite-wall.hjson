@@ -11,5 +11,16 @@ requirements:[
    b03-durasteel/2
    b10-zaprezonite/10
 ]
+destroyBullet:{
+ type:BulletType
+ damage:0
+ collides:false
+ speed:0
+ lifetime:5
+ splashDamage:0
+ splashDamageRadius:12
+ healPercent:0.2
+ despawnEffect:healWave
+}
 research:a04l-large-alloy-wall
 researchCostMultiplier:0.5
