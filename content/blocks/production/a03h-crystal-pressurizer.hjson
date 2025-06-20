@@ -28,6 +28,12 @@ drawer:{
         }
         {
          type:DrawDefault
+        }
+        {
+         type:DrawFrames
+         frames:30
+         interval:8
+         sine:true
       }
    ]
 }
