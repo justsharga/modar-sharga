@@ -7,7 +7,7 @@ category:turret
 rotateSpeed:4
 shootSound:shootBig
 reload:40
-outlineColor:565666
+outlineColor:000000
 range:360
 inaccuracy:7
 shootCone:35
@@ -123,6 +123,8 @@ ammoTypes:{
         pierce:true
         pierceBuilding:true
         pierceCap:6
+        colors:[7c4b80,995d9a,ffffff
+        ]
         fragBullets:1
         fragRandomSpread:0
         fragBullet:{
@@ -136,9 +138,9 @@ ammoTypes:{
          collidesGround:false
          collidestTiles:false
          frontColor:ffffff
-         backColor:d6dbe7
-         hitColor:d6dbe7
-         trailColor:d6dbe7
+         backColor:7c4b80
+         hitColor:7c4b80
+         trailColor:7c4b80
          trailRotation:true
          trailWidth:1
          trailLength:4
@@ -150,7 +152,7 @@ ammoTypes:{
 }
 drawer:{
    type:DrawTurret
-   basePrefix:reinforced-
+   basePrefix:fireworks-
 }
 requirements:[
    b03-durasteel/80
