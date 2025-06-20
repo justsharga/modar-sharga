@@ -13,13 +13,13 @@ plans:[
   unit:f01e-scout
   time:1200
   requirements:[
-   b06-hard-crystal/70
-   b08-mechanical-alloy/10
+   b03-durasteel/130
+   b06-hard-crystal/80
   ]
  }
 ]
 requirements:[
- b01-iron/60
+ b01-iron/240
  b03-durasteel/80
  b06-hard-crystal/50
 ]
