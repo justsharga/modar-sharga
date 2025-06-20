@@ -6,8 +6,8 @@ hitSize:77
 armor:4
 speed:0.4
 rotateSpeed:0.75
-legLength:100
-legBaseOffset:32
+legLength:80
+legBaseOffset:15
 legCount:10
 legSpeed:0.3
 legMoveSpace:0.8
@@ -15,7 +15,7 @@ legExtension:-18
 legForwardScl:0.5
 legLengthScl:0.96
 faceTarget:true
-outlineColor:565666
+outlineColor:000000
 abilities:[
  {
   type:SpawnDeathAbility
@@ -161,6 +161,38 @@ weapons:[
     damage:30
     knockback:3
    }
+  }
+ }
+ {
+  x:9
+  y:15
+  name:shrapnel-frag
+  mirror:true
+  alternate:true
+  rotationLimit:50
+  rotateSpeed:5
+  rotate:false
+  reload:45
+  shootSound:shootAltLong
+  shoot:{
+   type:ShootAlternate
+   shots:2
+   barrels:2
+   spread:3
+  }
+  bullet:{
+   type:ShrapnelBulletType
+   length:100
+   width:4
+   damage:28
+   lifetime:20
+   serrations:3
+   serrationWidth:1
+   serrationSpacing:10
+   serrationSpaceOffset:110
+   serrationLenScl:-4
+   fromColor:d1efff
+   toColor:6c9bff
   }
  }
  {
