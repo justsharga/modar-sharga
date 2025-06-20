@@ -13,10 +13,20 @@ drawer:{
    type:drawMulti
       drawers:[
       {
+      type:DrawRegion
+      suffix:-bottom
+      }
+      {
+       type:drawLiquidTile
+       drawLiquid:c01-hydrocharge
+       padding:0.8
+      }
+      {
       type:DrawDefault
       }
       {
       type:DrawWarmupRegion
+      color:ffffff
       }
    ]
 }
@@ -25,6 +35,24 @@ requirements:[
    b03-durasteel/80
    b05-hexaria-glass/20
 ]
+effectChance:0.8
+generateEffectRange:0.25
+generateEffect:{
+   type:ParticleEffect
+   particles:8
+   sizeFrom:3
+   sizeTo:0
+   interp:pow2
+   sizeInterp:pow3In
+   length:10
+   lifetime:210
+   offset:0
+   cone:11
+   layer:88
+   colorFrom:ffffff
+   colorTo:ffffff00
+}
+warmupSpeed:0.02
 liquidCapacity:60
 outputLiquid:water/0.5
 buildCostMultiplier:0.8
