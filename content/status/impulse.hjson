@@ -1,0 +1,6 @@
+name:Impulse
+damage:-2.5
+speedMultiplier:1.2
+opposites:[
+ emp
+]
