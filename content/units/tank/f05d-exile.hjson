@@ -4,21 +4,27 @@ description:Heavy assault tank with a gun for destroying enemy defend line.This 
 health:28600
 armor:5
 speed:0.3
-hitSize:80
-rotateSpeed:0.3
+hitSize:70
+rotateSpeed:0.5
 omniMovement:false
 rotateMoveFirst:true
 faceTarget:false
 itemCapacity:0
-outlineColor:565666
-crushDamage:4
+outlineColor:000000
+crushDamage:2
 treadPullOffset:3
 treadRects:[
  {
-  x:75
-  y:-144
-  width:31
-  height:288
+  x:46
+  y:-86
+  width:22
+  height:187
+ }
+ {
+  x:100
+  y:-137
+  width:26
+  height:275
  }
 ]
 weapons:[
@@ -27,62 +33,41 @@ weapons:[
   x:0
   y:0
   recoil:5
-  shootY:37.5
-  reload:420
-  inaccuracy:1
-  rotateSpeed:0.5
-  shootWarmupSpeed:0.06
-  minWarmup:0.9
-  cooldownTime:110
+  shootY:30.5
+  reload:380
+  rotateSpeed:0.65
   rotate:true
   mirror:false
+  shoot:{
+   type:ShootAlternate
+   spread:10.5
+   shots:2
+   barrels:2
+  }
   shootSound:largeCannon
-  parts:[
-   {
-    type:RegionPart
-    suffix:-blade
-    moveX:8
-    moveY:-7
-    moveRot:-40
-    mirror:true
-    progress:warmup
-    heatProgress:warmup
-    under:true
-   }
-   {
-    type:RegionPart
-    suffix:-front
-    progress:warmup
-    heatProgress:warmup
-    color:989aa4
-    heatColor:ffea00
-    mirror:false
-    under:false
-   }
-  ]
   bullet:{
-  type:BasicBulletType
-  sprite:missile-large
-  width:12
-  height:20
-  speed:4
-  damage:280
-  lifetime:80
-  pierce:true
-  pierceBuilding:true
-  pierceCap:4
-  removeAfterPierce:false
-  frontColor:ffffff
-  backColor:feb380
-  trailColor:feb380
-  hitColor:feb380
-  trailWidth:4
-  trailLength:9
-  smokeEffect:shootSmokeTitan
-  hitEffect:massiveExplosion
-  shootEffect:{
-   type:MultiEffect
-   effects:[
+   type:BasicBulletType
+   sprite:mod-ar-dart
+   shrinkY:0
+   width:22
+   height:25
+   speed:4
+   damage:265
+   lifetime:80
+   pierce:true
+   pierceBuilding:true
+   removeAfterPierce:false
+   frontColor:ffffff
+   backColor:feb380
+   trailColor:feb380
+   hitColor:feb380
+   trailWidth:4
+   trailLength:9
+   smokeEffect:shootSmokeTitan
+   hitEffect:massiveExplosion
+   shootEffect:{
+    type:MultiEffect
+    effects:[
     {
      type:explosionEffect
      lifetime:70
