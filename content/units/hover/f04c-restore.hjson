@@ -1,34 +1,23 @@
-type:mech
+type:flying
+flying:true
 name:Restore
-description:Multi Function Assisting hover unit that specialized on healing allied buildings.
+description:Multi Function Assisting hover unit that specialized on healing allied building and unit.
 health:12500
-speed:1.5
+speed:1.9
 armor:4
-shadowElevation:0.1
-mechFrontSway:0
-mechSideSway:0
-mechStride:0
-hitsize:35
+hitsize:38
 buildSpeed:1.2
-groundLayer:60
-accel:0.1
-rotateSpeed:3
-itemCapacity:60
-mineSpeed:8
+rotateSpeed:2
+itemCapacity:80
+mineSpeed:6
 mineTier:4
-hovering:true
-hoverable:true
 mineFloor:true
 mineWall:true
-flying:false
 useEngineElevation:false
-rotateMoveFirst:true
-lowAltitude:true
 faceTarget:true
-accel:0.1
 controller:DefenderAI
 commands: [move, repair, rebuild, assist,mine]
-outlineColor:565666
+outlineColor:000000
 abilities:[
  {
   type:MoveEffectAbility
@@ -36,129 +25,98 @@ abilities:[
   effect:missileTrailShort
   x:0
   y:-8
-  interval:4
+  interval:1
+  minVelocity:0.9
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:0
+  y:-15
+  interval:1
   minVelocity:0.6
  }
  {
   type:MoveEffectAbility
   teamColor:true
-  effect:missileTrailShort
-  x:0
-  y:-7.5
-  interval:4
+  effect:mineWallSmall
+  x:4
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:-4
+  y:-15
+  interval:1
   minVelocity:0.6
  }
  {
   type:EnergyFieldAbility
-  damage:4
+  damage:56
   reload:320
   range:140
   effectRadius:1.5
   damageEffect:chainLightning
   status:electrified
-  statusDuration:60
+  statusDuration:160
   shootSound:spark
-  maxTargets:15
-  healPercent:3
+  maxTargets:8
+  healPercent:5
  }
  {
  type:UnitSpawnAbility
- spawnTime:1800
+ spawnTime:3200
  unit:repairer-drone
- spawnX:6
- spawnY:-14.5
  }
  {
- type:UnitSpawnAbility
- spawnTime:1800
- unit:repairer-drone
- spawnX:-6
- spawnY:-14.5
+  type:ShieldArcAbility
+  y:0
+  radius:110
+  max:3325
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
  }
  {
- type:ForceFieldAbility
- max:870
- radius:125
- cooldown:600
- regen:0.3
- sides:12
+  type:ShieldArcAbility
+  y:0
+  angleOffset:120
+  radius:110
+  max:3325
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:240
+  radius:110
+  max:3325
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
  }
 ]
 engines:[
  {
   x:0
-  y:-17
+  y:-15
   radius:5
- }
- {
- x:11
- y:-16
- radius:2.5
- }
- {
- x:-11
- y:-16
- radius:2.5
- }
-]
-weapons:[
- {
-  x:0
-  y:19
-  reload:120
-  innacuracy:10
-  mirror:false
-  rotate:false
-  shootSound:blaster
-  shoot:{
-   type:ShootHelix
-   mag:2
-   scl:4
-  }
-  bullet:{
-   type:EmpBulletType
-   damage:58
-   radius:24
-   timeIncrease:1.5
-   timeDuration:100
-   powerDamageScl:1.2
-   healPercent:3
-   shootEffect:hitEmpSpark
-   smokeEffect:shootBigSmoke2
-   lifetime:50
-   backColor:84f491
-   frontColor:ffffff
-   width:12
-   height:12
-   shrinkY:0
-   speed:3
-   trailLength:45
-   trailWidth:5
-   trailColor:84f491
-   splashDamage:45
-   splashDamageRadius:24
-   collidesTeam:true
-   pierceBuilding:true
-   status:electrified
-   trailEffect:missileTrail
-   statusDuration:60
-   hitSound:plasmaboom
-   fragBullets:4
-   fragBullet:{
-    type:EmpBulletType
-    damage:10
-    speed:5
-    lifetime:20
-    healPercent:1
-    trailEffect:missileTrail
-    trailColor:84f491
-    splashDamage:5
-    splashDamageRadius:10
-    collidesTeam:true
-    pierceBuilding:true
-    status:electrified
-    statusDuration:30
-   }
-  }
+  rotation:-90
  }
 ]
