@@ -7,7 +7,7 @@ category:turret
 rotateSpeed:0.8
 shootSound:shootSmite
 reload:210
-outlineColor:565666
+outlineColor:000000
 range:64
 ammoPerShot:5
 shootCone:4
@@ -24,36 +24,6 @@ shoot:{
  shotDelay:3
 }
 ammoTypes:{
- b01-iron:{
-  type:BulletType
-  speed:4
-  lifetime:16
-  damage:20
-  smokeEffect:none
-  despawnEffect:none
-  hitEffect:none
-  hittable:false
-  reflectable:false
-  shootEffect:{
-   type:MultiEffect
-   effects:[
-    {
-     type:ParticleEffect
-     particles:30
-     sizeFrom:7
-     sizeTo:0
-     interp:circleOut
-     sizeInterp:pow5In
-     length:100
-     lifetime:32
-     cone:30
-     offset:0
-     colorFrom:9b9daa
-     colorTo:9b9daa00
-    }
-   ]
-  }
- }
  b06-hard-crystal:{
   type:BulletType
   speed:4
@@ -193,7 +163,7 @@ ammoTypes:{
 }
 drawer:{
  type:DrawTurret
- basePrefix:reinforced-
+ basePrefix:overlay-
  parts:[
   {
    type:RegionPart
@@ -209,7 +179,7 @@ drawer:{
    type:RegionPart
    suffix:-side
    progress:warmup
-   moveX:4
+   moveX:2.5
    mirror:true
    under:true
   }
