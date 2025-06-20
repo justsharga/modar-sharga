@@ -1,0 +1,14 @@
+type:UnitAssemblerModule
+name:Intermediate Upgrade Module
+description:Upgrades the tier of attached reassembler into the second tier.Can be used as payload input when powered
+size:5
+category:units
+tier:2
+consumes:{
+ power:3
+}
+requirements:[
+ b08-mechanical-alloy/320
+ b11-rexonite/280
+ b12-hexahedron-plating/80
+]
