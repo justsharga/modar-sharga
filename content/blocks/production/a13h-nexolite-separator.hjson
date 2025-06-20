@@ -13,7 +13,7 @@ consumes:{
 craftTime:120
 outputItems:[
  b04-mineral-sand/5
- b07-nexolite/3
+ b07-nexolite/5
 ]
 requirements:[
  b01-iron/240
