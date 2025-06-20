@@ -1,0 +1,76 @@
+type:legs
+name:Base Sentry
+hidden:true
+health:80
+hitSize:16
+speed:0
+legLength:12
+legCount:4
+legSpeed:0
+legMoveSpace:0.7
+legExtension:0
+legForwardScl:0.5
+faceTarget:false
+targetable:false
+bounded:false
+isEnemy:false
+hidden:false
+useUnitCap:false
+logicControllable:false
+playerControllable:false
+allowedInPayloads:false
+createWreck:false
+outlineColor:565666
+abilities:[
+ {
+  type:ForceFieldAbility
+  max:780
+  radius:24
+  cooldown:1200
+  regen:0.1
+  sides:8
+ }
+]
+weapons:[
+ {
+  x:0
+  y:0
+  reload:30
+  rotate:true
+  rotateSpeed:1
+  mirror:false
+  shootOnDeath:true
+  parts:[
+   {
+    type:ShapePart
+    x:0
+    y:0
+    radius:32
+    radiusTo:0
+    stroke:3
+    strokeTo:0
+    layer:110
+    circle:true
+    hollow:true
+    color:d1efff
+   }
+   {
+    type:FlarePart
+    x:0
+    y:0
+    sides:2
+    spinSpeed:5
+    color1:d1efff
+    color2:ffffff
+    radius:32
+    followRotation:true
+   }
+  ]
+  bullet:{
+   killShooter:true
+   instantDisappear:true
+   spawnUnit:sentry-missile
+   damage:0
+  }
+ }
+]

@@ -1,0 +1,92 @@
+type:missile
+flying:true
+physics:false
+template:MissileUnitType
+controller:MissileAI
+speed:0
+useUnitCap:false
+engineSize:0
+lifetime:5
+rotateSpeed:0
+hitSize:1
+trailLength:0
+autoFindTarget:true
+health:10
+aimDst:320
+drawCell:false
+outlines:false
+range:2
+hidden:true
+weapons:[
+ {
+  reload:1
+  shake:0
+  shootOnDeath:true
+  mirror:false
+  shootCone:360
+  shake:2
+  bullet:{
+   type:BulletType
+   speed:0
+   despawnEffect:titanSmoke
+   collides:false
+   parts:[
+    {
+     type:ShapePart
+     x:0
+     y:0
+     radius:160
+     radiusTo:0
+     stroke:0
+     strokeTo:2
+     layer:110
+     circle:true
+     hollow:true
+     color:bf92f9
+     progress:life
+    }
+   ]
+   fragBullets:1
+   fragVelocityMin:0
+   fragVelocityMax:0
+   fragBullet:{
+    type:BulletType
+    speed:0
+    lifetime:240
+    damage:0
+    pierce:true
+    pierceBuilding:true
+    splashDamage:320
+    splashDamageRadius:160
+    parts:[
+     {
+      type:ShapePart
+      radius:64
+      radiusTo:180
+      stroke:1
+      layer:110
+      circle:true
+      hollow:true
+      colorFrom:fffff
+      colorTo:ffffff00
+      interp:pow5In
+      progress:life
+     }
+    ]
+    intervalBullets:1
+    bulletInterval:5
+    intervalBullet:{
+     type:ExplosionBulletType
+     despawnShake:5
+     hitShake:2
+     splashDamage:98
+     splashDamageRadius:160
+    }
+   }
+  }
+ }
+]
+immunities:[
+ emp
+ unmoving
+]

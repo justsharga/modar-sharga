@@ -1,0 +1,49 @@
+type:missile
+flying:true
+physics:false
+template:MissileUnitType
+controller:MissileAI
+speed:4
+useUnitCap:false
+engineSize:2.5
+engineOffset:3.5
+lifetime:110
+rotateSpeed:2
+hitSize:6
+trailLength:18
+autoFindTarget:true
+missileAccelTime:5
+circleTarget:false
+faceTarget:true
+health:720
+trailColor:d6dbe7
+aimDst:320
+drawCell:false
+outlines:true
+outlineRadius:2
+outlineColor:565666
+range:2
+hidden:true
+weapons:[
+ {
+  reload:1
+  shake:0
+  shootOnDeath:true
+  mirror:false
+  shootCone:360
+  shake:4
+  bullet:{
+   type:ExplosionBulletType
+   despawnShake:6
+   hitShake:10
+   splashDamage:128
+   splashDamageRadius:16
+   buildingDamageMultiplier:0.2
+   shootEffect:titanSmoke
+  }
+ } 
+]
+immunities:[
+ emp
+ unmoving
+]
