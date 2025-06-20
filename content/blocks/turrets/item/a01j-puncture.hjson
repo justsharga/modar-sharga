@@ -6,96 +6,123 @@ size:3
 category:turret
 rotateSpeed:1.5
 shootSound:shootAlt
-inaccuracy:2
 reload:45
-outlineColor:565666
+outlineColor:000000
 range:280
 shootCone:4
 recoil:2
 shake:1
+shootY:1.25
+ammoPerShot:3
+shoot:{
+ type:ShootHelix
+ scl:3
+ mag:2
+}
 ammoTypes:{
    b01-iron:{
       type:BasicBulletType
+      sprite:circle-bullet
+      shrinkX:0.5
       damage:30
       speed:3
       lifetime:93
-      width:12
-      height:20
+      width:17
+      height:17
       shootEffect:shootBigColor
       smokeEffect:shootBigSmoke
-      ammoMultiplier:2
       pierce:true
-      pierceCap:3
-      pierceBuilding:true
-      frontColor:ffffff
-      backColor:9b9daa
-      trailColor:9b9daa
-      hitColor:9b9daa
-      trailWidth:2.1
+      pierceBuilding:false
+      frontColor:989aa4
+      backColor:989aa4
+      trailColor:989aa4
+      hitColor:989aa4
+      trailWidth:2.2
       trailLength:10
+      trailInterval:2
+      trailParam:3
+      trailEffect:missileTrail
       hitEffect:hitBulletColor
       despawnEffect:hitBulletColor
       buildingDamageMultiplier:0.2
    }
    b05-hexaria-glass:{
       type:BasicBulletType
-      damage:15
+      sprite:circle-bullet
+      reloadMultiplier:0.75
+      shrinkX:0.5
+      damage:18
       speed:3
       lifetime:93
-      width:12
-      height:20
+      width:17
+      height:17
       shootEffect:shootBigColor
       smokeEffect:shootBigSmoke
-      ammoMultiplier:3
-      reloadMultiplier:0.8
-      frontColor:ffffff
-      backColor:9b9daa
-      trailColor:9b9daa
-      hitColor:9b9daa
-      trailWidth:2.1
+      pierce:true
+      pierceBuilding:false
+      frontColor:989aa4
+      backColor:989aa4
+      trailColor:989aa4
+      hitColor:989aa4
+      trailWidth:2.2
       trailLength:10
-      splashDamage:28
-      splashDamageRadius:12
+      trailInterval:2
+      trailParam:3
+      trailEffect:missileTrail
       hitEffect:hitBulletColor
       despawnEffect:hitBulletColor
       buildingDamageMultiplier:0.2
+      fragBullets:4
+      fragBullet:{
+         type:BasicBulletType
+         width:8
+         height:8
+         damage:12
+         speed:1.2
+         lifetime:20
+         frontColor:989aa4
+         backColor:989aa4
+         hitColor:989aa4
+         buildingDamageMultiplier:0.2
+      }
    }
    b06-hard-crystal:{
       type:BasicBulletType
-      damage:42
-      speed:4
-      lifetime:80
-      rangeChange:40
-      width:12
-      hitSize:7
-      height:20
+      sprite:circle-bullet
+      reloadMultiplier:0.6
+      shrinkX:0.5
+      damage:50
+      speed:3
+      lifetime:93
+      width:17
+      height:17
       shootEffect:shootBigColor
       smokeEffect:shootBigSmoke
-      ammoMultiplier:1
       pierce:true
-      pierceCap:3
-      pierceBuilding:true
-      frontColor:ffffff
-      backColor:d70000
-      trailColor:d70000
-      hitColor:d70000
-      trailWidth:2.1
+      pierceBuilding:false
+      frontColor:ff2323
+      backColor:ff2323
+      trailColor:ff2323
+      hitColor:ff2323
+      trailWidth:2.2
       trailLength:10
-      splashDamage:16
-      splashDamageRadius:12
+      trailInterval:2
+      trailParam:3
+      splashDamage:18
+      splashDamageRadius:20
+      trailEffect:missileTrail
       hitEffect:hitBulletColor
       despawnEffect:hitBulletColor
       buildingDamageMultiplier:0.2
-      status:blasted
    }
 }
 drawer:{
    type:DrawTurret
-   basePrefix:reinforced-
+   basePrefix:puncture-
 }
 requirements:[
-   b01-iron/160
-   b03-durasteel/80
+   b01-iron/140
+   b03-durasteel/65
 ]
 coolant:{
    type:ConsumeCoolant
