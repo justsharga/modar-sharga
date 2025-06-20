@@ -6,20 +6,15 @@ health:5200
 armor:25
 absorbLasers:true
 destroyBullet:{
- instantDisappear:true
+ type:BulletType
  damage:0
- fragBullets:8
- fragVelocityMin:1
- fragBullet:{
-  type:BasicBulletType
-  damage:0
-  lifetime:8
-  speed:1
-  pierce:true
-  collidesTeam:true
-  collidesAir:false
-  healPercent:1.5
- }
+ collides:false
+ speed:0
+ lifetime:5
+ splashDamage:0
+ splashDamageRadius:24
+ healPercent:2.5
+ despawnEffect:healWave
 }
 destroyBulletSameTeam:true
 category:defense
