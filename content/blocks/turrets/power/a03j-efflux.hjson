@@ -7,34 +7,102 @@ category:turret
 accurateDelay:false
 inaccuracy:0
 reload:480
-outlineColor:565666
+outlineColor:000000
 range:400
 shootCone:3
-shootWarmupSpeed:5
+shootWarmupSpeed:0.05
+minWarmupSpeed:0.9
 recoil:4
 shake:3
 shootType:{
-   type:RailBulletType
-   shootEffect:instShoot
-   hitEffect:instHit
-   pierceEffect:railHit
-   smokeEffect:smokeCloud
-   pointEffect:instTrail
-   despawnEffect:instBomb
-   pointEffectSpace:10
-   damage:145
+ spawnBullets:[
+  {
+   type:BasicBulletType
+   sprite:large-orb
+   shrinkX:0
+   shrinkY:0
+   width:10
+   height:10
+   speed:2
+   lifetime:200
+   damage:140
    buildingDamageMultiplier:0.2
-   maxDamageFraction:0.6
-   pierceDamageFactor:1
-   length:400
-   hitshake:6
+   frontColor:ffffff
+   backColor:ff6e51
+   trailColor:ff6e51
+   trailEffect:missileTrail
+   trailInterval:4
+   trailWidth:2
+   trailLength:12
+   fragBullets:10
+   fragBullet:{
+    type:BasicBulletType
+    width:4
+    height:6
+    lifetime:2
+    damage:12
+    pierce:true
+    pierceBuilding:true
+    frontColor:ffffff
+    backColor:ff6e51
+    trailColor:ff6e51
+    trailEffect:missileTrail
+    trailInterval:3
+    trailWidth:1.6
+    trailLength:5
+    homingPower:0.2
+    buildingDamageMultiplier:0.2
+   }
+  }
+  {
+   type:BulletType
+   instantsDisappear:true
+   lifetime:0
+   fragBullets:8
+   fragRandomSpread:100
+   fragVelocityMin:1
+   fragBullet:{
+    type:FlakBulletType
+    sprite:missile-large
+    width:8
+    height:12
+    speed:3
+    lifetime:120
+    damage:15
+    frontColor:ffffff
+    backColor:ff6e51
+    trailColor:ff6e51
+    trailWidth:2
+    trailLength:4
+    flakInterval:20
+    homingPower:1.5
+    homingDelay:15
+    homingRange:120
+    fragBullets:1
+    fragRandomSpread:0
+    fragBullet:{
+     type:LaserBulletType
+     width:8
+     length:18
+     sideWidth:2
+     sideLength:40
+     sideAngle:175
+     pierceCap:2
+     lifetime:22
+     colors:[ff6e51,ff866e,ffffff
+     ]
+     buildingDamageMultiplier:0.2
+    }
+   }
+  }
+ ]
 }
 consumes:{
    power:4
 }
 drawer:{
    type:DrawTurret
-   basePrefix:reinforced-
+   basePrefix:efflux-
    parts:[
       {
       type:RegionPart
@@ -42,7 +110,7 @@ drawer:{
       progress:warmup
       heatProgress:warmup
       color:989aa4
-      heatColor:ffea00
+      heatColor:ff6e51
       mirror:false
       under:false
       }
