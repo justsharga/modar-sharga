@@ -1,119 +1,91 @@
 type:tank
 name:Corner
-description:Heavily armored tank equipped with a big frag cannon and two burst missile launchers.
+description:Heavily armored tank equipped with a deadly freezing flamethrower.Less effective against buildings.
 health:12800
-armor:4
-speed:0.6
-hitsize:40
-rotateSpeed:0.7
+armor:6
+speed:0.5
+hitSize:46
+rotateSpeed:0.75
 omniMovement:false
 rotateMoveFirst:true
 itemCapacity:0
-outlineColor:565666
-crushDamage:1
+outlineColor:000000
+crushDamage:0.75
 treadRects:[
  {
-  x:56
-  y:-66
-  width:22
-  height:162
- }
- {
-  x:22
-  y:-84
-  width:22
-  height:184
+  x:60
+  y:-81
+  width:12
+  height:171
  }
 ]
 weapons:[
  {
   x:0
   y:0
-  name:corner-weapon
-  shootSound:mediumCannon
-  reload:145
+  name:corner-gun
+  shootSound:flame
+  reload:45
   mirror:false
   rotate:true
-  rotateSpeed:0.4
-  bullet:{
-   collides:true
-   collidesTiles:true
-   collidesAir:true
-   collidesGround:true
-   type: BasicBulletType
-   sprite:missile-large
-   damage:105
-   speed:5
-   width:10
-   height:16
-   pierce:false
-   shootEffect:shootBigColor
-   smokeEffect:shootSmokeTitan
-   lifetime:60
-   frontColor:ffffff
-   backColor:bc5452
-   trailColor:bc5452
-   hitColor:bc5452
-   trailWidth:3
-   trailLength:16
-   hitEffect:massiveExplosion
-   despawnEffect:hitBulletColor
-      fragBullets:10
-      fragSpread:18
-      fragRandomSpread:0
-      fragVelocityMin:1
-      fragBullet:{
-         type:BasicBulletType
-         sprite:missile-large
-         damage:30
-         speed:6
-         hitsize:6
-         width:6
-         height:10
-         lifetime:5
-         frontColor:ffffff
-         backColor:bc5452
-         hitColor:bc5452
-         trailColor:bc5452
-         trailRotation:true
-         trailWidth:1
-         trailLength:3
-         fragBullets:2
-         fragSpread:30
-         fragRandomSpread:0
-         fragVelocityMin:1
-         fragBullet:{
-            type:laserBulletType
-            width:20
-            length:24
-            damage:38
-            pierce:true
-            pierceBuilding:true
-            pierceCap:6
-            colors:[bc5452,f3e872,ffffff
-            ]
-         }
-      }
+  rotateSpeed:0.8
+  shootWarmupSpeed:0.042
+  minWarmup:0.9
+  inaccuracy:20
+  recoil:0
+  shootCone:4
+  shootY:18
+  parts:[
+   {
+    type:RegionPart
+    suffix:-side
+    progress:warmup
+    heatProgress:warmup
+    color:00000000
+    heatColor:26e2ff
+    mirror:false
+    under:false
    }
- }
- {
- x:17
- y:-13
- name:corner-launcher
- reload:280
-  mirror:true
-  rotate:true
-  alternate:false
-  rotateSpeed:0.6
-  inaccuracy:10
+  ]
   shoot:{
-   shots:2
-   shotDelay:10
+   shots:15
+   shotDelay:3
   }
   bullet:{
-   instantDisappear:true
-   damage:0
-   spawnUnit:breaker-missile
+   type:BulletType
+   speed:4
+   lifetime:16
+   damage:26
+   smokeEffect:none
+   despawnEffect:none
+   hitEffect:none
+   piercing:true
+   pierce:true
+   pierceBuilding:false
+   status:frost
+   statusDuration:180
+   buildingDamageMultiplier:0.85
+   hittable:false
+   reflectable:false
+   shootEffect:{
+    type:MultiEffect
+    effects:[
+     {
+      type:ParticleEffect
+      particles:30
+      sizeFrom:7
+      sizeTo:0
+      interp:circleOut
+      sizeInterp:pow5In
+      length:100
+      lifetime:32
+      cone:30
+      offset:0
+      colorFrom:26e2ff
+      colorTo:2696ff00
+     }
+    ]
+   }
   }
  }
 ]
