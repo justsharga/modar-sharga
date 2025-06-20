@@ -5,12 +5,12 @@ description:Large Airforce armed with four lasers and single deadly continous la
 health:8890
 armor:3
 hitSize:70
-speed:1
-rotateSpeed:1.2
+speed:0.85
+rotateSpeed:1
 itemCapacity:0
 faceTarget:true
 lowAltitude:true
-outlineColor:565666
+outlineColor:000000
 engineSize:0
 abilities:[
  {
@@ -32,110 +32,131 @@ abilities:[
   interval:2
  }
  {
+  y:-5.5
   type:SuppressionFieldAbility
   reload:120
   range:160
-  orbRadius:4
-  orbMidScl:1
+  orbRadius:2.5
  }
 ]
 engines:[
  {
   x:0
-  y:-37.5
+  y:-26
   radius:12
- }
-]
-parts:[
- {
-  type:ShapePart
-  circle:true
-  hollow:true
-  radius:0
-  radiusTo:13
-  stroke:0
-  strokeTo:4
-  layer:110
-  color:bf92f9
- }
- {
-  type:HaloPart
-  haloRadius:0
-  haloRadiusTo:13
-  haloRotateSpeed:0.8
-  sides:12
-  shapes:3
-  radius:0
-  radiusTo:4
-  stroke:0
-  strokeTo:3
-  hollow:false
-  color:bf92f9
-  layer:110
+  rotation:-90
  }
 ]
 weapons:[
  {
   x:0
-  y:36
-  continuous:true
-  reload:400
-  cooldown:120
-  shootSound:beam
-  shoot:{
-   shots:1
-   firstShotDelay:30
-  }
-  rotate:false
+  y:9.5
+  name:sap-teeth
   mirror:false
-  bullet:{
-   type:ContinuousLaserBulletType
-   continuous:true
-   width:12
-   length:310
-   lifetime:330
-   damage:90
-   damageInterval:10
-   fadeTime:50
-   incendSpread:0
-   incendAmount:0
-   incendChance:0
-  }
- }
- {
-  x:10
-  y:36
-  reload:30
-  mirror:true
-  rotate:true
+  rotate:false
+  shootCone:10
+  reload:90
   shootSound:sap
   bullet:{
    type:SapBulletType
-   damage:80
-   length:320
-   width:0.8
+   damage:83
+   length:160
+   width:1
    color:bf92f9
   }
  }
  {
-  x:20
-  y:30
-  reload:30
+  x:11
+  y:11
+  name:sap-teeth
+  reload:45
   mirror:true
-  rotate:true
+  rotate:false
+  shootCone:10
+  baseRotation:5
   shootSound:sap
   bullet:{
    type:SapBulletType
-   damage:80
-   length:320
-   width:0.8
+   damage:72
+   length:158
+   width:1
+   color:bf92f9
+  }
+ }
+ {
+  x:15.5
+  y:28.5
+  name:sap-teeth
+  reload:20
+  mirror:true
+  rotate:false
+  shootCone:20
+  baseRotation:10
+  shootSound:sap
+  bullet:{
+   type:SapBulletType
+   damage:54
+   length:142
+   width:1
    color:bf92f9
   }
  }
  {
   x:0
   y:0
-  reload:1200
+  name:plasma-charger
+  reload:900
+  rotate:false
+  mirror:false
+  shootCone:360
+  shootY:-5.5
+  shootSound:laserblast
+  chargeSound:lasercharge2
+  parts:[
+   {
+    type:ShapePart
+    circle:true
+    hollow:false
+    y:-5.5
+    radius:0
+    radiusTo:9
+    stroke:0
+    strokeTo:5
+    layer:110
+    color:bf92f9
+    progress:charge
+   }
+  ]
+  shoot:{
+   firstShotDelay:60
+  }
+  bullet:{
+   type:BulletType
+   maxRange:120
+   instantDisappear:true
+   fragBullets:4
+   fragRandomSpread:0
+   fragSpread:90
+   fragBullet:{
+    type:LaserBulletType
+    length:240
+    width:22
+    damage:480
+    lifetime:60
+    sideAngle:10
+    sideWidth:0
+    sideLength:0
+    largeHit:true
+    lightColor:bf92f9
+    colors:[8a73c6,bf92f9,ffffff
+    ]
+   }
+  }
+ }
+ {
+  x:0
+  y:0
+  reload:3600
   mirror:false
   rotate:false
   shootCone:5
