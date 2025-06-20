@@ -3,6 +3,7 @@ name:Large Durasteel Wall
 description:Protect allied building from enemy attack.Has a larger size
 size:2
 health:1360
+armor:3
 category:defense
 requirements:[
    b03-durasteel/24
