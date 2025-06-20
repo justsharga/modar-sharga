@@ -1,42 +1,53 @@
 type:tank
 name:Threaten
-description:Slow manuverable tank eqquiped with a turret that shoots two missile.
+description:Slow manuverable tank eqquiped with a turret that shoots a laser beam.
 health:2680
-armor:4
-speed:0.5
-hitSize:25
-rotateSpeed:0.9
+armor:5
+speed:0.4
+hitSize:30.5
+rotateSpeed:0.7
 omniMovement:false
 rotateMoveFirst:true
 itemCapacity:0
-outlineColor:565666
+outlineColor:000000
 crushDamage:0.5
 treadRects:[
  {
-  x:24
-  y:-45
-  width:16
-  height:90
+  x:36
+  y:-54
+  width:11
+  height:108
  }
 ]
 weapons:[
  {
   x:0
   y:0
-  shoot:{
-   shots:2
-   shotDelay:25
-  }
   name:threathen-weapon
-  shootSound:smallMissile
-  reload:210
-  mirror:false
+  recoilTime:120
+  shootY:10.5
+  rotateSpeed:0.75
   rotate:true
-  rotateSpeed:0.7
+  mirror:false
+  continuous:true
+  alwaysContinuous:true
+  shootSound:laserbeam
   bullet:{
-   instantDisappear:true
-   damage:0
-   spawnUnit:breaker-missile
+   type:ContinuousFlameBulletType
+   width:2.5
+   length:120
+   damage:6
+   damageInterval:10
+   hitEffect:none
+   despawnEffect:none
+   colors:[7c1c1c,a81616,cb1515,ff1d1d,ffffff
+   ]
+   flareColor:ff1d1d
+   lightColor:ff1d1d
+   puddles:1
+   puddleRange:2
+   puddleAmount:8
+   puddleLiquid: c04-magnolite
   }
  }
 ]
