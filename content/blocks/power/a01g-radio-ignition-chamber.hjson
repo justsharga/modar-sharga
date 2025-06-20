@@ -1,17 +1,17 @@
 type:ConsumeGenerator
 name:Radio Ignition Chamber
 description:Releases radiation and heat from Pyrexenos to create small amount of power.
-size:3
-health:350
+size:2
+health:280
 category:power
 squareSprite:false
-powerProduction:2
+powerProduction:1.5
 consumes:{
    items:[
    b02-pyrexenos/1
    ]
 }
-itemDuration:180
+itemDuration:150
 drawer:{
    type:DrawMulti
    drawers:[
@@ -23,10 +23,10 @@ drawer:{
       type:DrawSoftParticles
       color:c85c51
       color2:ff795e
-      alpha:0.4
-      particleRad:12
-      particleSize:8
-      particleLife:120
+      alpha:0.5
+      particleRad:8
+      particleSize:7
+      particleLife:40
       particles:20
       }
       {
@@ -35,7 +35,7 @@ drawer:{
    ]
 }
 requirements:[
-   b01-iron/180
+   b01-iron/90
 ]
 buildCostMultiplier:0.8
 research:a01i-core-fragment
