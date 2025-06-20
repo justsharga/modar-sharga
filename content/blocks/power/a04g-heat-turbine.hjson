@@ -9,7 +9,7 @@ minEfficiency:8
 generateEffect:turbinegenerate
 effectChance:0.4
 hasLiquids:true
-outputLiquid:c03-heated-water/0.222222222
+outputLiquid:c03-heated-water/0.277777778
 liquidCapacity:30
 displayEfficiencyScale:0.111111111
 displayEfficiency:false
