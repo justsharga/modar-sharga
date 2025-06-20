@@ -1,7 +1,7 @@
 type:item
 name:Nexolite
 description:Cold strong ore scattered around ground.Goodfor coolant and making advanced technologies.
-cost:3
+cost:5
 hardness:3
 healthScaling:3
 color:568eff
