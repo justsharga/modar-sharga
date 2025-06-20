@@ -1,34 +1,33 @@
 type:flying
 flying:true
 name:Rift
-description:Air unit that fires four homing explosion into ground target
+description:Air unit that fires two homing explosion into ground target
 health:180
 armor:1
 speed:2.8
 hitsize:8
 targetAir:false
-outlinecolor:565666
+outlineColor:000000
 engines: [
    {
-    x: 0
-    y: -6.0
-    engineSize:5.0
-    engineOffset:5.0
-    engineLayer:-1.0
+    x:0
+    y:-4.5
+    radius:3
+    rotation:-90
    }
 ]
 weapons: [
 {
-    x:6.0
-    y:1.0
-    reload:165
+    x:5
+    y:4
+    reload:135
     shootCone:45
     mirror:true
     alternate:true
     rotate:false
     shootSound:mediumCannon
     inaccuracy:3
-    shoot: {
+    shoot:{
     shotDelay:0
     shots:2
   }
@@ -41,17 +40,17 @@ weapons: [
          collidesAir:false
          collidesGround:true
          type: BasicBulletType
-         damage:16
+         damage:12
          speed:3.0
          width:5
          hitSize:7
-         height:13
+         height:12
          shootEffect:shootBigColor
          smokeEffect:shootBigSmoke
          ammoMultiplier:1
          lifeTime:18
          splashDamageRadius:12
-         splashDamage:18
+         splashDamage:10
          scaledSplashDamage:false
          homingPower:0.3
          homingDelay:8
