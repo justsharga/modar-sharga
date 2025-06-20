@@ -6,8 +6,10 @@ health:490
 hitSize:16
 speed:2
 isEnemy:false
+physics:false
+lowAltitude:true
 drag:0.4
-outlineColor:565666
+outlineColor:000000
 abilities:[
  {
   type:EnergyFieldAbility
