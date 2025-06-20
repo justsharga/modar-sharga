@@ -1,93 +1,49 @@
 type:legs
 name:Spy
-description:Long ranged sniper mech mounted with knockback turret.
-health:470
+description:Long ranged sniper mech mounted with shrapnel turret.
+health:580
 hitSize:20.5
-armor:2
-legLength:45
+armor:4
+speed:1.2
+legLength:43
 legCount:6
-legSpeed:0.8
-legMoveSpace:0.9
-legExtension:-0.1
-legForwardScl:0.5
+legSpeed:0.5
+legMoveSpace:1.2
+legPairOffset:3
+legBaseOffset:5
+legExtension:-4
+legLengthScl:0.96
+legForwardScl:0.8
 faceTarget:true
-outlineColor:565666
+outlineColor:000000
 weapons:[
  {
   x:0
-  y:-3
+  y:-5
   name:spy-gun
-  mirror:true
-  alternate:false
-  reload:460
-  recoil:2
+  mirror:false
+  rotate:false
+  reload:45
   shootSound:lancerLaserShoot
-  bullet:{
-   type:PointBulletType
-   speed:15
-   lifetime:30
-   damage:10
-   pierce:true
-   pierceCap:2
-   width:4
-   height:12
-   knockback:1
-   frontColor:ffffff
-   backColor:ffffff
-   trailEffect:{
-    type:particleEffect
-    line:true
-    rotWithParent:true
-    length:0
-    particles:1
-    cone:360
-    strokeFrom:0.1
-    strokeTo:1.2
-    lenFrom:1
-    lenTo:1
-    colorFrom:ffffff
-    colorTo:00000000
-   }
-   trailChance:0.9
-   trailSpacing:0.5
+  shoot:{
+   type:ShootSpread
+   shots:2
+   spread:6
   }
- }
- {
- x:7
- y:3
-  name:scout-sniper
-  mirror:true
-  alternate:true
-  reload:320
-  recoil:4
-  shootSound:mediumCannon
   bullet:{
-   type:PointBulletType
-   speed:15
-   lifetime:30
-   damage:46
-   pierce:true
-   pierceCap:2
+   type:ShrapnelBulletType
+   length:88
    width:4
-   height:12
-   frontColor:ffffff
-   backColor:ffffff
-   trailEffect:{
-    type:particleEffect
-    line:true
-    rotWithParent:true
-    length:0
-    particles:1
-    cone:360
-    strokeFrom:0.1
-    strokeTo:1.2
-    lenFrom:1
-    lenTo:1
-    colorFrom:d56662
-    colorTo:00000000
-   }
-   trailChance:1
-   trailSpacing:0.1
+   damage:30
+   lifetime:30
+   serrations:4
+   serrationWidth:3
+   serrationSpacing:22
+   serrationSpaceOffset:130
+   serrationLenScl:4
+   fromColor:d1efff
+   pierceBuilding:true
+   toColor:6c9bff
   }
  }
 ]
