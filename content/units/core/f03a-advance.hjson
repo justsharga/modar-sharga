@@ -1,0 +1,54 @@
+type:flying
+flying:true
+name:Advance
+description:Defender of Contigent core.Capable of mining variety of resources and heals allied building.
+controller:BuilderAI
+health:360
+armor:2
+mineFloor:true
+mineWall:true
+hittable:false
+killable:true
+targetable:false
+speed:5
+hitsize:15
+isEnemy:false
+mineSpeed:8
+mineTier:3
+buildSpeed:0.8
+drag:0.6
+itemCapacity:120
+outlineColor:000000
+engineSize:0
+engines:[
+ {
+  x:0
+  y:-7.5
+  radius:2
+  rotation:-90
+ }
+]
+weapons:[
+ {
+  type:RepairBeamWeapon
+  x:0
+  y:7.5
+  beamWidth:0.7
+  aimDst:0
+  shootCone:15
+  repairSpeed:1.8
+  fractionRepairSpeed:0.05
+  mirror:false
+  rotate:false
+  autoTarget:false
+  targetUnits:false
+  targetBuildings:true
+  controllable:true
+  laserColor:ffd37f
+  healColor:ffd37f
+  bullet:{
+   type:BulletType
+   maxRange:60
+  }
+ }
+]
