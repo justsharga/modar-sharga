@@ -5,6 +5,7 @@ health:198
 size:2
 category:liquid
 liquidCapacity:100
+liquidPadding:0.8
 solid:true
 underbullets:false
 requirements:[
