@@ -7,7 +7,7 @@ leaks:true
 underBullets:true
 liquidCapacity:20
 liquidPressure:1.03
-botColor:565666
+botColor:000000
 requirements:[
    b05-hexaria-glass/2
 ]
