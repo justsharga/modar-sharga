@@ -1,29 +1,20 @@
-type:mech
-name:Search
-description:little assiting bot armed with repair gun
+type:flying
+flying:true
+name:Explore
+description:little assiting bot eqquiped with small arc shield generator.
 health:380
-speed:4
+speed:2.1
+drag:0
 armor:1
-shadowElevation:0.1
-mechFrontSway:0
-mechSideSway:0
-mechStride:0
-hitsize:24
-buildSpeed:0.7
-groundLayer:60
+hitSize:14.5
+buildSpeed:0.6
 accel:0.1
-rotateSpeed:4
+rotateSpeed:2
 itemCapacity:30
-hovering:true
-hoverable:true
-flying:false
 useEngineElevation:false
-rotateMoveFirst:true
-lowAltitude:true
-accel:0.1
-controller:RepairAI
-commands: [move, repair, rebuild, assist]
-outlineColor:565666
+controller:DefenderAI
+commands: [move, rebuild, assist]
+outlineColor:000000
 abilities:[
  {
   type:MoveEffectAbility
@@ -35,69 +26,61 @@ abilities:[
   minVelocity:0.6
  }
  {
-  type:EnergyFieldAbility
-  damage:6
+  type:StatusFieldAbility
+  effect:overdrive
+  duration:180
   reload:210
-  range:95
-  effectRadius:1
-  damageEffect:chainLightning
-  status:electrified
-  statusDuration:60
-  shootSound:spark
-  maxTargets:6
-  healPercent:2
+  range:40
  }
  {
- type:UnitSpawnAbility
- spawnTime:1200
- unit:heal-pod
- spawnX:0
- spawnY:2.5
+  type:RepairFieldAbility
+  amount:4
+  reload:330
+  range:48
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  radius:45
+  max:120
+  regen:0.01
+  cooldown:300
+  width:3
+  angle:80
+  color:84f491
+  whenShooting:false
  }
 ]
 engines:[
  {
   x:0
-  y:-6.5
+  y:-5
   radius:3.5
+  rotation:-90
  }
 ]
-weapons:[
+parts:[
  {
-  x:3
-  y:0
-  reload:240
+  type:HoverPart
+  x:6
+  y:6
+  radius:4
+  stroke:2.5
+  phase:80
+  layerOffset:-0.001
   mirror:true
-  rotate:false
-  alternate:true
-  shootSound:blaster
-  bullet:{
-   type:EmpBulletType
-   damage:22
-   radius:20
-   timeIncrease:1.5
-   timeDuration:100
-   powerDamageScl:1.2
-   healPercent:2
-   shootEffect:hitEmpSpark
-   smokeEffect:shootBigSmoke2
-   lifetime:30
-   backColor:84f491
-   frontColor:ffffff
-   width:5
-   height:5
-   shrinkY:0
-   speed:4
-   trailLength:20
-   trailWidth:4
-   trailColor:84f491
-   splashDamage:8
-   splashDamageRadius:20
-   collidesTeam:true
-   status:electrified
-   statusDuration:60
-   hitSound:plasmaboom
-  }
+  color:84f491
+ }
+ {
+  type:HoverPart
+  x:6
+  y:-6
+  radius:4
+  stroke:2.5
+  phase:80
+  layerOffset:-0.001
+  mirror:true
+  color:84f491
  }
 ]
 research:a08k-helper-recrafter
