@@ -1,48 +1,81 @@
 type:legs
 name:Sniper
-description:Heavy mech mounted with heavy assault railgun.Capable to place assisting sentry after some period of time.
+description:Heavy mech mounted with two small assault railgun and two shrapnel frag turret.Capable to place assisting sentry after some period of time.
 health:1980
-hitSize:20.5
-armor:4
+hitSize:26
+armor:12
 speed:0.6
-legLength:78
-legBaseOffset:5
-legCount:8
-legSpeed:0.45
-legMoveSpace:0.8
+legLength:57
+legBaseOffset:7
+legCount:6
+legSpeed:0.7
+legMoveSpace:1.2
+legPairOffset:4
 legExtension:-15
-legForwardScl:0.5
-legLengthScl:0.96
+legForwardScl:0.8
+legLengthScl:1
 faceTarget:true
-outlineColor:565666
+outlineColor:000000
 weapons:[
  {
-  x:0
-  y:-16
+  x:7.5
+  y:6
   name:railgun
-  reload:320
-  mirror:false
-  recoil:3
-  shake:15
-  shoot:{
-   firstShotDelay:30
-  }
-  chargeSound:lasercharge2
-  shootSound:laserblast
+  reload:60
+  mirror:true
+  alternate:true
+  rotationLimit:65
+  rotateSpeed:4
+  recoil:2
+  shake:2
+  shootSound:bolt
   bullet:{
    type:BasicBulletType
    sprite:shell
-   width:10
-   height:10
+   width:5
+   height:5
    speed:20
    lifetime:12
-   damage:180
+   damage:68
    knockback:2
    pierce:true
    pierceBuilding:true
-   trailWidth:3
+   trailWidth:1
    trailLength:12
    trailEffect:disperseTrail
+  }
+ }
+ {
+  x:7
+  y:-5.5
+  shootY:4
+  name:shrapnel-frag
+  mirror:true
+  alternate:true
+  rotationLimit:50
+  rotateSpeed:5
+  rotate:false
+  reload:25
+  shootSound:shootAltLong
+  shoot:{
+   type:ShootAlternate
+   shots:2
+   barrels:2
+   spread:3
+  }
+  bullet:{
+   type:ShrapnelBulletType
+   length:88
+   width:3
+   damage:14
+   lifetime:20
+   serrations:3
+   serrationWidth:1
+   serrationSpacing:10
+   serrationSpaceOffset:110
+   serrationLenScl:-4
+   fromColor:d1efff
+   toColor:6c9bff
   }
  }
  {
