@@ -1,0 +1,62 @@
+type:ShieldWall
+name:Supreme Wall
+description:Very well constructed wall capable to absorbs laser by itself and also projecting a shield when powered. Discharges into electric orb and explode to deal emp at all nearby enemy unit when destroyed.
+size:2
+health:8280
+category:defense
+squareSprite:false
+absorbLasers:true
+conductivePower:true
+shieldHealth:720
+shieldCooldown:180
+regenSpeed:2
+consumes:{
+ power:0.5
+}
+destroyBullet:{
+type:BulletType
+speed:0
+fragBullets:1
+fragVelocityMin:0
+fragVelocityMax:0
+fragBullet:{
+  type:BasicBulletType
+  sprite:circle-bullet
+  width:8
+  height:8
+  shrinkX:0
+  shrinkY:0
+  damage:0
+  collides:false
+  speed:0
+  lifetime:30
+  despawnEffect:none
+  intervalBullets:4
+  bulletInterval:5
+  intervalBullet:{
+   type:LightningBulletType
+   damage:8
+   color:bf92f9
+   lightningLength:8
+  }
+  fragBullets:1
+  fragVelocityMin:0
+  fragVelocityMax:0
+  fragBullet:{
+   type:BulletType
+   speed:0
+   lifetime:1
+   damage:0
+   splashDamage:0
+   splashDamageRadius:76
+   status:emp
+   statusDuration:180
+   despawnEffect:overdriveWave
+  }
+ }
+}
+destroyBulletSameTeam:true
+requirements:[
+ b11-rexonite/4
+ b12-hexahedron-plating/20
+]
