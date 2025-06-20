@@ -4,64 +4,51 @@ name:Adapt
 description:Defender of Pieces core.Capable of mining some resources and heal allied building
 controller:BuilderAI
 health:280
-armor:1
+armor:2
 mineFloor:true
 mineWall:true
+hittable:false
+killable:true
+targetable:false
 speed:5
-hitsize:7
+hitsize:14
 isEnemy:false
 mineSpeed:7
 mineTier:2
 buildSpeed:0.8
 drag:0.4
-itemCapacity:80
-outlineColor:565666
+itemCapacity:75
+outlineColor:000000
+engineSize:0
 engines: [
    {
     x: 0
-    y: -7.0
-    engineSize:4.5
-    engineOffset:5.0
-    engineLayer:-1.0
+    y: -5.5
+    radius:3.5
+    rotation:-90
    }
 ]
 weapons: [
 {
+    type:RepairBeamWeapon
     x:0
-    y:1.5
-    reload:90
+    y:6.5
+    beamWidth:0.7
+    aimDst:0
+    shootCone:15
+    repairSpeed:0.8
+    fractionRepairSpeed:0.03
     mirror:false
     rotate:false
-    alternate:true
-    shootSound:laser
-    inaccuracy:2
-    shoot: {
-  firstShotDelay: 80
-    shotDelay: 10
-    shots:2
-  }
-    chargeSound: short-laser-charge
+    autoTarget:false
+    targetUnits:false
+    targetBuildings:true
+    controllable:true
+    laserColor:ffd37f
+    healColor:ffd37f
     bullet:{
-      collides: true
-      collidesTiles: true
-      collidesAir: true
-      collidesGround: true
-      type: LaserBulletType
-      colors: [ d89b5c, f3e872, ffffff
-      ]
-         width:6
-         length:95
-         damage:22
-         healPercent:3
-         collidesTeam:true
-         pierce:true
-         pierceBuilding:false
-         pierceCap:2
-         chargeEffect:none
-         shootEffect:shootSmall
-         smokeEffect:shootSmallSmoke
-         hitColor:85c278
-         buildingDamageMultiplier:0.1
+      type:BulletType
+      maxRange:60
     }
   }
 ]
