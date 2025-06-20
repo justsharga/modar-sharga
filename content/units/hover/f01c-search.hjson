@@ -1,17 +1,17 @@
 type:mech
 name:Search
-description:little assiting bot armed with repair gun
-health:210
-speed:2.8
+description:little assiting bot for helping the assault type unit. Sometime will discharge some electric shock current to the surrounding area.
+health:230
+speed:1.8
+drag:0
 armor:1
 shadowElevation:0.1
 mechFrontSway:0
 mechSideSway:0
 mechStride:0
 hitsize:8
-buildSpeed:0.6
+buildSpeed:0.3
 groundLayer:60
-accel:0.1
 rotateSpeed:6
 itemCapacity:20
 flying:false
@@ -20,9 +20,9 @@ hoverable:true
 useEngineElevation:false
 rotateMoveFirst:true
 lowAltitude:true
-accel:0.1
-commands: [move, repair, rebuild, assist]
-outlineColor:565666
+accel:0.05
+commands: [move, rebuild, assist]
+outlineColor:000000
 abilities:[
  {
   type:MoveEffectAbility
@@ -34,61 +34,68 @@ abilities:[
   minVelocity:0.6
  }
  {
-  type:EnergyFieldAbility
-  damage:4
-  reload:180
-  range:100
-  effectRadius:0.9
-  damageEffect:chainLightning
-  status:electrified
-  statusDuration:60
-  shootSound:spark
-  maxTargets:8
-  healPercent:1
+  type:StatusFieldAbility
+  effect:overdrive
+  duration:180
+  reload:210
+  range:32
+ }
+ {
+  type:RepairFieldAbility
+  amount:1
+  reload:240
+  range:32
  }
 ]
 engines:[
  {
   x:0
-  y:-6.5
-  radius:2.0
+  y:-2.5
+  radius:1.5
+  rotation:-90
+ }
+]
+parts:[
+ {
+  type:HoverPart
+  x:2.5
+  y:2
+  radius:2
+  stroke:1.5
+  phase:80
+  layerOffset:-0.001
+  mirror:true
+  color:84f491
+ }
+ {
+  type:HoverPart
+  x:2.5
+  y:-2.5
+  radius:2
+  stroke:1.5
+  phase:80
+  layerOffset:-0.001
+  mirror:true
+  color:84f491
  }
 ]
 weapons:[
  {
   x:0
   y:0
-  name:search-weapon
-  reload:240
+  shootY:0
+  reload:300
   mirror:false
-  rotate:false
-  shootSound:blaster
+  shootSound:arc
   bullet:{
-   type:EmpBulletType
-   damage:22
-   radius:20
-   timeIncrease:1.5
-   timeDuration:100
-   powerDamageScl:1.2
-   healPercent:2
-   shootEffect:hitEmpSpark
-   smokeEffect:shootBigSmoke2
-   lifetime:30
-   backColor:84f491
-   frontColor:ffffff
-   width:10
-   height:10
-   shrinkY:0
-   speed:4
-   trailLength:20
-   trailWidth:8
-   trailColor:84f491
-   splashDamage:8
-   splashDamageRadius:20
+   type:BulletType
+   speed:0
+   lifetime:0
+   lightning:10
+   lightningColor:84f491
    collidesTeam:true
-   status:electrified
-   statusDuration:60
-   hitSound:plasmaboom
+   healPercent:0.8
+   damage:8
   }
  }
 ]
