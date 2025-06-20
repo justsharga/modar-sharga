@@ -43,3 +43,7 @@ weapons:[
   }
  } 
 ]
+immunities:[
+ emp
+ unmoving
+]
