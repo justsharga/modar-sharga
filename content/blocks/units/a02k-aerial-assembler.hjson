@@ -23,7 +23,7 @@ requirements:[
  b06-hard-crystal/70
  b08-mechanical-alloy/30
 ]
-builCostMultiplier:0.8
+buildCostMultiplier:0.8
 research:{
  parent:a01k-striker-assembler
  objectives:[
