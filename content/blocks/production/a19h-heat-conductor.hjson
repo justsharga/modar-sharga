@@ -1,0 +1,25 @@
+type:HeatConductor
+name:Heat Conductor
+description:Accepts heat and transfres it to the front of the block.
+category:crafting
+size:1
+regionRotated1:1
+drawer:{
+ type:DrawMulti
+ drawers:[
+  {
+   type:DrawDefault
+  }
+  {
+   type:DrawHeatInput
+   suffix:-heat
+  }
+  {
+   type:DrawHeatOutput
+  }
+ ]
+}
+requirements:[
+ b06-hard-crystal/4
+ b08-mechanical-alloy/8
+]

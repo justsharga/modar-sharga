@@ -1,0 +1,13 @@
+type:incinerator
+name:Item Burner
+description:burns and destroy any inputted item when activated with power.
+size:1
+category:crafting
+squareSprite:false
+consumes:{
+ power:0.25
+}
+requirements:[
+ b03-durasteel/8
+ b10-zaprezonite/4
+]
