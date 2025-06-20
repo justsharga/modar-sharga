@@ -4,12 +4,12 @@ description:Slowly separate radioactive and flamable Pyrexenos from impurities.
 health:1120
 size:5
 category:crafting
-craftTime:600
+craftTime:300
 itemCapacity:30
 heatRequirement:10
 maxEfficiency:4
 squareSprite:false
-outputItem:b13-enriched-pyrexenos/1
+outputItem:b13-enriched-pyrexenos/2
 consumes:{
  power:3.5
  items:[
