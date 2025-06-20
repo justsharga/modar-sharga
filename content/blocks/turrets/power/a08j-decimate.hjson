@@ -3,10 +3,11 @@ name:Decimate
 description:Advanced upgrade from Efflux.Designed to specialize at decimating a single target.
 health:1024
 size:5
+rotateSpeed:0.8
 category:turret
 accurateDelay:false
 reload:500
-outlineColor:565666
+outlineColor:000000
 range:600
 shootCone:2
 shootWarmupSpeed:0.005
@@ -14,10 +15,6 @@ minWarmupSpeed:0.9
 recoil:4
 shake:5
 shootSound:railgun
-shoot:{
- firstShotDelay:200
-}
-
 shootType:{
    type:RailBulletType
    shootEffect:instShoot
@@ -26,7 +23,6 @@ shootType:{
    smokeEffect:smokeCloud
    pointEffect:instTrail
    despawnEffect:instBomb
-   chargeEffect:lancerLaserCharge
    pointEffectSpace:30
    damage:1025
    buildingDamageMultiplier:0.1
@@ -40,7 +36,7 @@ consumes:{
 }
 drawer:{
  type:DrawTurret
- basePrefix:reinforced-
+ basePrefix:decimate-
  parts:[
     {
       type:RegionPart
@@ -49,19 +45,6 @@ drawer:{
       moveY:26.25
       mirror:false
       under:true
-    }
-    {
-      type:ShapePart
-      y:30
-      radius:0
-      radiusTo:3
-      stroke:2
-      strokeTo:3
-      layer:110
-      circle:true
-      hollow:false
-      color:f3e872
-      progress:charge
     }
     {
       type:ShapePart
