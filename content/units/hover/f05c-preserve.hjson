@@ -4,23 +4,23 @@ name:Preserve
 description:Highest tier we can produce at the support unit tree.Specialized for passive buffs and capable for making some kind of helper bot.
 health:23200
 hitSize:52
-speed:0.5
-armor:5
+speed:0.6
+rotateSpeed:0.75
+armor:8
+lowAltitude:true
+outlineColor:000000
 engines:[
  {
-  x:0
-  y:-22
-  radius:8
+  x:6
+  y:-21
+  radius:6
+  rotation:-135
  }
  {
-  x:21.5
-  y:-27
+  x:-6
+  y:-21
   radius:6
- }
- {
-  x:-21.5
-  y:-27
-  radius:6
+  rotation:45
  }
 ]
 abilities:[
@@ -29,7 +29,7 @@ abilities:[
   teamColor:true
   effect:missileTrailShort
   x:0
-  y:-22
+  y:-21
   interval:5
   minVelocity:0.3
  }
@@ -42,65 +42,93 @@ abilities:[
   sides:12
  }
  {
-  type:UnitSpawnAbility
-  spawnTime:2400
-  unit:resource-drone
-  spawnX:15.5
-  spawnY:-9.5
- }
- {
-  type:UnitSpawnAbility
-  spawnTime:2400
-  unit:builder-drone
-  spawnX:-15.5
-  spawnY:-9.5
- }
- {
-  type:UnitSpawnAbility
-  spawnTime:2400
-  unit:repairer-drone
-  spawnX:12.5
-  spawnY:16
- }
- {
-  type:UnitSpawnAbility
-  spawnTime:2400
-  unit:support-drone
-  spawnX:-12.5
-  spawnY:16
- }
- {
   type:RepairFieldAbility
   amount:4
   reload:480
   range:280
  }
+ {
+  type:StatusFieldAbility
+  effect:impulse
+  duration:300
+  reload:1200
+  range:64
+ }
 ]
 weapons:[
  {
-  x:0
+  name:missile
+  x:20
   y:0
-  reload:600
-  mirror:false
+  shootY:17.5
+  xRand:3
+  shootSound:malignShoot
+  reload:180
+  inaccuracy:3
+  mirror:true
   rotate:false
-  shootCone:360
+  shootCone:3
+  recoil:1
+  shootWarmupSpeed:0.08
+  minWarmup:0.9
   shoot:{
-   type:shootSpread
-   shots:180
-   shotDelay:1
-   spread:2
+   shots:3
+   shotDelay:10
   }
+  parts:[
+   {
+    type:RegionPart
+    suffix:-top
+    progress:warmup
+    moveX:5
+    mirror:false
+   }
+  ]
   bullet:{
-   type:LaserBulletType
-   colors:[85c278, 9be98b, ffffff
-   ]
-   width:5
-   length:120
-   damage:12
-   healPercent:3
-   collidesTeam:true
-   pierce:true
-   pierceBuilding:true
+   type:MissileBulletType
+   width:11
+   height:11
+   speed:3
+   weaveMag:4
+   weaveScale:2
+   lifetime:80
+   damage:58
+   frontColor:84f491
+   backColor:84f491
+   trailLength:18
+   trilWidth:4.7
+   trailEffect:missileTrail
+   trailColor:84f491
   }
  }
+ {
+  name:blaster
+  x:0
+  y:-9
+  reload:270
+  shootY:3
+  recoil:3
+  shootSound:lancerShoot
+  mirror:false
+  rotate:true
+  rotateSpeed:0.85
+  bullet:{
+   type:LaserBulletType
+   length:240
+   width:6
+   damage:88
+   lifetime:120
+   sideAngle:7
+   sideWidth:2
+   sideLength:0
+   largeHit:true
+   lightColor:bf92f9
+   colors:[62ae7f,84f491,ffffff
+   ]
+  }
+ }
+]
+immunities:[
+ emp
+ unmoving
 ]
