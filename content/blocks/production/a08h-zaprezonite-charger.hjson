@@ -4,6 +4,7 @@ description:Charges up iron using Hydrocharge to get highly charged Zaprezonite.
 size:4
 health:850
 category:crafting
+ignoreLiquidFullness:true
 squareSprite:false
 itemCapacity:20
 consumes:{
