@@ -7,13 +7,13 @@ category:turret
 rotateSpeed:0.8
 shootSound:missileLaunch
 reload:560
-outlineColor:565666
+outlineColor:000000
 range:1900
 ammoPerShot:3
-shootCone:3
 shootY:1
 recoil:2
 shake:2
+predictTarget:false
 shoot:{
  shots:3
  shotDelay:10
@@ -30,7 +30,7 @@ ammoTypes:{
 }
 drawer:{
  type:DrawTurret
- basePrefix:reinforced-
+ basePrefix:burst-
  parts:[
   {
    type:RegionPart
