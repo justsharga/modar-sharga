@@ -9,7 +9,7 @@ consumes:{
    liquids:[
     {
      liquid:water
-     amount:2.5
+     amount:2
     }
     {
      liquid:c05-molten-iron
