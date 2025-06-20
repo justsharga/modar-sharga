@@ -5,12 +5,12 @@ health:1135
 size:5
 category:crafting
 craftTime:180
-itemCapacity:50
+itemCapacity:20
 consumes:{
  power:5
  items:[
-  b03-durasteel/10
-  b07-nexolite/25
+  b03-durasteel/5
+  b07-nexolite/20
  ]
  liquid:c01-hydrocharge/1
 }
@@ -31,19 +31,14 @@ drawer:{
    color2:4673cb
    alpha:0.9
    particleRad:20
-   particles:80
-   particleLife:40
+   particles:50
+   particleLife:80
    particleSize:5
-  }
-  {
-   type:DrawRegion
-   suffix:-mid
   }
   {
    type:DrawLiquidTile
    drawLiquid:c01-hydrocharge
-   alpha:0.7
-   padding:15
+   alpha:0.6
   }
   {
   type:DrawDefault
