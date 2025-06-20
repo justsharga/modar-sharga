@@ -5,46 +5,71 @@ description:Dangerious flying vessel equipped with two pairs of missile launcher
 health:1290
 speed:0.9
 hitSize:25
-faceTarget:false
+faceTarget:true
 engineSize:0
+outlineColor:000000
 targetFlags:[core]
 targetAir:false
 engines:[
  {
   x: 0
-  y: -15
+  y: -13
   radius:5
+  rotation:-90
  }
 ]
 weapons:[
  {
-  x:7
-  y:2
-  name:hole-weapon
-  reload:290
-  mirror:true
-  alternate:true
-  rotate:true
-  rotateSpeed:1.2
-  bullet:{
-   instantDisappear:true
-   damage:0
-   spawnUnit:piercer-missile
+  x:0
+  y:13
+  mirror:false
+  roatate:false
+  reload:60
+  shootSound:shockBlast
+  shoot:{
+   type:ShootHelix
+   scl:5
+   mag:3
   }
- }
- {
-  x:4
-  y:-8.5
-  name:hole-weapon
-  reload:290
-  mirror:true
-  alternate:true
-  rotate:true
-  rotateSpeed:1.2
   bullet:{
-   instantDisappear:true
-   damage:0
-   spawnUnit:piercer-missile
+   type:BasicBulletType
+   sprite:circle-bullet
+   speed:8
+   lifetime:25
+   damage:23
+   width:12
+   height:12
+   frontColor:bf92f9
+   backColor:bf92f9
+   trailColor:bf92f9
+   trailWidth:4
+   trailLength:12
+   trailEffect:missileTrail
+   intervalBullets:3
+   bulletInterval:2
+   intervalBullet:{
+    type:LightningBulletType
+    damage:22
+    lightningLength:4
+    lightningLengthRand:6
+    lightningColor:bf92f9
+    buildingDamageMultiplier:0.2
+   }
+   spawnBullets:{
+    type:BasicBulletType
+    sprite:circle-bullet
+    damage:18
+    speed:4
+    lifetime:50
+    width:12
+    height:12
+    frontColor:bf92f9
+    backColor:bf92f9
+    trailColor:bf92f9
+    trailWidth:4
+    trailLength:12
+    trailEffect:missileTrail
+   }
   }
  }
 ]
