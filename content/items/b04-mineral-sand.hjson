@@ -1,7 +1,7 @@
 type:item
 name:Mineral Sand
 description:Sand containing various minerals.Need to be processed before it can be used for building purposes
-hardness:2
+hardness:3
 cost:1
 buildable:false
 color:cb734b
