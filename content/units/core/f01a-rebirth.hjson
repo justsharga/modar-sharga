@@ -1,67 +1,86 @@
 type:flying
 flying:true
 name:Rebirth A
-description:Defender of fragment core.Capable of mining basic resources and heal allied building
+description:Defender of fragment core.Capable of mining basic resources and heals allied building
 controller:BuilderAI
 health:120
 armor:1
 mineFloor:true
 mineWall:true
+hittable:false
+killable:true
+targetable:false
 speed:5
-hitsize:6
+hitsize:12
 isEnemy:false
 mineSpeed:5
-mineTier:1
+mineTier:2
 buildSpeed:0.5
 drag:0.4
 itemCapacity:60
 alwaysUnlocked:true
-outlineColor:565666
+outlineColor:000000
 engines: [
    {
     x: 0
-    y: -7.0
-    engineSize:3.0
-    engineOffset:5.0
-    engineLayer:-1.0
+    y: -5.25
+    radius:3.0
+    rotation:-90
+   }
+   {
+    x:4
+    y:-5
+    radius:1.3
+    rotation:-135
+   }
+   {
+    x:-4
+    y:-5
+    radius:1.3
+    rotation:-45
    }
 ]
 weapons: [
 {
     x:0
-    y:6.0
+    y:4
     reload:90
     mirror:false
     rotate:false
-    shootSound: laser
-    inaccuracy: 2
-    shoot: {
-  firstShotDelay:60
-    shotDelay:0
-    shots:1
-  }
-    chargeSound: short-laser-charge
-    shootY:0.5
+    shootSound:cannon
     bullet:{
-      collides: true
-      collidesTiles: true
-      collidesAir: true
-      collidesGround: true
-      type: LaserBulletType
-      colors: [ d89b5c, f3e872, ffffff
-      ]
+         type:ArtilleryBulletType
+         shrinkY:0
          width:4
-         length:80
-         damage:16
+         height:4
+         speed:1.2
+         lifetime:30
+         splashDamage:0
+         splashDamageRadius:12
+         splashDamagePierce:true
+         collidesAir:false
+         collidesGround:false
+         collidesTeam:true
          healPercent:1.5
-         collidesTeam: true
-         pierce: true
-         pierceBuilding: false
-         pierceCap: 1
-         chargeEffect: none
-         shootEffect: shootSmall
-         smokeEffect: shootSmallSmoke
-         hitColor: 85c278
-    }
-  }
+         fragBullets:3
+         fragRandomSpread:0
+         fragSpread:120
+         fragVelocityMin:1.0
+         fragBullet:{
+            type:BasicBulletType
+            width:6
+            height:8
+            speed:1
+            lifetime:30
+            damage:0
+            homingPower:0.5
+            homingDelay:5
+            homingRange:60
+            healPercent:0.2
+            collidesTeam:true
+            collidesGround:true
+            collidesAir:false
+         }
+      }
+   }
 ]
