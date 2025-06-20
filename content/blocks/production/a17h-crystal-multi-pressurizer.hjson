@@ -21,7 +21,8 @@ drawer:{
  type:drawMulti
  drawers:[
   {
-   type:DrawDefault
+   type:DrawRegion
+   suffix:-bottom
   }
   {
    type:DrawRegion
@@ -30,8 +31,7 @@ drawer:{
    rotateSpeed:0.9
   }
   {
-   type:DrawRegion
-   suffix:-top
+   type:DrawDefault
   }
  ]
 }
