@@ -7,6 +7,17 @@ lightningChance:0.1
 lightningDamage:25
 armor:20
 category:defense
+destroyBullet:{
+ type:BulletType
+ damage:0
+ collides:false
+ speed:0
+ lifetime:5
+ splashDamage:0
+ splashDamageRadius:24
+ healPercent:1.5
+ despawnEffect:healWave
+}
 requirements:[
    b03-durasteel/8
    b10-zaprezonite/40
