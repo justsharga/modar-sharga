@@ -3,6 +3,7 @@ name:Durasteel Wall
 description:Protect allied building from enemy attack
 size:1
 health:340
+armor:2
 category:defense
 requirements:[
    b03-durasteel/6
