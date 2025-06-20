@@ -6,6 +6,7 @@ health:1245
 category:crafting
 squareSprite:true
 itemCapacity:30
+craftTime:240
 consumes:{
    power:6
    items:[
