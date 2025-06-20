@@ -9,8 +9,8 @@ consumes:{
  power:3
  liquid:water/0.5
  items:[
-  b06-hard-crystal/120
-  b08-mechanical-alloy/60
+  b03-durasteel/140
+  b06-hard-crystal/60
  ]
 }
 upgrades:[
@@ -20,8 +20,9 @@ upgrades:[
  ]
 ]
 requirements:[
- b03-durasteel/200
- b08-mechanical-alloy/60
+ b03-durasteel/210
+ b05-hexaria-glass/80
+ b06-hard-crystal/40
 ]
 builCostMultiplier:0.8
 research:a01k-striker-assembler
