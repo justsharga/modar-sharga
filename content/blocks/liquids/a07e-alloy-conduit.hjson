@@ -8,7 +8,7 @@ underBullets:true
 noSideBlend:true
 liquidCapacity:40
 liquidPressure:1.5
-botColor:565666
+botColor:000000
 requirements:[
    b05-hexaria-glass/3
    b08-mechanical-alloy/2
