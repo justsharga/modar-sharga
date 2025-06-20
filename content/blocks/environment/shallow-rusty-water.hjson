@@ -1,7 +1,7 @@
 type: Floor
 name: Shallow Rusty Water
 speedMultiplier: 0.6
-variants: 1
+variants: 2
 status: wet
 statusDuration: 10
 liquidDrop: c02-rusty-water
