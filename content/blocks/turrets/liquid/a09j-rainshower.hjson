@@ -7,8 +7,8 @@ category:turret
 rotateSpeed:0
 shootCone:360
 reload:5
-range:156
-outlineColor:565666
+range:240
+outlineColor:000000
 minWarmup:0.9
 shootWarmupSpeed:0.1
 shootY:0
@@ -19,66 +19,69 @@ ammoTypes:{
   speed:0
   lifetime:0
   collides:false
-  despawnEffect:hitLiquid
-  fragBullets:30
-  fragVelocityMin:0.1
-  fragVelocityMax:1.0
-  fragLifeMin:0.1
-  fragLifeMax:1.2
+  despawnEffect:none
+  hitEffect:none
+  fragBullets:8
+  fragVelocityMin:1.0
   fragBullet:{
-   type:BulletType
-   speed:0.8
-   lifetime:200
-   collides:false
+   type:LiquidBulletType
+   liquid:water
+   orbSize:6
+   speed:4
+   lifetime:60
+   knockback:2
    despawnEffect:hitLiquid
-   fragBullets:1
-   fragVelocityMax:0
-   fragBullet:{
+   intervalBullets:1
+   intervalRandomSpread:0
+   bulletInterval:10
+   intervalBullet:{
     type:LiquidBulletType
     liquid:water
-    keepVelocity:false
-    damage:0
-    speed:0
-    lifetime:60
-    orbSize:1
-    shrinkX:0
-    shrinkY:0
-    knockback:3
-    status:wet
-    statusDuration:180
+    orbSize:4
+    speed:0.5
+    lifetime:30
+    knockback:2
+    despawnEffect:hitLiquid
    }
   }
  }
  c05-molten-iron:{
   type:BulletType
-  speed:0
-  lifetime:0
-  collides:false
+  speed:8
+  lifetime:30
   despawnEffect:hitLiquid
-  fragBullets:30
-  fragVelocityMin:0.1
-  fragVelocityMax:1.0
-  fragLifeMin:0.1
-  fragLifeMax:1.2
+  homingPower:0.5
+  homingRange:240
+  buildingDamageMultiplier:0.2
+  fragBullets:1
+  fragRandomSpread:0
+  fragVelocityMin:1.0
   fragBullet:{
-   type:BulletType
-   speed:0.8
-   lifetime:200
-   collides:false
-   despawnEffect:hitLiquid
+   type:ShrapnelBulletType
+   length:88
+   width:5
+   damage:16
+   lifetime:60
+   serrations:3
+   serrationWidth:1.4
+   serrationSpacing:10
+   serrationSpaceOffset:110
+   serrationLenScl:-4
+   fromColor:bob9c0
+   toColor:888ba2
    fragBullets:1
-   fragVelocityMax:0
+   piercing:true
+   fragOnHit:true
    fragBullet:{
     type:LiquidBulletType
     liquid:c05-molten-iron
     keepVelocity:false
-    damage:20
+    damage:8
     speed:0
-    lifetime:60
-    orbSize:1.5
-    shrinkX:0
-    shrinkY:0
+    lifetime:5
+    orbSize:0
     knockback:1
+    buildingDamageMultiplier:0.2
    }
   }
  }
@@ -87,41 +90,41 @@ ammoTypes:{
   speed:0
   lifetime:0
   collides:false
-  despawnEffect:hitLiquid
-  fragBullets:30
-  fragVelocityMin:0.1
-  fragVelocityMax:1.0
-  fragLifeMin:0.1
-  fragLifeMax:1.2
+  despawnEffect:none
+  hitEffect:none
+  fragBullets:8
+  fragVelocityMin:1.0
   fragBullet:{
-   type:BulletType
-   speed:0.8
-   lifetime:200
-   collides:false
+   type:LiquidBulletType
+   liquid:c06-exozero
+   orbSize:6
+   speed:4
+   lifetime:60
+   knockback:2
    despawnEffect:hitLiquid
-   fragBullets:1
-   fragVelocityMax:0
-   fragBullet:{
+   intervalBullets:1
+   intervalRandomSpread:0
+   bulletInterval:10
+   intervalBullet:{
     type:LiquidBulletType
-    liquid:water
-    keepVelocity:false
-    damage:0
-    speed:0
-    lifetime:60
-    orbSize:2
-    shrinkX:0
-    shrinkY:0
-    knockback:4
-    status:frost
-    statusDuration:180
+    liquid:c06-exozero
+    orbSize:4
+    speed:0.5
+    lifetime:30
+    knockback:2
+    despawnEffect:hitLiquid
    }
   }
  }
 }
 drawer:{
  type:DrawTurret
- basePrefix:reinforced-
+ basePrefix:rainshower-
  parts:[
+  {
+   type:RegionPart
+   suffix:-top
+  }
   {
    type:RegionPart
    suffix:-front
