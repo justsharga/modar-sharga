@@ -3,52 +3,51 @@ name:Scout
 description:Highly agile leg unit equipped with two heavy sniper turrets on it sides.
 health:210
 hitSize:10
+speed:1.5
 armor:1
-legLength:32
-legCount:6
-legSpeed:0.5
-legMoveSpace:0.9
+legLength:10
+legCount:4
+legSpeed:0.3
+legMoveSpace:2
+legBaseOffset:5
 legExtension:-1.5
-legForwardScl:0.5
+legForwardScl:0.8
 faceTarget:true
-outlineColor:565666
+outlineColor:000000
 weapons:[
  {
-  x:3.25
-  y:0
+  x:0
+  y:-3.5
+  shootY:5
   name:scout-sniper
-  mirror:true
+  mirror:false
   alternate:false
-  reload:380
-  recoil:4
-  shootSound:mediumCannon
+  rotate:false
+  reload:120
+  cooldownTime:210
+  shootStatus:vulnerable
+  shootStatusDuration:280
+  shootSound:beam
+  shootEffect:none
+  continuous:true
+  alwaysContinuous:true
   bullet:{
-   type:PointBulletType
-   speed:16
-   lifetime:10
-   damage:30
+   type:ContinuousLaserBulletType
    pierce:true
-   pierceCap:2
-   width:4
-   height:12
-   frontColor:ffffff
-   backColor:ffffff
-   trailEffect:{
-    type:particleEffect
-    line:true
-    rotWithParent:true
-    length:0
-    particles:1
-    cone:360
-    strokeFrom:0.1
-    strokeTo:1.2
-    lenFrom:1
-    lenTo:1
-    colorFrom:d56662
-    colorTo:00000000
-   }
-   trailChance:1
-   trailSpacing:0.1
+   pierceCap:3
+   pierceBuilding:false
+   width:2
+   length:40
+   damage:2
+   damageInterval:10
+   fadeTime:15
+   shake:0
+   incendSpread:0
+   incendAmount:0
+   incendChance:0
+   colors:[6c9bff,8ca9eb,d1efff,ffffff
+   ]
+   status:frost
   }
  }
 ]
