@@ -10,7 +10,7 @@ consumes:{
    liquid:water/0.5
    power:4
 }
-outputLiquid:c06-exozero/0.5
+outputLiquid:c06-exozero/1
 drawer:{
    type:DrawMulti
    drawers:[
