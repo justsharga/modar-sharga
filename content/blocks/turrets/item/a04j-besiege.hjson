@@ -7,7 +7,7 @@ category:turret
 rotateSpeed:2
 shootSound:shootAltLong
 reload:120
-outlineColor:565666
+outlineColor:000000
 range:240
 ammoPerShot:8
 inaccuracy:15
@@ -80,7 +80,7 @@ ammoTypes:{
 }
 drawer:{
    type:DrawTurret
-   basePrefix:reinforced-
+   basePrefix:besiege-
 }
 requirements:[
    b01-iron/180
