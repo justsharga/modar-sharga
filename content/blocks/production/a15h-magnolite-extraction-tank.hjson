@@ -31,7 +31,6 @@ drawer:{
   {
    type:DrawLiquidTile
    drawLiquid:c04-magnolite
-   alpha:0.7
    padding:2.5
   }
   {
