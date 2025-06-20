@@ -1,0 +1,20 @@
+type:HeaterGenerator
+name:Pyre Generator
+description:A safer form of Pyre Reactor that cannot explode but also have lower power output but higher overall heat output.
+size:3
+category:power
+powerProduction:15
+heatOutput:12
+rotate:false
+consumes:{
+ liquid:c06-exozero/0.5
+ items:[
+  b13-enriched-pyrexenos/1
+ ]
+}
+itemDuration:360
+requirements:[
+ b06-hard-crystal/130
+ b10-zaprezonite/80
+ b11-rexonite/60
+]
