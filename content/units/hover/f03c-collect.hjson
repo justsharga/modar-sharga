@@ -1,34 +1,24 @@
-type:mech
+type:flying
+flying:true
 name:Collect
 description:Medium sized carrier ship capable for mining.
 health:1250
-speed:2.5
+speed:3
 armor:2
-shadowElevation:0.1
-mechFrontSway:0
-mechSideSway:0
-mechStride:0
 hitSize:24
 buildSpeed:0.7
-groundLayer:60
 accel:0.1
-rotateSpeed:4
-itemCapacity:30
+rotateSpeed:1.6
+itemCapacity:35
 mineSpeed:7
 mineTier:3
 mineFloor:true
 mineWall:true
-flying:false
-hovering:true
-hoverable:true
 useEngineElevation:false
-rotateMoveFirst:true
-lowAltitude:true
-accel:0.05
-controller:RepairAI
+controller:DefenderAI
 commands: [move, repair, rebuild, assist,mine
 ]
-outlineColor:565666
+outlineColor:000000
 abilities:[
  {
   type:MoveEffectAbility
@@ -40,88 +30,62 @@ abilities:[
   minVelocity:0.6
  }
  {
-  type:EnergyFieldAbility
-  damage:8
-  reload:260
-  range:110
-  effectRadius:1.5
-  damageEffect:chainLightning
-  status:electrified
-  statusDuration:60
-  shootSound:spark
-  maxTargets:10
-  healPercent:3
- }
- {
- type:UnitSpawnAbility
- spawnTime:800
- unit:heal-pod
- spawnX:0
- spawnY:-1.5
+  type:RepairFieldAbility
+  amount:12
+  reload:20
+  range:64
+  activeEffect:regenParticle
  }
 ]
 engines:[
  {
   x:0
-  y:-8
+  y:-11.5
   radius:3.5
+  rotation:-90
  }
+]
+parts:[
  {
- x:7.5
- y:-10
- radius:1.5
- }
- {
- x:-7.5
- y:-10
- radius:1.5
+  type:ShapePart
+  radius:64
+  radiusTo:64
+  circle:true
+  color:84f49150
  }
 ]
 weapons:[
  {
   x:0
-  y:2.5
-  reload:280
-  inaccuracy:8
-  shootCone:45
+  y:0
+  reload:20
+  shootCone:360
   mirror:false
   rotate:false
-  shootSound:blaster
-  shoot:{
-   type:ShootHelix
-   mag:1
-   scl:3
-   shots:4
-  }
+  shootSound:none
+  alwaysShooting:true
   bullet:{
-   type:EmpBulletType
-   sprite:circle-bullet
-   damage:32
-   radius:20
-   timeIncrease:1.5
-   timeDuration:100
-   powerDamageScl:1.2
-   healPercent:1.5
-   shootEffect:hitEmpSpark
-   smokeEffect:shootBigSmoke2
-   lifetime:45
-   backColor:84f491
-   frontColor:ffffff
-   width:10
-   height:10
-   shrinkY:0
-   speed:3.5
-   trailLength:12
-   trailWidth:3
-   trailColor:84f491
-   trailEffect:missileTrail
-   splashDamage:12
-   splashDamageRadius:20
-   pierceBuilding:true
-   collidesTeam:true
-   status:electrified
-   statusDuration:60
-   hitSound:plasmaboom
+   type:bulletType
+   collidesAir:false
+   splashDamagePierce:true
+   damage:0
+   lifetime:0
+   speed:0
+   splashDamage:18
+   splashDamageRadius:64
+   healPercent:0.35
+   buildingDamageMultiplier:0.1
+   shootEffect:{
+    type:ParticleEffect
+    cone:360
+    length:64
+    colorFrom:84f491
+    colorTo:84f49100
+    particles:18
+    sizeFrom:5
+    sizeTo:2
+   }
+   despawnEffect:none
   }
  }
 ]
