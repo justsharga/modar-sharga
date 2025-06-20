@@ -1,74 +1,76 @@
-type:LiquidTurret
+type:ContinuousLiquidTurret
 name:Splash
-description:Shoot various liquid simultaneously
+description:Use various liquids as ammo to concentrate a laser beam.
 health:920
 size:3
 category:turret
-rotateSpeed:2.0
-inaccuracy:4
-reload:2
-range:140
-flying:false
-outlineColor:565666
-shootCone:6
-recoil:3
+rotateSpeed:1.2
+reload:5
+range:144
+shootY:3
+outlineColor:000000
+recoilTime:120
+loopSound:laserbeam
 ammoTypes:{
  water:{
-  type:LiquidBulletType
-  liquid:water
-  damage:0
-  speed:5
-  width:8
-  height:12
-  hitsize:9
-  knockback:1
-  status:wet
-  statusDuration:180
-  lifetime:40
+  type:ContinuousFlameBulletType
+  width:3
+  length:144
+  damage:1
+  damageInterval:10
+  knockback:2
+  pierceCap:2
+  hitEffect:none
+  despawnEffect:none
+  colors:[4673cb,568eff,80a9ff,9ebeff,ffffff
+  ]
+  drawFlare:false
+  lightColor:9ebeff
+  puddles:1
+  puddleRange:1
+  puddleAmount:2
+  puddleLiquid:water
  }
  c02-rusty-water:{
-  type:LiquidBulletType
-  liquid:c02-rusty-water
-  damage:4
-  speed:4
-  width:8
-  height:12
-  hitsize:9
-  knockback:0
-  status:wet
-  statusDuration:180
-  lifetime:40
+type:ContinuousFlameBulletType
+  width:3
+  length:144
+  damage:1
+  damageInterval:10
+  pierceCap:1
+  hitEffect:none
+  despawnEffect:none
+  colors:[ff733e,ff8866,ff9275,ffa589,ffffff
+  ]
+  drawFlare:false
+  lightColor:ffa589
+  puddles:1
+  puddleRange:1
+  puddleAmount:2
+  puddleLiquid:c02-rusty-water
  }
  c04-magnolite:{
-  type:LiquidBulletType
-  liquid:c04-magnolite
-  damage:4
-  speed:3
-  width:8
-  height:12
-  hitsize:9
-  knockback:1
-  status:melting
-  statusDuration:180
-  lifetime:40
- }
- c06-exozero:{
-  type:LiquidBulletType
-  liquid:c06-exozero
-  damage:0
-  speed:2
-  width:8
-  height:12
-  hitsize:9
-  knockback:2
-  status:frost
-  statusDuration:180
-  lifetime:40
+  type:ContinuousFlameBulletType
+  width:3
+  length:144
+  damage:5
+  damageInterval:10
+  pierceCap:2
+  hitEffect:none
+  despawnEffect:none
+  colors:[da7000,e57700,ee9100,ee913f,ffffff
+  ]
+  drawFlare:false
+  lightColor:ee913f
+  puddles:1
+  puddleRange:1
+  puddleAmount:2
+  puddleLiquid:c04-magnolite
  }
 }
 drawer:{
    type:DrawTurret
-   basePrefix:reinforced-
+   basePrefix:splash-
 }
 requirements:[
  b01-iron/120
