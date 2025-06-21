@@ -1,0 +1,13 @@
+type:UnitCargoUnloadPoint
+name:Item Drop Vault
+description:Accepts selected item being delivered by the logistic drones.
+health:420
+size:2
+itemCapacity:150
+squareSprite:false
+category:distribution
+requirements:[
+ b03-durasteel/100
+ b08-mechanical-alloy/60
+ b10-zaprezonite/20
+]

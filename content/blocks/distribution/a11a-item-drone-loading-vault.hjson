@@ -1,0 +1,19 @@
+type:UnitCargoLoader
+name:Item Drone Loading Vault
+description:Loads the logistic drone with item to be delivered into drop vault.
+health:870
+size:4
+category:distribution
+buildTime:1200
+itemCapacity:300
+squareSprite:false
+unitType:cetus
+consumes:{
+ power:5
+ liquid:c04-magnolite/1
+}
+requirements:[
+ b03-durasteel/120
+ b08-mechanical-alloy/80
+ b10-zaprezonite/90
+]
