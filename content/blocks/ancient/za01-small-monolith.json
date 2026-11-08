@@ -1,0 +1,11 @@
+{
+    "type": "Wall",
+    "name": "Small Monolith",
+    "health": 20250,
+    "armor": 20,
+    "variants": 3,
+    "category": "defense",
+    "requirements": [
+        "zb01-ancient-rune/200"
+    ]
+}
