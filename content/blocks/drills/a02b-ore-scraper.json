@@ -1,0 +1,31 @@
+{
+   "type": "drill",
+   "name": "Ore Scraper",
+   "description": "Extracts deposits from the ground below it. Slow but it works.",
+   "size": 2,
+   "category": "production",
+   "tier": 3,
+   "health": 100,
+   "drillTime": 360,
+   "drawMinedItem": false,
+   "rotateSpeed": 4,
+   "drillEffect": "mineHuge",
+   "drillEffectChance": "0.1",
+   "consumes": {
+      "liquid": {
+         "liquid": "water",
+         "amount": 0.25,
+         "booster": true,
+         "optional" true
+      }
+   }
+   "requirements": [
+      "b01-iron/20"
+   ]
+   "liquidBoostIntensity": 1.8,
+   "squareSprite": false,
+   "research": "a01i-core-fragment",
+   "researchCost": [
+      "b01-iron/15"
+   ]
+}
