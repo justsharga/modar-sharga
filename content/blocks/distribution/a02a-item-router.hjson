@@ -1,9 +1,0 @@
-type:Router
-name:Item Router
-description:divides item input into three outputs equally
-health:50
-category:distribution
-requirements:[
-   b01-iron/6
-]
-buildCostMultiplier:4
