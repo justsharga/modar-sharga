@@ -1,0 +1,14 @@
+{
+   "type": "Overflowgate",
+   "name": "Underflow Controller",
+   "description": "Outputs items to the front if the rear side is blocked or full.",
+   "health": 40,
+   "invert": true,
+   "category": "distribution",
+   "requirements": [
+      "b01-iron/6"
+   ],
+   "buildCostMultiplier": 3,
+   "research": "a07a-overflow-controller",
+   "researchCostMultiplier": 2
+}
