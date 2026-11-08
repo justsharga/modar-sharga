@@ -1,0 +1,16 @@
+{
+   "type": "Sorter",
+   "name": "Inverted Item Sorter",
+   "description": "Outputs selected item to the side and anything else to the front.",
+   "invert": true,
+   "health": 40,
+   "category": "distribbution",
+   "requirements": [
+      "b01-iron/4"
+   ],
+   "buildCostMultiplier": 3,
+   "research": "a05a-item-sorter",
+   "researchCost": [
+      "b01-iron/8"
+   ]
+}
