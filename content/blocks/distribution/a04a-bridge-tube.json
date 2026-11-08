@@ -1,0 +1,16 @@
+{
+	"type": "DuctBridge",
+	"name": "Bridge Tube",
+	"description": "Transports items over terrain and structures.",
+	"category": "distribution",
+	"health": 40,
+	"range": 4,
+	"speed": 4,
+	"requirements": [
+		"b01-iron/10"
+	],
+	"research": "a02a-item-router",
+	"researchCost": [
+		"b01-iron/50"
+	]
+}
