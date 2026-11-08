@@ -1,0 +1,13 @@
+{
+   "type": "DuctBridge",
+   "name": "Zaprezonite Bridge",
+   "description": "Transports items over terrain and structures.",
+   "health": 190,
+   "speed": 1,
+   "range": 8,
+   "itemCapacity": 40,
+   "requirements": [
+      "b03-durasteel/1",
+      "b10-zaprezonite/10"
+   ]
+}
