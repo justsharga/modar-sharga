@@ -16,7 +16,7 @@
          "liquid": "water",
          "amount": 0.25,
          "booster": true,
-         "optional" true
+         "optional": true
       }
    }
    "requirements": [
