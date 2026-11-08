@@ -1,0 +1,17 @@
+{
+   "type": "DirectionalUnloader",
+   "name": "Item Unloader",
+   "description": "Unloads items from the adjacent block and outputs it into the front side.",
+   "health": 40,
+   "speed": 5,
+   "regionRotated": 1,
+   "solid": false,
+   "underBullets": true,
+   "category": "distribution",
+   "requirements": [
+      "b01-iron/2",
+      "b03-durasteel/4"
+   ],
+   "research": "a04a-bridge-tube",
+   "researchCostMultiplier": 0.4
+}
