@@ -1,0 +1,6 @@
+{
+  "type": "Floor",
+  "name": "Rusty Sand",
+  "itemDrop": "b04-mineral-sand"
+  "variants": 3
+}
