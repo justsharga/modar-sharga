@@ -1,0 +1,6 @@
+{
+  "type": "OreBlock",
+  "name": "Rexonite Ore",
+  "itemDrop": "b11-rexonite",
+  "variants": 2
+}
