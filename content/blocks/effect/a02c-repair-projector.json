@@ -26,7 +26,7 @@
   "type": "DrawMulti",
   "drawers": [
    {
-    "type": "DrawDefault",
+    "type": "DrawDefault"
    },
    {
     "type": "DrawPulseShape",
