@@ -1,0 +1,6 @@
+{
+  "type": "Prop",
+  "name": "Rusted Boulder",
+  "variants": 2,
+  "breakSound": "rock-crush"
+}
