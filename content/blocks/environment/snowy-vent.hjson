@@ -1,8 +1,0 @@
-type:SteamVent
-name:Snowy Vent
-blendGroup:heavy-snow
-parent:heavy-snow
-attributes:{
- steam:1
- heat:1
-}
