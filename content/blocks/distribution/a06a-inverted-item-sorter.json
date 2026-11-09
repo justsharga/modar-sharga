@@ -4,7 +4,7 @@
    "description": "Outputs selected item to the side and anything else to the front.",
    "invert": true,
    "health": 40,
-   "category": "distribbution",
+   "category": "distribution",
    "requirements": [
       "b01-iron/4"
    ],
