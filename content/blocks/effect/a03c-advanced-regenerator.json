@@ -1,0 +1,41 @@
+{
+ "type": "RegenProjector",
+ "name": "Advanced Regenerator",
+ "description": "Slowly heals surrounding strutures over time. Significantly better than the smaller version.",
+ "size": 3,
+ "health": 1032,
+ "category": "effect",
+ "range": 30,
+ "baseColor": "#85c278",
+ "healPercent": 0.045,
+ "consumes": {
+  "power": 1.5,
+  "liquid": "c04-magnolite/0.5",
+  "items": {
+   "item": "b12-hexahedron-plating/1",
+   "optional": true,
+   "booster": true
+  }
+ },
+ "optionalUseTime": 240,
+ "optionalMultiplier": 2,
+ "drawer": {
+  "type": "DrawMulti",
+  "drawers": [
+   {
+    "type": "DrawDefault",
+   },
+   {
+    "type": "DrawPulseShape",
+    "square": true,
+    "color": "#85c278",
+    "layer": 110
+   }
+  ]
+ },
+ "requirements": [
+  "b03-durasteel/120",
+  "b09-repair-circuit/80",
+  "b10-zaprezonite/220"
+ ]
+}
