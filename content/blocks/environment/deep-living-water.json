@@ -1,0 +1,15 @@
+{
+  "type": "Floor",
+  "name": "Deep Living Water",
+  "speedMultiplier": 0.5,
+  "variants": 2,
+  "status": "enchanced",
+  "statusDuration": 30,
+  "drownTime": 660,
+  "liquidDrop": "c01-hydrocharge",
+  "liquidMultiplier": 2,
+  "isLiquid": true,
+  "cacheLayer": "water",
+  "albedo": 0.9,
+  "supportsOverlay": true
+}
