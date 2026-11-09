@@ -1,0 +1,17 @@
+{
+ "type": "Floor",
+ "name": "Magma",
+ "variants": 2,
+ "attributes": {
+  "water": 0,
+  "magnolite": 1
+ },
+ "status": "burning",
+ "statusDuration": 15,
+ "liquidDrop": "c04-magnolite",
+ "liquidDropMultiplier": 1.8,
+ "supportsOverlay": true,
+ "emitLight": true,
+ "lightRadius": 50,
+ "lightColor": "#ee913f"
+}
