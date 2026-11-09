@@ -1,0 +1,14 @@
+{
+  "type": "Floor",
+  "name": "Shallow Living Water",
+  "speedMultiplier": 0.7,
+  "variants": 2,
+  "status": "enchanced",
+  "statusDuration": 20,
+  "liquidDrop": "c01-hydrocharge",
+  "isLiquid": true,
+  "cacheLayer": "water",
+  "liquidMultiplier": 1,
+  "albedo": 0.9,
+  "supportsOverlay": true
+}
