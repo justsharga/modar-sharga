@@ -18,10 +18,10 @@
          "booster": true,
          "optional": true
       }
-   }
+   },
    "requirements": [
       "b01-iron/20"
-   ]
+   ],
    "liquidBoostIntensity": 1.8,
    "squareSprite": false,
    "research": "a01i-core-fragment",
