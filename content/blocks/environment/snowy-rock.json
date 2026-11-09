@@ -1,0 +1,6 @@
+{
+  "type": "Prop",
+  "name: "Snowy Rock",
+  "variants": 3,
+  "breakSound": "rock-crush"
+}
