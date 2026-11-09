@@ -1,0 +1,31 @@
+{
+ "type": "ForceProjector",
+ "name": "Shield Concentrator",
+ "description": "Concentrates power into a wide energy shield, absorbing most bullets. Can be boosted using hexahedron plating.",
+ "size": 3,
+ "health": 1020,
+ "category": "effect",
+ "shieldHealth": 650,
+ "sides": 4,
+ "radius": 180,
+ "phaseRadiusBoost": 80,
+ "phaseShieldBoost": 550,
+ "phaseUseTime": 180,
+ "cooldownNormal": 2,
+ "cooldownBrokenBase": 0.35,
+ "coolantConsumption": 0.5,
+ "squareSprite": false,
+ "consumes": {
+  "power": 2,
+  "items": {
+   "item": "b12-hexahedron-plating/1",
+   "optional": true,
+   "booster": true
+  }
+ },
+ "requirements": [
+  "b08-mechanical-alloy/180",
+  "b10-zaprezonite/280",
+  "b11-rexonite/120"
+ ]
+}
