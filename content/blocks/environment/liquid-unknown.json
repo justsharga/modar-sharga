@@ -1,0 +1,9 @@
+{
+    "type": "Floor",
+    "name": "Unknown Puddle",
+    "speedMultiplier": 0.3,
+    "variants": 0,
+    "liquidDrop": "c07-unknown-substance",
+    "isLiquid": true,
+    "cacheLayer": "cryofluid"
+}
