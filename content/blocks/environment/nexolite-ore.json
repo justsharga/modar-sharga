@@ -1,0 +1,6 @@
+{
+  "type": "OreBlock",
+  "name": "Nexolite Ore",
+  "itemDrop": "b07-nexolite",
+  "variants": 3
+}
