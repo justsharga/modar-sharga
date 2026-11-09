@@ -1,0 +1,6 @@
+{
+  "type": "OreBlock",
+  "name": "Rusted Iron",
+  "itemDrop": "b01-iron",
+  "variants": 3
+}
