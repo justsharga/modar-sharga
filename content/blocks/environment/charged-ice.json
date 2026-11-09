@@ -1,0 +1,10 @@
+{
+ "type": "Floor",
+ "name": "Charged Ice",
+ "speedMultiplier": 0.9,
+ "dragMultiplier": 0.7,
+ "variants": 3,
+ "attributes": {
+  "c01-hydrocharge: 0.4"
+ }
+}
