@@ -1,0 +1,6 @@
+{
+  "type": "OreBlock",
+  "name": "Pyrexenos Ore",
+  "itemDrop": "b02-pyrexenos",
+  "variants": 3
+}
