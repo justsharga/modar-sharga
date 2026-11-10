@@ -1,0 +1,17 @@
+{
+   "type": "Pump",
+   "name": "Heating Pump",
+   "description": "Pumps out liquids from the ground below it. Requires pyrexenos to operate.",
+   "size": 2,
+   "health": 150,
+   "squareSprite": false,
+   "category": "liquid",
+   "pumpAmount": 0.08,
+   "consumes": {
+      "item": "b02-pyrexenos/1"
+   },
+   "requirements": [
+      "b03-durasteel/20",
+      "b05-hexaria-glass/10"
+   ]
+}
