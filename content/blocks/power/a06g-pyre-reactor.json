@@ -1,7 +1,7 @@
 {
  "type": "HeaterGenerator",
  "name": "Pyre Reactor",
- "description": "Produces power using unstable enriched pyrexenos and water. May explode if the hot water exceeds the capacity",
+ "description": "Produces power using unstable enriched pyrexenos and water. May explode if the hot water exceeds the capacity.",
  "health": 1080,
  "size": 5,
  "category": "power",
@@ -28,7 +28,7 @@
    },
    {
     "type": "DrawCircles",
-    "color": ffffff,
+    "color": "#ffffff",
     "particles": 40,
     "range": 6
    },
