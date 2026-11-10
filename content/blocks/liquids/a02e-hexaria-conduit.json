@@ -1,0 +1,18 @@
+{
+   "type": "Conduit",
+   "name": "Hexaria Conduit",
+   "description": "Transports liquid and gas across blocks.",
+   "health": 60,
+   "category": "liquid",
+   "leaks": true,
+   "underBullets": true,
+   "liquidCapacity": 15,
+   "liquidPressure": 1.03,
+   "botColor": "#00000000",
+   "requirements": [
+      "b05-hexaria-glass/2"
+   ],
+   "junctionReplacement": "a03e-hexaria-junction",
+   "bridgeReplacement": "a05e-hexaria-bridge",
+   "research": "a01e-heat-water-pump"
+}
