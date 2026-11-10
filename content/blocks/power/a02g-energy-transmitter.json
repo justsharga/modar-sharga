@@ -11,7 +11,7 @@
     "powerBuffered": 2000
   },
   "requirements": [
-    "b01-iron/8
+    "b01-iron/8"
   ],
   "squareSprite": false,
   "research": "a01g-radio-ignition-chamber",
