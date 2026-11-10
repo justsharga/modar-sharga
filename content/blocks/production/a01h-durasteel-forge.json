@@ -1,0 +1,43 @@
+{
+   "type": "GenericCrafter",
+   "name": "Durasteel Forge",
+   "description": "Melts up iron and raw pyrexenos into durasteel.",
+   "health": 120,
+   "size": 3,
+   "category": "crafting",
+   "itemCapacity": 20,
+   "craftTime": 180,
+   "craftEffect": "none",
+   "outputItem": "b03-durasteel/4",
+   "ambientSound": "smelter",
+   "ambientSoundVolume": 0.6,
+   "consumes": {
+      "power": 1,
+      "items": [
+         "b01-iron/4",
+         "b02-pyrexenos/2"
+      ]
+   },
+   "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+         {
+            "type": "DrawRegion",
+            "suffix": "-bottom"
+         },
+         {
+            "type": "DrawArcSmelt"
+         },
+         {
+            "type": "DrawDefault"
+         }
+      ]
+   },
+   "requirements": [
+      "b01-iron/60"
+   ],
+   "research": "a01i-core-fragment",
+   "researchCost": [
+      b01-iron/20
+   ]
+}
