@@ -1,7 +1,7 @@
 {
    "type": "LiquidRouter",
    "name": "Flow Tank",
-   "description": Stores moderate amount of substance and distributes it into surrounding buildings.",
+   "description": "Stores moderate amount of substance and distributes it into surrounding buildings.",
    "health": 198,
    "size": 2,
    "category": "liquid",
