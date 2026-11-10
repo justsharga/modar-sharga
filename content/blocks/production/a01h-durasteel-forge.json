@@ -38,6 +38,6 @@
    ],
    "research": "a01i-core-fragment",
    "researchCost": [
-      b01-iron/20
+      "b01-iron/20"
    ]
 }
