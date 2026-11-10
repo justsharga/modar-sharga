@@ -1,0 +1,14 @@
+{
+   "type": "LiquidJunction",
+   "name": "Hexaria Junction",
+   "description": "Acts as a bridge for two crossing conduits.",
+   "health": 70,
+   "category": "liquid",
+   "solid": false,
+   "underBulltes": true,
+   "requirements": [
+      "b03-durasteel/2",
+      "b05-hexaria-glass/2"
+   ],
+   "research": "a02e-hexaria-conduit"
+}
