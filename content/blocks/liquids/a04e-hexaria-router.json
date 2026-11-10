@@ -10,5 +10,6 @@
    "requirements": [
       "b03-durasteel/2",
       "b05-hexaria-glass/4"
-   ]
+   ],
+   "research": "a02e-hexaria-conduit"
 }
