@@ -1,0 +1,14 @@
+{
+   "type": "liquidRouter",
+   "name": "Hexaria Router",
+   "description": "Stores a small amount substance and distributes it into every sides.",
+   "health": 85,
+   "category": "liquid",
+   "liquidCapacity": 30,
+   "solid": false,
+   "underBullets": true,
+   "requirements": [
+      "b03-durasteel/2",
+      "b05-hexaria-glass/4"
+   ]
+}
