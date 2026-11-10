@@ -9,7 +9,7 @@
   "consumesPower": true,
   "outputPower": true,
   "consumes": {
-    "powerBuffered": 8000,
+    "powerBuffered": 8000
   },
   "requirements": [
     "b03-durasteel/40",
