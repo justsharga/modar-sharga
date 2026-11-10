@@ -1,0 +1,19 @@
+{
+   "type": "Conduit",
+   "name": "Aloy Conduit",
+   "description": "Transports substance across buildings. Does not accept non conduit side input.",
+   "health": 60,
+   "category": "liquid",
+   "leaks": true,
+   "underBullets": true,
+   "noSideBlend": true,
+   "liquidCapacity": 30,
+   "liquidPressure": 1.5,
+   "botColor": "#00000000",
+   "requirements": [
+      "b05-hexaria-glass/3",
+      "b08-mechanical-alloy"
+   ],
+   "junctionReplacement": "a03e-hexaria-junction",
+   "bridgeReplacement": "a05e-hexaria-bridge"
+}
