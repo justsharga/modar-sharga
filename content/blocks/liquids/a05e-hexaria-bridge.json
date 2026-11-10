@@ -1,0 +1,15 @@
+{
+   "type": "LiquidBridge",
+   "name": "Hexaria Bridge",
+   "description": "Moves substances over terrain.",
+   "health": 90,
+   "category": "liquid",
+   "fadeIn": false,
+   "moveArrow": false,
+   "arrowSpacing": 6,
+   "range": 4,
+   "requirements": [
+      "b03-durasteel/4",
+      "b05-hexaria-glass/4"
+   ]
+}
