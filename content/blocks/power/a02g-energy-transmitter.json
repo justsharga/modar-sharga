@@ -1,0 +1,21 @@
+{
+  "type": "BeamNode",
+  "name": "Energy Transmitter",
+  "description": "Transfers power to another transmitter or block in a straight line.",
+  "category": "power",
+  "health": 90,
+  "range": 8,
+  "consumesPower": true,
+  "outputPower": true,
+  "consumes": {
+    "powerBuffered": 2000
+  },
+  "requirements": [
+    "b01-iron/8
+  ],
+  "squareSprite": false,
+  "research": "a01g-radio-ignition-chamber",
+  "researchCost": {
+    "b01-iron": 2
+  }
+}
