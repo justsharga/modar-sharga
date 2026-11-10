@@ -1,0 +1,36 @@
+{
+   "type": "GenericCrafter",
+   "name": "Hexaria Kiln",
+   "description": "Melts up mineral sand into hexaria glass. Requires power to operate.",
+   "health": 215,
+   "size": 3,
+   "category": "crafting",
+   "craftEffect": "none",
+   "outputItem": "b05-hexaria-glass/1",
+   "consumes": {
+      "power": 3,
+      "item": "b04-mineral-sand/2"
+   },
+   "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+         {
+            "type": "DrawRegion",
+            "suffix": "-bottom"
+         },
+         {
+            "type": "DrawCrucibleFlame"
+         },
+         {
+            "type": "DrawDefault"
+         }
+      ]
+   },
+   "ambientSound": "smelter",
+   "ambientSoundVolume": 0.09,
+   "squareSprite": false,
+   "requirements": [
+      "b01-iron/70",
+      "b03-durasteel/40"
+   ]
+}
