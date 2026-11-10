@@ -1,0 +1,39 @@
+{
+  "type": "ThermalGenerator",
+  "name": "Heat Turbine",
+  "description": "Uses steam from vent to produce power. May collect some amount of hot water.",
+  "size": 3,
+  "health": 720,
+  "category": "power",
+  "minEfficiency": 9,
+  "generateEffect": "turbinegenerate",
+  "effectChance": 0.4,
+  "hasLiquids": true,
+  "outputLiquid": "c03-heated-water/0.277777778",
+  "liquidCapacity": 30,
+  "displayEfficiencyScale": 0.111111,
+  "displayEfficiency": false,
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.9,
+  "powerProduction": 1.48148148,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "spinSprite": true,
+        "blurThresh": 0.07
+      }
+    ]
+  },
+  "squareSprite": false,
+  "requirements": [
+    "b05-hexaria-glass/40",
+    "b06-hard-crystal/20",
+    "b08-mechanical-alloy/15"
+  ]
+}
