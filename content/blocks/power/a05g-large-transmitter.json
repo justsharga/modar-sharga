@@ -1,0 +1,19 @@
+{
+  "type": "BeamNode",
+  "name": "Large Transmitter",
+  "description": "Transfers power to another transmitter or block in a straight line.",
+  "health": 210,
+  "size": 3,
+  "category": "power",
+  "range": 18,
+  "consumesPower": true,
+  "outputPower": true,
+  "consumes": {
+    "powerBuffered": 8000,
+  },
+  "requirements": [
+    "b03-durasteel/40",
+    "b06-hard-crystal/50"
+  ],
+  "squareSprite": false
+}
