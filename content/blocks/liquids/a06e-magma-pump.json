@@ -1,0 +1,17 @@
+{
+ "type": "Pump",
+ "name": "Magma Pump",
+ "description": "Pumps out liquid from the tile below it. Uses magnolite to operate more effectively.",
+ "size": 3,
+ "health": 350,
+ "squareSprite": false,
+ "category": "liquid",
+ "pumpAmount": 0.12,
+ "consumes": {
+  "liquid": "c04-magnolite/0.1"
+ },
+ "requirements": [
+  "b05-hexaria-glass/20",
+  "b08-mechanical-alloy/60"
+ ]
+}
