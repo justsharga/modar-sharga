@@ -12,7 +12,7 @@
    "botColor": "#00000000",
    "requirements": [
       "b05-hexaria-glass/3",
-      "b08-mechanical-alloy"
+      "b08-mechanical-alloy/1"
    ],
    "junctionReplacement": "a03e-hexaria-junction",
    "bridgeReplacement": "a05e-hexaria-bridge"
