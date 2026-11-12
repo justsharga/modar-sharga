@@ -9,7 +9,7 @@
    "outputItem": "b05-hexaria-glass/1",
    "consumes": {
       "power": 3,
-      "item": "b04-mineral-sand/2"
+      "items": [{"item": "b04-mineral-sand", "amount": 2}]
    },
    "drawer": {
       "type": "DrawMulti",
