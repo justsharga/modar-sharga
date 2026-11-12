@@ -8,7 +8,7 @@
    "squareSprite": false,
    "powerProduction": 1.5,
    "consumes": {
-      "item": "b02-pyrexenos/1"
+      "items": [{"item": "b02-pyrexenos", "amount": 1}]
    },
    "itemDuration": 150,
    "drawer": {
