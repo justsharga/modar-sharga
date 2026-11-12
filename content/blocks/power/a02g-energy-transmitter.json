@@ -15,7 +15,7 @@
   ],
   "squareSprite": false,
   "research": "a01g-radio-ignition-chamber",
-  "researchCost": {
+  "researchCost": [
     "b01-iron/2"
-  }
+  ]
 }
