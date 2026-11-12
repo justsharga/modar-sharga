@@ -11,7 +11,7 @@
  "outputLiquid": "c03-heated-water/0.25",
  "consumes": {
   "liquid": "water/1.5",
-  "item": "b13-enriched-pyrexenos/1"
+  "items": [{"item": "b13-enriched-pyrexenos", "amount": 1}]
  },
  "itemDuration": 300,
  "drawer": {
