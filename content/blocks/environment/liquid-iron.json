@@ -8,7 +8,7 @@
   "isLiquid": true,
   "cacheLayer": "tar",
   "albedo": 0.8,
-  "status": "molten",
+  "status": "melting",
   "statusDuration": 30,
   "supportsOverlay": true
 }
