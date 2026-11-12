@@ -1,0 +1,9 @@
+{
+    "type": "Liquid",
+    "name": "Ferroline",
+    "description": "origin: ferucia, usage: unknown",
+    "color": "#c1c4cb",
+    "viscosity": 1,
+    "heatCapacity": 0,
+    "coolant": false
+}
