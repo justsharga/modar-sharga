@@ -8,8 +8,7 @@
    "category": "liquid",
    "pumpAmount": 0.08,
    "consumes": {
-      "item": "b02-pyrexenos",
-      "amount": 1
+      "items": [ {"item": "b02-pyrexenos", "amount": 1}]
    },
    "requirements": [
       "b03-durasteel/20",
