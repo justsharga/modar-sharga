@@ -10,7 +10,7 @@
  "rotate": false,
  "consumes": {
   "liquid": "c06-exozero/0.5",
-  "item": "b13-enriched-pyrexenos/1"
+  "items": [{"item": "b13-enriched-pyrexenos", "amount": 1}]
  },
  "itemDuration": 360,
  "requirements": [
