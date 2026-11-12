@@ -1,0 +1,11 @@
+{
+    "type": "Liquid",
+    "name": "Unknown Substance",
+    "description": "Liquid without any known use and origin.",
+    "color": "#d1efff",
+    "viscosity": 1,
+    "coolant": false,
+    "incinerable": false,
+    "effect": "corroded",
+    "hidden": true
+}
