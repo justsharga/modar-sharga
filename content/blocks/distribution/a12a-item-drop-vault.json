@@ -1,5 +1,5 @@
 {
-    "type": "UnitCargoLoader",
+    "type": "UnitCargoUnloadPoint",
     "name": "Item Drop Vault",
     "description": "Accepts selected item being delivered by the logistic drones.",
     "health": 420,
