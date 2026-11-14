@@ -1,0 +1,31 @@
+{
+ "type": "HeatProducer",
+ "name": "Conventional Heater",
+ "description": "Uses heat from hot water as the source of heat.",
+ "size": 2,
+ "health": 430,
+ "category": "crafting",
+ "consumes": {
+  "liquid": "c03-heated-water/0.5"
+ },
+ "ignoreLiquidFullness": true,
+ "rotateDraw": false,
+ "regionRotated": 1,
+ "heatOutput": 2,
+ "outputLiquid": "water/0.5",
+ "drawer": {
+  "type": "MultiDraw",
+  "drawers": [
+   {
+    "type": "DrwaDefault"
+   },
+   {
+    "type": "DrawHeatOutput"
+   }
+  ]
+ },
+ "requirements": [
+  "b06-hard-crystal/40",
+  "b08-mechanical-alloy/20"
+ ]
+}
