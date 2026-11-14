@@ -4,6 +4,7 @@
    "description": "Manufactures repair circuit using nexolite and durasteel. Requires water and power to operate.",
    "size": 4,
    "health": 970,
+   "category": "crafting",
    "squareSprite": false,
    "consumes": {
       "items": [
