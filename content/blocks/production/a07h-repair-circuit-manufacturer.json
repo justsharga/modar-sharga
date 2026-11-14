@@ -30,7 +30,7 @@
          },
          {
             "type": "DrawLiquidTile",
-            "drawLiquid": "water,
+            "drawLiquid": "water",
             "alpha": 0.9,
             "padding": 2.5
          },
