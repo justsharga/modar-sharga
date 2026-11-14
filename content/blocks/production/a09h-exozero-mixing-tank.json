@@ -1,0 +1,36 @@
+{
+   "type": "GenericCrafter",
+   "name": "Exozero Mixing Tank",
+   "description": "Dissolves nexolite in water.",
+   "size": 3,
+   "health": 580,
+   "category": "crafting",
+   "consumes": {
+      "power": 4,
+      "liquid": "water/0.75",
+      "items": [{"item": "b07-nexolite", "amount": 5}]
+   },
+   "outputLiquid": "c06-exozero/0.5",
+   "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+         {
+            "type": "DrawRegion",
+            "suffix": "-bottom"
+         },
+         {
+            "type": "DrawLiquidTile",
+            "drawLiquid": "c06-exozero"
+         },
+         {
+            "type": "DrawDefault"
+         }
+      ]
+   },
+   "requirements": [
+      "b05-hexaria-glass/35",
+      "b06-hard-crystal/30",
+      "b08-mechanical-alloy/50",
+      "b11-rexonite/40"
+   ]
+}
