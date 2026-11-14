@@ -1,0 +1,53 @@
+{
+   "type": "GenericCrafter",
+   "name": "Hexahedron Blast Furnace",
+   "description": "Combines multiple materials into hexahedron plating.",
+   "size": 4,
+   "health": 1245,
+   "category": "crafting",
+   "itemCapacity": 30,
+   "craftTime": 240,
+   "consumes": {
+      "power": 6,
+      "items": [{"item": "b14-rough-nexolite/10"}],
+      "liquids": [
+         "c04-magnolite/1",
+         "c05-molten-iron/1.5"
+      ]
+   },
+   "ambientSound": "smelter",
+   "ambientSoundVolume": 0.6,
+   "outputItem": "b12-hexahedron-plating/8",
+   "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+         {
+            "type": "DrawRegion",
+            "suffix": "-bottom"
+         },
+         {
+            "type": "DrawLiquidTile",
+            "drawLiquid": "c04-magnolite"
+         },
+         {
+            "type": "DrawSoftParticles",
+            "color": "#b0b9c0",
+            "color2": "#3f4049",
+            "alpha": 0.6,
+            "particleRad": 10
+            "particleSize": 8.5,
+            "particleLife": 30,
+            "particles": 25
+         },
+         {
+            "type": "DrawDefault"
+         }
+      ]
+   },
+   "requirements": [
+      "b03-durasteel/50",
+      "b08-mechanical-alloy/80",
+      "b10-zaprezonite/60",
+      "b11-rexonite/35"
+   ]
+}
