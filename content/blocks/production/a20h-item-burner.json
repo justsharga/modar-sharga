@@ -1,0 +1,15 @@
+{
+ "type": "incinerator",
+ "name": "Resource Burner",
+ "description": "Destroys any inputted material. Requires power to operate.",
+ "health": 230,
+ "category": "crafting",
+ "squareSprite": false,
+ "consumes": {
+  "power": 0.25
+ },
+ "requirements": [
+  "b03-durasteel/8",
+  "b08-mechanical-alloy/4"
+ ]
+}
