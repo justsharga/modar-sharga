@@ -9,7 +9,7 @@
    "craftTime": 240,
    "consumes": {
       "power": 6,
-      "items": [{"item": "b14-rough-nexolite/10"}],
+      "items": [{"item": "b14-rough-nexolite", "amount": 10}],
       "liquids": [
          "c04-magnolite/1",
          "c05-molten-iron/1.5"
