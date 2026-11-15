@@ -1,6 +1,6 @@
 {
  "type": "HeatConductor",
- "name" "Heat Conductor",
+ "name": "Heat Conductor",
  "description": "Takes heat input and transfers it to the front of this block.",
  "category": "crafting",
  "regionRotated1": 1,
