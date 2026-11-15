@@ -1,0 +1,40 @@
+{
+ "type": "HeatCrafter",
+ "name": "Pyrexenos Enricher",
+ "description": "Enriches radioactivity of pyrexenos.",
+ "health": 1120,
+ "size": 5,
+ "category": "crafting",
+ "craftTime": 240,
+ "itemCapacity": 30,
+ "heatRequirement": 10,
+ "maxEfficiency": 4,
+ "squareSprite": false,
+ "outputItem": "b13-enriched-pyrexenos/2",
+ "consumes": {
+  "power": 3.5,
+  "items": [{"item": "b02-pyrexenos", "amount": 5}]
+ },
+ "drawer": {
+  "type": "DrawMulti",
+  "drawers": [
+   {
+    "type": "DrawRegion",
+    "suffix": "-bottom"
+   },
+   {
+    "type": "DrawArcSmelt"
+   },
+   {
+    "type": "DrawDefault"
+   }
+  ]
+ },
+ "requirements": [
+  "b08-mechanical-alloy/120",
+  "b09-repair-circuit/80",
+  "b10-zaprezonite/35"
+ ],
+ "ambientSound": "smelter",
+ "ambientSoundVolume": 0.9
+}
