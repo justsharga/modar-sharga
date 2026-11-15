@@ -1,0 +1,20 @@
+{
+ "type": "GenericCrafter",
+ "name": "Nexolite Separator",
+ "description": "Separates nexolite in rough chunk of nexolite.",
+ "health": 780,
+ "size": 3,
+ "category": "crafting",
+ "consumes": {
+  "power": 2,
+  "items": [{"item": "b14-rough-nexolite", "amount": 1}]
+ },
+ "craftTime": 30,
+ "outputItems": [
+  "b04-mineral-sand/1",
+  "b07-nexolite/1"
+ ],
+ "requirements": [
+  "b01-iron/180",
+  "b08-mechanical-alloy/60"
+ ]
