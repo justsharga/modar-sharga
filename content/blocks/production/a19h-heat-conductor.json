@@ -1,0 +1,26 @@
+{
+ "type": "HeatConductor",
+ "name" "Heat Conductor",
+ "description": "Takes heat input and transfers it to the front of this block.",
+ "category": "crafting",
+ "regionRotated1": 1,
+ "drawer": {
+  "type": "DrawMulti",
+  "drawers": [
+   {
+    "type": "DrawDefault"
+   },
+   {
+    "type": "DrawHeatInput",
+    "suffix": "-heat"
+   },
+   {
+    "type": "DrawHeatOutput"
+   }
+  ]
+ },
+ "requirements": [
+  "b06-hard-crystal/4",
+  "b08-mechanical-alloy/8"
+ ]
+}
